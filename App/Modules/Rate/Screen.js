@@ -14,6 +14,7 @@ export default class Screen extends Component {
       <Container>
         <Footer>
           <Card
+            theme='light'
             title='LOVING THE APP?'
             text={'Every rating means the world to us.\n\n★★★★★'}
             button='Rate'

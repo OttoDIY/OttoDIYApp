@@ -9,5 +9,11 @@ export default StyleSheet.create({
     color: Colors.button.text,
     textDecorationLine: 'underline',
     textAlign: 'center'
+  },
+  text_light: {
+    ...Fonts.style.button,
+    color: Colors.white,
+    textDecorationLine: 'underline',
+    textAlign: 'center'
   }
 })

@@ -33,7 +33,7 @@ export default class CompactListItem extends Component {
       disabled = false,
       onPress } = this.props
 
-    const textStyle = (!disabled) ? s.text : [s.text, s.text_disabled]
+    const textStyle = (!disabled) ? s.text_compact : [s.text_compact, s.text_disabled]
     const primaryButtonIconColor = (!disabled) ? iconColor : Colors.icon_disabled
     const buttonIconColor = (!disabled) ? Colors.icon_dark : Colors.icon_disabled
 

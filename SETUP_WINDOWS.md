@@ -6,7 +6,7 @@ This will take 1 hour or longer depending on Internet and your laptop speed.
 In a nutshell, these are the steps:
   * Install react native pre-requisites for Windows
   * Run HelloWorld React Native app on an Android device
-  * Run Code & Robots app on an Android device
+  * Run Otto app on an Android device
 
 ## Install react native pre-requisites
 
@@ -153,7 +153,7 @@ To check to see if your device is connected and authorized:
 
 Follow the instructions in https://github.com/codeandrobots/codeandrobots-app#arrow_up-how-to-setup, i.e:
   * ```cd C:\Users\%username%```
-  * ```git clone https://github.com/codeandrobots/codeandrobots-app.git```
+  * ```git clone https://github.com/OttoDIY/OttoDIYApp.git```
   * ```yarn install --ignore-engines```
   * ```copy .env.example .env```
   * ```react-native run-android --variant=devDebug```
@@ -164,19 +164,18 @@ Follow the instructions in https://github.com/codeandrobots/codeandrobots-app#ar
 
 If you see the error "Failed to create directory" then keep running ```react-native run-android --variant=devDebug``` until they stop happening, sometimes as much as 3 or 4 times :/
 
-#### Activity class {com.codeandrobots/com.codeandrobots.MainActivity} does not exist
+#### Activity class {com.ottodiy/com.ottodiy.MainActivity} does not exist
 
-If you see the error "Activity class {com.codeandrobots/com.codeandrobots.MainActivity} does not exist" then all is OK but you have to launch the Code & Robots app manually from your device. This error occurs because react-native CLI doesn't work well yet with Android variants.
+If you see the error "Activity class {com.ottodiy/com.ottodiy.MainActivity} does not exist" then all is OK but you have to launch the Code & Robots app manually from your device. This error occurs because react-native CLI doesn't work well yet with Android variants.
 
 #### Operation not permitted, lstat
 
 If you see the error "Operation not permitted, lstat" then try the following:
 
 1. Start the React Native bundler inside a **NEW** terminal or command prompt
-  * ```cd codeandrobots-app```
+  * ```cd OttoDIYApp```
   * ```npm cache clean```
   * ```npm start -- --reset-cache```
 
 2. Run the app in a different terminal or command prompt
   * ```react-native run-android --variant=devDebug```
-

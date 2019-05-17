@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native'
 
-import { Styles, Metrics } from 'App/Themes'
+import { Styles, Metrics, Colors } from 'App/Themes'
 
 export default StyleSheet.create({
   ...Styles,
@@ -9,6 +9,7 @@ export default StyleSheet.create({
   },
   title: {
     ...Styles.text,
+    color: Colors.primary,
     marginHorizontal: Metrics.unit,
     marginBottom: Metrics.unit
   }

@@ -33,7 +33,7 @@ export default class SquareListItem extends Component {
       disabled = false,
       onPress } = this.props
 
-    const textStyle = (!disabled) ? s.text : [s.text, s.text_disabled]
+    const textStyle = (!disabled) ? s.text_featured : [s.text_featured, s.text_disabled]
 
     return (
       <TouchableOpacity style={[s.itemView, s.itemView_featured, style]} disabled={disabled} onPress={onPress}>

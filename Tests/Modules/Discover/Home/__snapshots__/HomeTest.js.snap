@@ -73,6 +73,7 @@ exports[`Discover Component renders correctly 1`] = `
       }
       text="Get inspired by what you can create. Build your own creations or remix others to jumpstart your ideas."
       textAlign="left"
+      theme="light"
       title="DISCOVER"
     />
   </Footer>

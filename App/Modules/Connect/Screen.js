@@ -47,6 +47,7 @@ export default class Screen extends Component {
         {this.renderIsYourDeviceSupportedModal()}
         <Footer style={{paddingTop: 0}}>
           <Card
+            theme='light'
             title='CHOOSE HOW TO CONNECT'
             text='Connect to a bluetooth device OR to the Code & Robots simulator'
             button='Connect Bluetooth Device'
@@ -66,6 +67,7 @@ export default class Screen extends Component {
       <Container>
         <Footer style={{paddingTop: 0}}>
           <Card
+            theme='light'
             title='YOU`RE CONNECTED TO THE SIMULATOR'
             text={instructions}
             button='Done'
@@ -88,6 +90,7 @@ export default class Screen extends Component {
       <Container>
         <Footer style={{paddingTop: 0}}>
           <Card
+            theme='light'
             title='BLUETOOTH IS TURNED OFF'
             text='You need to turn on Bluetooth before connecting'
             button='Turn on Bluetooth'
@@ -122,6 +125,7 @@ export default class Screen extends Component {
         </List>
         <Footer style={{paddingTop: 0}}>
           <Card
+            theme='light'
             title='YOU’RE CONNECTED'
             text='All hooked up & ready to go!'
             button='Done'
@@ -151,6 +155,7 @@ export default class Screen extends Component {
       <Container>
         <Footer style={{paddingTop: 0}}>
           <Card
+            theme='light'
             title='GET CONNECTED'
             text={footerText}
             button='Scan'

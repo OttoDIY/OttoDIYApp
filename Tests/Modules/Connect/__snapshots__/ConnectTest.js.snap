@@ -31,6 +31,7 @@ exports[`Connect Component renders correctly when bluetooth device is connected 
       }
       text="All hooked up & ready to go!"
       textAlign="left"
+      theme="light"
       title="YOU’RE CONNECTED"
     />
   </Footer>
@@ -61,6 +62,7 @@ exports[`Connect Component renders correctly when bluetooth is enabled 1`] = `
       }
       text="Tap on a bluetooth device above to connect or scan to find other devices nearby."
       textAlign="left"
+      theme="light"
       title="GET CONNECTED"
     />
   </Footer>
@@ -126,6 +128,7 @@ exports[`Connect Component renders correctly when bluetooth is not enabled 1`] =
       }
       text="You need to turn on Bluetooth before connecting"
       textAlign="left"
+      theme="light"
       title="BLUETOOTH IS TURNED OFF"
     />
   </Footer>
@@ -172,6 +175,7 @@ exports[`Connect Component renders correctly when connected to simulator 1`] = `
       }
       text="Test instructions"
       textAlign="left"
+      theme="light"
       title="YOU\`RE CONNECTED TO THE SIMULATOR"
     />
   </Footer>
@@ -229,6 +233,7 @@ Code & Robots Simulator"
       }
       text="Connect to a bluetooth device OR to the Code & Robots simulator"
       textAlign="left"
+      theme="light"
       title="CHOOSE HOW TO CONNECT"
     />
   </Footer>
@@ -260,6 +265,7 @@ exports[`Connect Component renders correctly when scanning 1`] = `
       text="Scanning for nearby bluetooth devices...
 "
       textAlign="left"
+      theme="light"
       title="GET CONNECTED"
     />
   </Footer>

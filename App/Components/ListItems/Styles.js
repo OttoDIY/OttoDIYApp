@@ -106,6 +106,14 @@ export default StyleSheet.create({
     alignItems: 'center',
     marginTop: Metrics.unit * 2
   },
+  text_compact: {
+    ...Styles.text,
+    color: Colors.primary
+  },
+  text_featured: {
+    ...Styles.text,
+    color: Colors.primary
+  },
   buttonView: {
     justifyContent: 'center',
     margin: Metrics.unit
@@ -134,6 +142,7 @@ export default StyleSheet.create({
   },
   statValue: {
     ...Styles.text,
+    color: Colors.primary,
     fontSize: Fonts.size.large
   }
 })

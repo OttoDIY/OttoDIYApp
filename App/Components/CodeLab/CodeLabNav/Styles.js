@@ -6,6 +6,10 @@ import { isIphoneX } from 'App/Services/Properties'
 
 export default StyleSheet.create({
   ...Styles,
+  text: {
+    ...Styles.text,
+    color: Colors.primary
+  },
   view: {
     backgroundColor: Colors.white
   },

@@ -57,6 +57,7 @@ export default class Screen extends Component {
           template='NotReady' />
         <Footer style={{paddingTop: 0}}>
           <Card
+            theme='light'
             title='DISCOVER'
             text={'Get inspired by what you can create. Build your own creations or remix others to jumpstart your ideas.'}
             button='Code Lab'

@@ -12,6 +12,7 @@ import s from './Styles'
 
 export default class Card extends Component {
   static propTypes = {
+    theme: PropTypes.string,
     image: PropTypes.oneOfType([PropTypes.number, PropTypes.object]),
     video: PropTypes.oneOfType([PropTypes.number, PropTypes.object]),
     title: PropTypes.string,
@@ -80,6 +81,7 @@ export default class Card extends Component {
   render () {
     const {
       style = {},
+      theme = 'default',
       image,
       video,
       title,
@@ -96,6 +98,7 @@ export default class Card extends Component {
     const imageStyle = (imageWidth > 0)
       ? {width: imageWidth, height: imageHeight}
       : undefined
+    const textStyle = (theme === 'default') ? s.text : s['text_' + theme]
 
     return (
       <View style={style.view}>
@@ -130,12 +133,12 @@ export default class Card extends Component {
         )}
         {title && (
           <View style={[s.titleView, (textAlign === 'center') ? s.centered : s.titleView_padded, style.titleView]}>
-            <Text style={[s.text, (textAlign === 'center') ? s.text_center : null]}>{title}</Text>
+            <Text style={[textStyle, (textAlign === 'center') ? s.text_center : null]}>{title}</Text>
           </View>
         )}
         {text && (
           <View style={[s.textView, (textAlign === 'center') ? s.centered : s.textView_padded, style.textView]}>
-            <Text style={[s.text, (textAlign === 'center') ? s.text_center : null]}>{text}</Text>
+            <Text style={[textStyle, (textAlign === 'center') ? s.text_center : null]}>{text}</Text>
           </View>
         )}
         {button && (
@@ -143,6 +146,7 @@ export default class Card extends Component {
         )}
         {link && (
           <Link
+            theme={theme}
             style={{view: (button) ? {marginTop: Metrics.unit} : null, text: StyleSheet.flatten(s.link)}}
             text={link}
             centered uppercase={false}

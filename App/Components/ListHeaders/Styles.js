@@ -12,7 +12,8 @@ export default StyleSheet.create({
   },
   title: {
     flex: 1,
-    ...Styles.text
+    ...Styles.text,
+    color: Colors.primary
   },
   bottomBorder: {
     ...Styles.row,

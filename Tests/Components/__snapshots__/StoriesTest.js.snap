@@ -12,7 +12,7 @@ exports[`Storyshots BottomNav Default 1`] = `
   <View
     style={
       Object {
-        "backgroundColor": "#F9BC62",
+        "backgroundColor": "#2D2D64",
         "bottom": 0,
         "left": 0,
         "minHeight": 80,
@@ -385,7 +385,7 @@ exports[`Storyshots Button Default 1`] = `
       style={
         Object {
           "backgroundColor": "white",
-          "borderColor": "#FCE2BA",
+          "borderColor": "#9696B2",
           "borderRadius": 100,
           "borderWidth": 8,
           "minWidth": 112,
@@ -669,7 +669,7 @@ exports[`Storyshots Card Atlas 1`] = `
       style={
         Array [
           Object {
-            "color": "#354052",
+            "color": "#2D2D64",
             "fontFamily": "Roboto-Medium",
             "fontSize": 16,
           },
@@ -706,7 +706,7 @@ exports[`Storyshots Card Atlas 1`] = `
       style={
         Array [
           Object {
-            "color": "#354052",
+            "color": "#2D2D64",
             "fontFamily": "Roboto-Medium",
             "fontSize": 16,
           },
@@ -820,7 +820,7 @@ exports[`Storyshots Card Hello 1`] = `
       style={
         Array [
           Object {
-            "color": "#354052",
+            "color": "#2D2D64",
             "fontFamily": "Roboto-Medium",
             "fontSize": 16,
           },
@@ -857,7 +857,7 @@ exports[`Storyshots Card Hello 1`] = `
       style={
         Array [
           Object {
-            "color": "#354052",
+            "color": "#2D2D64",
             "fontFamily": "Roboto-Medium",
             "fontSize": 16,
           },
@@ -903,7 +903,7 @@ exports[`Storyshots Card Hello 1`] = `
       style={
         Object {
           "backgroundColor": "white",
-          "borderColor": "#FCE2BA",
+          "borderColor": "#9696B2",
           "borderRadius": 100,
           "borderWidth": 8,
           "minWidth": 112,
@@ -971,7 +971,7 @@ exports[`Storyshots Carousel Default 1`] = `
           style={
             Array [
               Object {
-                "color": "#354052",
+                "color": "#2D2D64",
                 "fontFamily": "Roboto-Medium",
                 "fontSize": 16,
               },
@@ -989,7 +989,7 @@ exports[`Storyshots Carousel Default 1`] = `
   <View
     style={
       Object {
-        "backgroundColor": "#F9BC62",
+        "backgroundColor": "#2D2D64",
         "bottom": 0,
         "justifyContent": "center",
         "left": 0,
@@ -1092,7 +1092,7 @@ exports[`Storyshots Carousel Default 1`] = `
           style={
             Object {
               "backgroundColor": "white",
-              "borderColor": "#FCE2BA",
+              "borderColor": "#9696B2",
               "borderRadius": 100,
               "borderWidth": 8,
               "minWidth": 112,
@@ -1182,7 +1182,7 @@ exports[`Storyshots Carousel Dilbert 1`] = `
           style={
             Array [
               Object {
-                "color": "#354052",
+                "color": "#2D2D64",
                 "fontFamily": "Roboto-Medium",
                 "fontSize": 16,
               },
@@ -1219,7 +1219,7 @@ exports[`Storyshots Carousel Dilbert 1`] = `
           style={
             Array [
               Object {
-                "color": "#354052",
+                "color": "#2D2D64",
                 "fontFamily": "Roboto-Medium",
                 "fontSize": 16,
               },
@@ -1237,7 +1237,7 @@ exports[`Storyshots Carousel Dilbert 1`] = `
   <View
     style={
       Object {
-        "backgroundColor": "#F9BC62",
+        "backgroundColor": "#2D2D64",
         "bottom": 0,
         "justifyContent": "center",
         "left": 0,
@@ -1328,7 +1328,7 @@ exports[`Storyshots Carousel Dilbert 1`] = `
           style={
             Object {
               "backgroundColor": "white",
-              "borderColor": "#FCE2BA",
+              "borderColor": "#9696B2",
               "borderRadius": 100,
               "borderWidth": 8,
               "minWidth": 112,
@@ -1419,7 +1419,7 @@ exports[`Storyshots CodeLab Nav Default 1`] = `
         ellipsizeMode="tail"
         style={
           Object {
-            "color": "#354052",
+            "color": "#2D2D64",
             "fontFamily": "Roboto-Medium",
             "fontSize": 16,
           }
@@ -1467,7 +1467,7 @@ exports[`Storyshots CodeLab Nav Default 1`] = `
         ellipsizeMode="tail"
         style={
           Object {
-            "color": "#354052",
+            "color": "#2D2D64",
             "fontFamily": "Roboto-Medium",
             "fontSize": 16,
           }
@@ -1515,7 +1515,7 @@ exports[`Storyshots CodeLab Nav Default 1`] = `
         ellipsizeMode="tail"
         style={
           Object {
-            "color": "#354052",
+            "color": "#2D2D64",
             "fontFamily": "Roboto-Medium",
             "fontSize": 16,
           }
@@ -1563,7 +1563,7 @@ exports[`Storyshots CodeLab Nav Default 1`] = `
         ellipsizeMode="tail"
         style={
           Object {
-            "color": "#354052",
+            "color": "#2D2D64",
             "fontFamily": "Roboto-Medium",
             "fontSize": 16,
           }
@@ -1577,7 +1577,7 @@ exports[`Storyshots CodeLab Nav Default 1`] = `
     style={
       Object {
         "alignItems": "center",
-        "backgroundColor": "#F9BC62",
+        "backgroundColor": "#2D2D64",
         "minHeight": 80,
         "paddingBottom": 32,
         "paddingTop": 32,
@@ -1607,7 +1607,7 @@ exports[`Storyshots CodeLab Nav Default 1`] = `
         style={
           Object {
             "backgroundColor": "white",
-            "borderColor": "#FCE2BA",
+            "borderColor": "#9696B2",
             "borderRadius": 100,
             "borderWidth": 8,
             "minWidth": 112,
@@ -2113,7 +2113,7 @@ exports[`Storyshots Instruction Action 1`] = `
     Array [
       Object {
         "alignItems": "center",
-        "backgroundColor": "#F9BC62",
+        "backgroundColor": "#2D2D64",
         "borderRadius": 4,
         "elevation": 1,
         "flexDirection": "row",
@@ -2239,7 +2239,7 @@ exports[`Storyshots Instruction Control 1`] = `
     Array [
       Object {
         "alignItems": "center",
-        "backgroundColor": "#F9BC62",
+        "backgroundColor": "#2D2D64",
         "borderRadius": 4,
         "elevation": 1,
         "flexDirection": "row",
@@ -2338,7 +2338,7 @@ exports[`Storyshots Instruction Data 1`] = `
     Array [
       Object {
         "alignItems": "center",
-        "backgroundColor": "#F9BC62",
+        "backgroundColor": "#2D2D64",
         "borderRadius": 4,
         "elevation": 1,
         "flexDirection": "row",
@@ -2464,7 +2464,7 @@ exports[`Storyshots Instruction Sensor 1`] = `
     Array [
       Object {
         "alignItems": "center",
-        "backgroundColor": "#F9BC62",
+        "backgroundColor": "#2D2D64",
         "borderRadius": 4,
         "elevation": 1,
         "flexDirection": "row",
@@ -2682,7 +2682,7 @@ exports[`Storyshots Joystick Default 1`] = `
             onStartShouldSetResponderCapture={[Function]}
             style={
               Object {
-                "backgroundColor": "#F9BC62",
+                "backgroundColor": "#2D2D64",
                 "borderRadius": 30,
                 "height": 60,
                 "left": 0,
@@ -2697,7 +2697,7 @@ exports[`Storyshots Joystick Default 1`] = `
     <View
       style={
         Object {
-          "backgroundColor": "#FCE2BA",
+          "backgroundColor": "#9696B2",
           "borderRadius": 30,
           "height": 60,
           "left": 50,
@@ -2888,7 +2888,7 @@ exports[`Storyshots List Default 1`] = `
     ellipsizeMode="tail"
     style={
       Object {
-        "color": "#354052",
+        "color": "#2D2D64",
         "fontFamily": "Roboto-Medium",
         "fontSize": 16,
         "marginBottom": 8,
@@ -2924,7 +2924,7 @@ exports[`Storyshots List Default 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "backgroundColor": "#F9BC62",
+          "backgroundColor": "#2D2D64",
           "borderRadius": 8,
           "flex": 1,
           "flexDirection": "row",
@@ -2975,7 +2975,7 @@ exports[`Storyshots List Default 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "color": "#354052",
+              "color": "white",
               "fontFamily": "Roboto-Medium",
               "fontSize": 16,
             }
@@ -2990,7 +2990,7 @@ exports[`Storyshots List Default 1`] = `
           style={
             Array [
               Object {
-                "color": "#354052",
+                "color": "white",
                 "fontFamily": "Roboto-Medium",
                 "fontSize": 16,
               },
@@ -3143,7 +3143,7 @@ exports[`Storyshots List Default 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "backgroundColor": "#F9BC62",
+          "backgroundColor": "#2D2D64",
           "borderRadius": 8,
           "flex": 1,
           "flexDirection": "row",
@@ -3205,7 +3205,7 @@ exports[`Storyshots List Default 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "color": "#354052",
+              "color": "white",
               "fontFamily": "Roboto-Medium",
               "fontSize": 16,
             }
@@ -3220,7 +3220,7 @@ exports[`Storyshots List Default 1`] = `
           style={
             Array [
               Object {
-                "color": "#354052",
+                "color": "white",
                 "fontFamily": "Roboto-Medium",
                 "fontSize": 16,
               },
@@ -3367,7 +3367,7 @@ exports[`Storyshots List Featured 1`] = `
     ellipsizeMode="tail"
     style={
       Object {
-        "color": "#354052",
+        "color": "#2D2D64",
         "fontFamily": "Roboto-Medium",
         "fontSize": 16,
         "marginBottom": 8,
@@ -3495,7 +3495,7 @@ exports[`Storyshots List Featured 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "color": "#354052",
+              "color": "#2D2D64",
               "fontFamily": "Roboto-Medium",
               "fontSize": 16,
             }
@@ -3630,7 +3630,7 @@ exports[`Storyshots List Featured 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "color": "#354052",
+              "color": "#2D2D64",
               "fontFamily": "Roboto-Medium",
               "fontSize": 16,
             }
@@ -3773,7 +3773,7 @@ exports[`Storyshots List Featured 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "color": "#354052",
+              "color": "#2D2D64",
               "fontFamily": "Roboto-Medium",
               "fontSize": 16,
             }
@@ -3804,7 +3804,7 @@ exports[`Storyshots List Games 1`] = `
     ellipsizeMode="tail"
     style={
       Object {
-        "color": "#354052",
+        "color": "#2D2D64",
         "fontFamily": "Roboto-Medium",
         "fontSize": 16,
         "marginBottom": 8,
@@ -3840,7 +3840,7 @@ exports[`Storyshots List Games 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "backgroundColor": "#F9BC62",
+          "backgroundColor": "#2D2D64",
           "borderRadius": 8,
           "flex": 0,
           "flexDirection": "column",
@@ -3875,7 +3875,7 @@ exports[`Storyshots List Games 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "color": "#354052",
+              "color": "white",
               "fontFamily": "Roboto-Medium",
               "fontSize": 16,
             }
@@ -3889,7 +3889,7 @@ exports[`Storyshots List Games 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "color": "#354052",
+              "color": "white",
               "fontFamily": "Roboto-Medium",
               "fontSize": 16,
             }
@@ -4035,7 +4035,7 @@ exports[`Storyshots List Games 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "backgroundColor": "#F9BC62",
+          "backgroundColor": "#2D2D64",
           "borderRadius": 8,
           "flex": 0,
           "flexDirection": "column",
@@ -4070,7 +4070,7 @@ exports[`Storyshots List Games 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "color": "#354052",
+              "color": "white",
               "fontFamily": "Roboto-Medium",
               "fontSize": 16,
             }
@@ -4084,7 +4084,7 @@ exports[`Storyshots List Games 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "color": "#354052",
+              "color": "white",
               "fontFamily": "Roboto-Medium",
               "fontSize": 16,
             }
@@ -4274,7 +4274,7 @@ exports[`Storyshots List Games 1`] = `
           style={
             Array [
               Object {
-                "color": "#354052",
+                "color": "white",
                 "fontFamily": "Roboto-Medium",
                 "fontSize": 16,
               },
@@ -4293,7 +4293,7 @@ exports[`Storyshots List Games 1`] = `
           style={
             Array [
               Object {
-                "color": "#354052",
+                "color": "white",
                 "fontFamily": "Roboto-Medium",
                 "fontSize": 16,
               },
@@ -4474,7 +4474,7 @@ exports[`Storyshots List Lessons 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "color": "#354052",
+              "color": "#2D2D64",
               "flex": 1,
               "fontFamily": "Roboto-Medium",
               "fontSize": 16,
@@ -4489,7 +4489,7 @@ exports[`Storyshots List Lessons 1`] = `
           ellipsizeMode="tail"
           style={
             Object {
-              "color": "#354052",
+              "color": "white",
               "fontFamily": "Roboto-Medium",
               "fontSize": 16,
             }
@@ -4510,7 +4510,7 @@ exports[`Storyshots List Lessons 1`] = `
           style={
             Array [
               Object {
-                "backgroundColor": "#F9BC62",
+                "backgroundColor": "#2D2D64",
               },
               Object {
                 "flex": 0.3333333333333333,
@@ -4588,7 +4588,7 @@ exports[`Storyshots List Lessons 1`] = `
           style={
             Array [
               Object {
-                "color": "#F9BC62",
+                "color": "#2D2D64",
                 "fontSize": 24,
               },
               undefined,
@@ -4608,7 +4608,7 @@ exports[`Storyshots List Lessons 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#F9BC62",
+              "backgroundColor": "#2D2D64",
               "borderRadius": 8,
               "flexDirection": "row",
               "margin": 8,
@@ -4651,7 +4651,7 @@ exports[`Storyshots List Lessons 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#354052",
+                "color": "#2D2D64",
                 "fontFamily": "Roboto-Medium",
                 "fontSize": 16,
               }
@@ -4740,7 +4740,7 @@ exports[`Storyshots List Lessons 1`] = `
           style={
             Array [
               Object {
-                "color": "#F9BC62",
+                "color": "#2D2D64",
                 "fontSize": 24,
               },
               undefined,
@@ -4760,7 +4760,7 @@ exports[`Storyshots List Lessons 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#F9BC62",
+              "backgroundColor": "#2D2D64",
               "borderRadius": 8,
               "flexDirection": "row",
               "margin": 8,
@@ -4803,7 +4803,7 @@ exports[`Storyshots List Lessons 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#354052",
+                "color": "#2D2D64",
                 "fontFamily": "Roboto-Medium",
                 "fontSize": 16,
               }
@@ -4912,7 +4912,7 @@ exports[`Storyshots List Lessons 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#F9BC62",
+              "backgroundColor": "#2D2D64",
               "borderRadius": 8,
               "flexDirection": "row",
               "margin": 8,
@@ -4956,7 +4956,7 @@ exports[`Storyshots List Lessons 1`] = `
             style={
               Array [
                 Object {
-                  "color": "#354052",
+                  "color": "#2D2D64",
                   "fontFamily": "Roboto-Medium",
                   "fontSize": 16,
                 },
@@ -5019,7 +5019,7 @@ exports[`Storyshots List Stats 1`] = `
       style={
         Array [
           Object {
-            "backgroundColor": "#F9BC62",
+            "backgroundColor": "#2D2D64",
             "borderRadius": 8,
             "flexDirection": "row",
             "margin": 8,
@@ -5083,7 +5083,7 @@ exports[`Storyshots List Stats 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#354052",
+                "color": "#2D2D64",
                 "fontFamily": "Roboto-Medium",
                 "fontSize": 18,
               }
@@ -5097,7 +5097,7 @@ exports[`Storyshots List Stats 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#F9BC62",
+                "color": "#2D2D64",
                 "fontFamily": "Roboto-Medium",
                 "fontSize": 16,
               }
@@ -5112,7 +5112,7 @@ exports[`Storyshots List Stats 1`] = `
       style={
         Array [
           Object {
-            "backgroundColor": "#F9BC62",
+            "backgroundColor": "#2D2D64",
             "borderRadius": 8,
             "flexDirection": "row",
             "margin": 8,
@@ -5176,7 +5176,7 @@ exports[`Storyshots List Stats 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#354052",
+                "color": "#2D2D64",
                 "fontFamily": "Roboto-Medium",
                 "fontSize": 18,
               }
@@ -5190,7 +5190,7 @@ exports[`Storyshots List Stats 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#F9BC62",
+                "color": "#2D2D64",
                 "fontFamily": "Roboto-Medium",
                 "fontSize": 16,
               }
@@ -5213,7 +5213,7 @@ exports[`Storyshots List Stats 1`] = `
       style={
         Array [
           Object {
-            "backgroundColor": "#F9BC62",
+            "backgroundColor": "#2D2D64",
             "borderRadius": 8,
             "flexDirection": "row",
             "margin": 8,
@@ -5277,7 +5277,7 @@ exports[`Storyshots List Stats 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#354052",
+                "color": "#2D2D64",
                 "fontFamily": "Roboto-Medium",
                 "fontSize": 18,
               }
@@ -5291,7 +5291,7 @@ exports[`Storyshots List Stats 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#F9BC62",
+                "color": "#2D2D64",
                 "fontFamily": "Roboto-Medium",
                 "fontSize": 16,
               }
@@ -5306,7 +5306,7 @@ exports[`Storyshots List Stats 1`] = `
       style={
         Array [
           Object {
-            "backgroundColor": "#F9BC62",
+            "backgroundColor": "#2D2D64",
             "borderRadius": 8,
             "flexDirection": "row",
             "margin": 8,
@@ -5370,7 +5370,7 @@ exports[`Storyshots List Stats 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#354052",
+                "color": "#2D2D64",
                 "fontFamily": "Roboto-Medium",
                 "fontSize": 18,
               }
@@ -5384,7 +5384,7 @@ exports[`Storyshots List Stats 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#F9BC62",
+                "color": "#2D2D64",
                 "fontFamily": "Roboto-Medium",
                 "fontSize": 16,
               }
@@ -5407,7 +5407,7 @@ exports[`Storyshots List Stats 1`] = `
       style={
         Array [
           Object {
-            "backgroundColor": "#F9BC62",
+            "backgroundColor": "#2D2D64",
             "borderRadius": 8,
             "flexDirection": "row",
             "margin": 8,
@@ -5471,7 +5471,7 @@ exports[`Storyshots List Stats 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#354052",
+                "color": "#2D2D64",
                 "fontFamily": "Roboto-Medium",
                 "fontSize": 18,
               }
@@ -5485,7 +5485,7 @@ exports[`Storyshots List Stats 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#F9BC62",
+                "color": "#2D2D64",
                 "fontFamily": "Roboto-Medium",
                 "fontSize": 16,
               }
@@ -5500,7 +5500,7 @@ exports[`Storyshots List Stats 1`] = `
       style={
         Array [
           Object {
-            "backgroundColor": "#F9BC62",
+            "backgroundColor": "#2D2D64",
             "borderRadius": 8,
             "flexDirection": "row",
             "margin": 8,
@@ -5564,7 +5564,7 @@ exports[`Storyshots List Stats 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#354052",
+                "color": "#2D2D64",
                 "fontFamily": "Roboto-Medium",
                 "fontSize": 18,
               }
@@ -5578,7 +5578,7 @@ exports[`Storyshots List Stats 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#F9BC62",
+                "color": "#2D2D64",
                 "fontFamily": "Roboto-Medium",
                 "fontSize": 16,
               }
@@ -5617,7 +5617,7 @@ exports[`Storyshots ListHeader Default 1`] = `
       ellipsizeMode="tail"
       style={
         Object {
-          "color": "#354052",
+          "color": "#2D2D64",
           "flex": 1,
           "fontFamily": "Roboto-Medium",
           "fontSize": 16,
@@ -5639,7 +5639,7 @@ exports[`Storyshots ListHeader Default 1`] = `
       style={
         Array [
           Object {
-            "backgroundColor": "#F9BC62",
+            "backgroundColor": "#2D2D64",
           },
           Object {
             "flex": 1,
@@ -5687,7 +5687,7 @@ exports[`Storyshots ListHeader Todos 1`] = `
       ellipsizeMode="tail"
       style={
         Object {
-          "color": "#354052",
+          "color": "#2D2D64",
           "flex": 1,
           "fontFamily": "Roboto-Medium",
           "fontSize": 16,
@@ -5702,7 +5702,7 @@ exports[`Storyshots ListHeader Todos 1`] = `
       ellipsizeMode="tail"
       style={
         Object {
-          "color": "#354052",
+          "color": "white",
           "fontFamily": "Roboto-Medium",
           "fontSize": 16,
         }
@@ -5723,7 +5723,7 @@ exports[`Storyshots ListHeader Todos 1`] = `
       style={
         Array [
           Object {
-            "backgroundColor": "#F9BC62",
+            "backgroundColor": "#2D2D64",
           },
           Object {
             "flex": 0.3333333333333333,
@@ -5767,7 +5767,7 @@ exports[`Storyshots ListItem Beep 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
-      "backgroundColor": "#F9BC62",
+      "backgroundColor": "#2D2D64",
       "borderRadius": 8,
       "flexDirection": "row",
       "margin": 8,
@@ -5828,7 +5828,7 @@ exports[`Storyshots ListItem Beep 1`] = `
       ellipsizeMode="tail"
       style={
         Object {
-          "color": "#354052",
+          "color": "white",
           "fontFamily": "Roboto-Medium",
           "fontSize": 16,
         }
@@ -5843,7 +5843,7 @@ exports[`Storyshots ListItem Beep 1`] = `
       style={
         Array [
           Object {
-            "color": "#354052",
+            "color": "white",
             "fontFamily": "Roboto-Medium",
             "fontSize": 16,
           },
@@ -6019,7 +6019,7 @@ exports[`Storyshots ListItem Compact 1`] = `
       style={
         Array [
           Object {
-            "color": "#F9BC62",
+            "color": "#2D2D64",
             "fontSize": 24,
           },
           undefined,
@@ -6039,7 +6039,7 @@ exports[`Storyshots ListItem Compact 1`] = `
     style={
       Array [
         Object {
-          "backgroundColor": "#F9BC62",
+          "backgroundColor": "#2D2D64",
           "borderRadius": 8,
           "flexDirection": "row",
           "margin": 8,
@@ -6082,7 +6082,7 @@ exports[`Storyshots ListItem Compact 1`] = `
         ellipsizeMode="tail"
         style={
           Object {
-            "color": "#354052",
+            "color": "#2D2D64",
             "fontFamily": "Roboto-Medium",
             "fontSize": 16,
           }
@@ -6185,7 +6185,7 @@ exports[`Storyshots ListItem Compact Disabled 1`] = `
     style={
       Array [
         Object {
-          "backgroundColor": "#F9BC62",
+          "backgroundColor": "#2D2D64",
           "borderRadius": 8,
           "flexDirection": "row",
           "margin": 8,
@@ -6229,7 +6229,7 @@ exports[`Storyshots ListItem Compact Disabled 1`] = `
         style={
           Array [
             Object {
-              "color": "#354052",
+              "color": "#2D2D64",
               "fontFamily": "Roboto-Medium",
               "fontSize": 16,
             },
@@ -6299,7 +6299,7 @@ exports[`Storyshots ListItem Compact No Icon 1`] = `
     style={
       Array [
         Object {
-          "backgroundColor": "#F9BC62",
+          "backgroundColor": "#2D2D64",
           "borderRadius": 8,
           "flexDirection": "row",
           "margin": 8,
@@ -6342,7 +6342,7 @@ exports[`Storyshots ListItem Compact No Icon 1`] = `
         ellipsizeMode="tail"
         style={
           Object {
-            "color": "#354052",
+            "color": "#2D2D64",
             "fontFamily": "Roboto-Medium",
             "fontSize": 16,
           }
@@ -6397,7 +6397,7 @@ exports[`Storyshots ListItem Default 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
-      "backgroundColor": "#F9BC62",
+      "backgroundColor": "#2D2D64",
       "borderRadius": 8,
       "flexDirection": "row",
       "margin": 8,
@@ -6424,7 +6424,7 @@ exports[`Storyshots ListItem Default 1`] = `
       ellipsizeMode="tail"
       style={
         Object {
-          "color": "#354052",
+          "color": "white",
           "fontFamily": "Roboto-Medium",
           "fontSize": 16,
         }
@@ -6439,7 +6439,7 @@ exports[`Storyshots ListItem Default 1`] = `
       style={
         Array [
           Object {
-            "color": "#354052",
+            "color": "white",
             "fontFamily": "Roboto-Medium",
             "fontSize": 16,
           },
@@ -6483,7 +6483,7 @@ exports[`Storyshots ListItem Default 1`] = `
         style={
           Object {
             "backgroundColor": "white",
-            "borderColor": "#FCE2BA",
+            "borderColor": "#9696B2",
             "borderRadius": 100,
             "borderWidth": 8,
             "minWidth": 112,
@@ -6564,7 +6564,7 @@ exports[`Storyshots ListItem Disabled 1`] = `
       style={
         Array [
           Object {
-            "color": "#354052",
+            "color": "white",
             "fontFamily": "Roboto-Medium",
             "fontSize": 16,
           },
@@ -6584,7 +6584,7 @@ exports[`Storyshots ListItem Disabled 1`] = `
         Array [
           Array [
             Object {
-              "color": "#354052",
+              "color": "white",
               "fontFamily": "Roboto-Medium",
               "fontSize": 16,
             },
@@ -6690,7 +6690,7 @@ exports[`Storyshots ListItem Drive 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
-      "backgroundColor": "#F9BC62",
+      "backgroundColor": "#2D2D64",
       "borderRadius": 8,
       "flexDirection": "row",
       "margin": 8,
@@ -6740,7 +6740,7 @@ exports[`Storyshots ListItem Drive 1`] = `
       ellipsizeMode="tail"
       style={
         Object {
-          "color": "#354052",
+          "color": "white",
           "fontFamily": "Roboto-Medium",
           "fontSize": 16,
         }
@@ -6755,7 +6755,7 @@ exports[`Storyshots ListItem Drive 1`] = `
       style={
         Array [
           Object {
-            "color": "#354052",
+            "color": "white",
             "fontFamily": "Roboto-Medium",
             "fontSize": 16,
           },
@@ -6995,7 +6995,7 @@ exports[`Storyshots ListItem Featured 1`] = `
       ellipsizeMode="tail"
       style={
         Object {
-          "color": "#354052",
+          "color": "#2D2D64",
           "fontFamily": "Roboto-Medium",
           "fontSize": 16,
         }
@@ -7093,7 +7093,7 @@ exports[`Storyshots ListItem Featured Disabled 1`] = `
           style={
             Array [
               Object {
-                "color": "#F9BC62",
+                "color": "#2D2D64",
                 "fontSize": 48,
               },
               undefined,
@@ -7134,7 +7134,7 @@ exports[`Storyshots ListItem Featured Disabled 1`] = `
       style={
         Array [
           Object {
-            "color": "#354052",
+            "color": "#2D2D64",
             "fontFamily": "Roboto-Medium",
             "fontSize": 16,
           },
@@ -7170,7 +7170,7 @@ exports[`Storyshots ListItem Square 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
-      "backgroundColor": "#F9BC62",
+      "backgroundColor": "#2D2D64",
       "borderRadius": 8,
       "flex": 0,
       "flexDirection": "column",
@@ -7205,7 +7205,7 @@ exports[`Storyshots ListItem Square 1`] = `
       ellipsizeMode="tail"
       style={
         Object {
-          "color": "#354052",
+          "color": "white",
           "fontFamily": "Roboto-Medium",
           "fontSize": 16,
         }
@@ -7219,7 +7219,7 @@ exports[`Storyshots ListItem Square 1`] = `
       ellipsizeMode="tail"
       style={
         Object {
-          "color": "#354052",
+          "color": "white",
           "fontFamily": "Roboto-Medium",
           "fontSize": 16,
         }
@@ -7404,7 +7404,7 @@ exports[`Storyshots ListItem Square Disabled 1`] = `
       style={
         Array [
           Object {
-            "color": "#354052",
+            "color": "white",
             "fontFamily": "Roboto-Medium",
             "fontSize": 16,
           },
@@ -7423,7 +7423,7 @@ exports[`Storyshots ListItem Square Disabled 1`] = `
       style={
         Array [
           Object {
-            "color": "#354052",
+            "color": "white",
             "fontFamily": "Roboto-Medium",
             "fontSize": 16,
           },
@@ -7562,7 +7562,7 @@ exports[`Storyshots ListItem Stat 1`] = `
   style={
     Array [
       Object {
-        "backgroundColor": "#F9BC62",
+        "backgroundColor": "#2D2D64",
         "borderRadius": 8,
         "flexDirection": "row",
         "margin": 8,
@@ -7626,7 +7626,7 @@ exports[`Storyshots ListItem Stat 1`] = `
         ellipsizeMode="tail"
         style={
           Object {
-            "color": "#354052",
+            "color": "#2D2D64",
             "fontFamily": "Roboto-Medium",
             "fontSize": 18,
           }
@@ -7640,7 +7640,7 @@ exports[`Storyshots ListItem Stat 1`] = `
         ellipsizeMode="tail"
         style={
           Object {
-            "color": "#F9BC62",
+            "color": "#2D2D64",
             "fontFamily": "Roboto-Medium",
             "fontSize": 16,
           }
@@ -7831,7 +7831,7 @@ exports[`Storyshots Modal Default 1`] = `
             ellipsizeMode="tail"
             style={
               Object {
-                "color": "#354052",
+                "color": "white",
                 "fontFamily": "Roboto-Medium",
                 "fontSize": 16,
               }
@@ -8016,7 +8016,7 @@ exports[`Storyshots Modal Is Your Device Supported 1`] = `
               style={
                 Array [
                   Object {
-                    "color": "#354052",
+                    "color": "#2D2D64",
                     "fontFamily": "Roboto-Medium",
                     "fontSize": 16,
                   },
@@ -8259,7 +8259,7 @@ exports[`Storyshots Modal Not Connected 1`] = `
               style={
                 Array [
                   Object {
-                    "color": "#354052",
+                    "color": "#2D2D64",
                     "fontFamily": "Roboto-Medium",
                     "fontSize": 16,
                   },
@@ -8305,7 +8305,7 @@ exports[`Storyshots Modal Not Connected 1`] = `
               style={
                 Object {
                   "backgroundColor": "white",
-                  "borderColor": "#FCE2BA",
+                  "borderColor": "#9696B2",
                   "borderRadius": 100,
                   "borderWidth": 8,
                   "minWidth": 112,
@@ -8511,7 +8511,7 @@ exports[`Storyshots Modal Not Ready 1`] = `
               style={
                 Array [
                   Object {
-                    "color": "#354052",
+                    "color": "#2D2D64",
                     "fontFamily": "Roboto-Medium",
                     "fontSize": 16,
                   },
@@ -8559,7 +8559,7 @@ The good news is you can follow along as this Beta version of the app develops o
               style={
                 Object {
                   "backgroundColor": "white",
-                  "borderColor": "#FCE2BA",
+                  "borderColor": "#9696B2",
                   "borderRadius": 100,
                   "borderWidth": 8,
                   "minWidth": 112,
@@ -8765,7 +8765,7 @@ exports[`Storyshots Modal Problems Connecting 1`] = `
               style={
                 Array [
                   Object {
-                    "color": "#354052",
+                    "color": "#2D2D64",
                     "fontFamily": "Roboto-Medium",
                     "fontSize": 16,
                   },

@@ -1,9 +1,17 @@
 import { StyleSheet } from 'react-native'
 
-import { Styles, Metrics, Fonts } from 'App/Themes'
+import { Styles, Metrics, Fonts, Colors } from 'App/Themes'
 
 export default StyleSheet.create({
   ...Styles,
+  text: {
+    ...Styles.text,
+    color: Colors.primary
+  },
+  text_light: {
+    ...Styles.text,
+    color: Colors.white
+  },
   imageView: {
     ...Styles.centered,
     marginVertical: Metrics.unit * 3

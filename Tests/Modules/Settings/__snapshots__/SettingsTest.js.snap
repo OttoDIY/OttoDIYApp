@@ -42,18 +42,22 @@ exports[`Settings Component renders correctly 1`] = `
       <Link
         onPress={[Function]}
         text="FAQ"
+        theme="light"
       />
       <Link
         onPress={[Function]}
         text="Support"
+        theme="light"
       />
       <Link
         onPress={[Function]}
         text="About"
+        theme="light"
       />
       <Link
         onPress={[Function]}
         text="Privacy"
+        theme="light"
       />
     </Links>
   </Footer>

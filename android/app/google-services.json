@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:111111111:android:9baaaaaaaaa",
         "android_client_info": {
-          "package_name": "com.codeandrobots"
+          "package_name": "com.ottodiy"
         }
       },
       "oauth_client": [
@@ -41,7 +41,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:111111111:android:9baaaaaaaaa",
         "android_client_info": {
-          "package_name": "com.codeandrobots.dev"
+          "package_name": "com.ottodiy.dev"
         }
       },
       "oauth_client": [
@@ -72,7 +72,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:111111111:android:9baaaaaaaaa",
         "android_client_info": {
-          "package_name": "com.codeandrobots.beta"
+          "package_name": "com.ottodiy.beta"
         }
       },
       "oauth_client": [

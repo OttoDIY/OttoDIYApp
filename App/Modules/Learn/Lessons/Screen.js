@@ -55,6 +55,7 @@ export default class Screen extends Component {
           template='NotReady' />
         <Footer style={{paddingTop: 0}}>
           <Card
+            theme='light'
             title='START YOUR NEXT LESSON'
             text={'Learn them skills!'}
             button='Start'

@@ -16,6 +16,7 @@ exports[`Rate Component renders correctly 1`] = `
       text="Every rating means the world to us.
 
 ★★★★★"
+      theme="light"
       title="LOVING THE APP?"
     />
   </Footer>

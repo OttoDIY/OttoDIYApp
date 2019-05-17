@@ -21,7 +21,7 @@ Steps to convert the base artwork as a LaunchImage in Android:
 
 `AppIcon\AppIcon-1024x1024.png` serves as the base app icon artwork.
 
-Steps to convert the base artwork as a AppIcon in XCode:
+Steps to convert the base artwork as a AppIcon in XCode and Android:
  1. Resize the base artwork to the correct icons using [https://makeappicon.com](https://makeappicon.com).
  2. Go to Images.xcassets in Xcode, click on AppIcon, and drag all the images into XCode.
-
+ 3. Copy images to correct `android\app\src` folders.

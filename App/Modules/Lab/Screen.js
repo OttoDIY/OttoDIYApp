@@ -41,10 +41,10 @@ export default class Screen extends Component {
           template='NotReady' />
         <Footer>
           <Links>
-            <Link text='Shop' onPress={onPress} />
-            <Link text='Customize' onPress={onPress} />
-            <Link text='Add a buddy' onPress={onPress} />
-            <Link text='View logs' onPress={onPress} />
+            <Link theme='light' text='Shop' onPress={onPress} />
+            <Link theme='light' text='Customize' onPress={onPress} />
+            <Link theme='light' text='Add a buddy' onPress={onPress} />
+            <Link theme='light' text='View logs' onPress={onPress} />
           </Links>
         </Footer>
       </Container>

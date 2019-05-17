@@ -56,18 +56,22 @@ exports[`Lab Component renders correctly 1`] = `
       <Link
         onPress={[Function]}
         text="Shop"
+        theme="light"
       />
       <Link
         onPress={[Function]}
         text="Customize"
+        theme="light"
       />
       <Link
         onPress={[Function]}
         text="Add a buddy"
+        theme="light"
       />
       <Link
         onPress={[Function]}
         text="View logs"
+        theme="light"
       />
     </Links>
   </Footer>

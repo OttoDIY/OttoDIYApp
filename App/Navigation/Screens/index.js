@@ -26,7 +26,7 @@ export default {
   HomeScreen: {
     screen: Home,
     navigationOptions: ({navigation}) => ({
-      title: 'Code & Robots'
+      title: 'Otto DIY'
     })
   },
   RateScreen: {

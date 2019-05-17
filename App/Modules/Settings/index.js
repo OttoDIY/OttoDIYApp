@@ -36,7 +36,7 @@ export class SettingsContainer extends Component {
   onFeedbackPress = () => {
     if (isSimulator()) { return notPossibleInSimulator() }
     const subject = 'Feedback and ideas'
-    const body = `How can we improve Code&Robots? We're all ears...`
+    const body = `How can we improve Otto? We're all ears...`
     const mailtoURL = `mailto:${Config.SUPPORT_EMAIL}?subject=${subject}&body=${body}`
 
     Linking.canOpenURL(mailtoURL)

@@ -35,10 +35,10 @@ export default class Screen extends Component {
         </View>
         <Footer>
           <Links>
-            <Link text='FAQ' onPress={onFAQPress} />
-            <Link text='Support' onPress={onSupportPress} />
-            <Link text='About' onPress={onAboutPress} />
-            <Link text='Privacy' onPress={onPrivacyPress} />
+            <Link theme='light' text='FAQ' onPress={onFAQPress} />
+            <Link theme='light' text='Support' onPress={onSupportPress} />
+            <Link theme='light' text='About' onPress={onAboutPress} />
+            <Link theme='light' text='Privacy' onPress={onPrivacyPress} />
           </Links>
         </Footer>
       </Container>

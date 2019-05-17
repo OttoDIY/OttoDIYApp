@@ -64,6 +64,7 @@ exports[`Lessons Component renders correctly 1`] = `
       }
       text="Learn them skills!"
       textAlign="left"
+      theme="light"
       title="START YOUR NEXT LESSON"
     />
   </Footer>

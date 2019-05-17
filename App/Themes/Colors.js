@@ -10,9 +10,9 @@ export const palette = {
   greyTranslucent: '#DFDFDF',
   darkgrey: '#516173',
   lightgrey: '#ECECEC',
-  primary: '#F9BC62', // Orange yellow
+  primary: '#2D2D64', // Dark blue
   primaryDark: '#354052', // Almost black
-  primaryTranslucent: '#FCE2BA', // White on orange yellow with 50% opacity
+  primaryTranslucent: '#9696B2', // White on dark blue with 50% opacity
   error: '#E62117' // red
 }
 
@@ -27,7 +27,7 @@ export default {
     background: palette.offwhite,
     text: palette.black
   },
-  text: palette.primaryDark,
+  text: palette.white,
   text_disabled: palette.grey,
   text_error: palette.error,
   icon: palette.darkgrey,

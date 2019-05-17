@@ -1,4 +1,4 @@
-package com.codeandrobots;
+package com.ottodiy;
 
 import android.os.Bundle;
 import com.facebook.react.ReactActivity;

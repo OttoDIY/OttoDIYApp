@@ -105,7 +105,7 @@ android {
     compileSdkVersion 26
 
     defaultConfig {
-        applicationId "com.codeandrobots"
+        applicationId "com.ottodiy"
         minSdkVersion 19
         targetSdkVersion 26
         versionCode appVersion as Integer // default appVersion is defined in android/gradle.properties but can be overriden in android/fastlane/Fastfile
@@ -115,15 +115,15 @@ android {
         }
 
         // See https://github.com/luggit/react-native-config#setup
-        resValue "string", "build_config_package", "com.codeandrobots"
+        resValue "string", "build_config_package", "com.ottodiy"
     }
     flavorDimensions "default"
     productFlavors {
         dev {
-            applicationId "com.codeandrobots.dev"
+            applicationId "com.ottodiy.dev"
         }
         beta {
-            applicationId "com.codeandrobots.beta"
+            applicationId "com.ottodiy.beta"
         }
     }
     splits {
