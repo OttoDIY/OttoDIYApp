@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-               BuildableName = "CodeAndRobots-tvOS.app"
-               BlueprintName = "CodeAndRobots-tvOS"
-               ReferencedContainer = "container:CodeAndRobots.xcodeproj">
+               BuildableName = "Otto-tvOS.app"
+               BlueprintName = "Otto-tvOS"
+               ReferencedContainer = "container:Otto.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "CodeAndRobots-tvOSTests.xctest"
-               BlueprintName = "CodeAndRobots-tvOSTests"
-               ReferencedContainer = "container:CodeAndRobots.xcodeproj">
+               BuildableName = "Otto-tvOSTests.xctest"
+               BlueprintName = "Otto-tvOSTests"
+               ReferencedContainer = "container:Otto.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "CodeAndRobots-tvOSTests.xctest"
-               BlueprintName = "CodeAndRobots-tvOSTests"
-               ReferencedContainer = "container:CodeAndRobots.xcodeproj">
+               BuildableName = "Otto-tvOSTests.xctest"
+               BlueprintName = "Otto-tvOSTests"
+               ReferencedContainer = "container:Otto.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "CodeAndRobots-tvOS.app"
-            BlueprintName = "CodeAndRobots-tvOS"
-            ReferencedContainer = "container:CodeAndRobots.xcodeproj">
+            BuildableName = "Otto-tvOS.app"
+            BlueprintName = "Otto-tvOS"
+            ReferencedContainer = "container:Otto.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "CodeAndRobots-tvOS.app"
-            BlueprintName = "CodeAndRobots-tvOS"
-            ReferencedContainer = "container:CodeAndRobots.xcodeproj">
+            BuildableName = "Otto-tvOS.app"
+            BlueprintName = "Otto-tvOS"
+            ReferencedContainer = "container:Otto.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -113,9 +113,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "CodeAndRobots-tvOS.app"
-            BlueprintName = "CodeAndRobots-tvOS"
-            ReferencedContainer = "container:CodeAndRobots.xcodeproj">
+            BuildableName = "Otto-tvOS.app"
+            BlueprintName = "Otto-tvOS"
+            ReferencedContainer = "container:Otto.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

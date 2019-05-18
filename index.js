@@ -5,4 +5,4 @@ import { initCrashReporting } from 'App/Services/CrashReporting'
 
 initCrashReporting()
 
-AppRegistry.registerComponent('CodeAndRobots', () => App)
+AppRegistry.registerComponent('Otto', () => App)
