@@ -38,13 +38,11 @@
 		239814352201FCBB002CA2F9 /* RobotoBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 239814332201FCBA002CA2F9 /* RobotoBold.ttf */; };
 		239814362201FCBB002CA2F9 /* RobotoMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 239814342201FCBB002CA2F9 /* RobotoMedium.ttf */; };
 		23AC08E62282F74700946957 /* GoogleService-Info-Dev.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23AC08B02282F74600946957 /* GoogleService-Info-Dev.plist */; };
-		23AC08E82282F9B900946957 /* GoogleService-Info-Beta.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23AC08E72282F9B800946957 /* GoogleService-Info-Beta.plist */; };
 		23B42BA5211091C30090D3E6 /* FirebaseMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B42B74211091C30090D3E6 /* FirebaseMessaging.framework */; };
 		23B42BA6211091C30090D3E6 /* Protobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B42BA4211091C30090D3E6 /* Protobuf.framework */; };
 		23FAD34E20FD067700ECBF97 /* Helvetica.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 23FAD34B20FD067500ECBF97 /* Helvetica.ttc */; };
 		23FAD35320FD180700ECBF97 /* LatoRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23FAD35120FD180700ECBF97 /* LatoRegular.ttf */; };
 		23FAD35420FD180700ECBF97 /* LatoBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23FAD35220FD180700ECBF97 /* LatoBold.ttf */; };
-		23FDFA7422896E5500179997 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23FDFA3E22896E5500179997 /* GoogleService-Info.plist */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -505,7 +503,6 @@
 		239814332201FCBA002CA2F9 /* RobotoBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = RobotoBold.ttf; path = ../assets/fonts/RobotoBold.ttf; sourceTree = "<group>"; };
 		239814342201FCBB002CA2F9 /* RobotoMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = RobotoMedium.ttf; path = ../assets/fonts/RobotoMedium.ttf; sourceTree = "<group>"; };
 		23AC08B02282F74600946957 /* GoogleService-Info-Dev.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info-Dev.plist"; path = "Otto/GoogleService-Info-Dev.plist"; sourceTree = "<group>"; };
-		23AC08E72282F9B800946957 /* GoogleService-Info-Beta.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info-Beta.plist"; path = "Otto/GoogleService-Info-Beta.plist"; sourceTree = "<group>"; };
 		23B42B74211091C30090D3E6 /* FirebaseMessaging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseMessaging.framework; path = Firebase/FirebaseMessaging.framework; sourceTree = "<group>"; };
 		23B42BA4211091C30090D3E6 /* Protobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Protobuf.framework; path = Firebase/Protobuf.framework; sourceTree = "<group>"; };
 		23D1A345227C8F68009CB6D3 /* RNDeviceInfo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNDeviceInfo.xcodeproj; path = "../node_modules/react-native-device-info/ios/RNDeviceInfo.xcodeproj"; sourceTree = "<group>"; };
@@ -513,7 +510,6 @@
 		23FAD34B20FD067500ECBF97 /* Helvetica.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; name = Helvetica.ttc; path = ../assets/fonts/Helvetica.ttc; sourceTree = "<group>"; };
 		23FAD35120FD180700ECBF97 /* LatoRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = LatoRegular.ttf; path = ../assets/fonts/LatoRegular.ttf; sourceTree = "<group>"; };
 		23FAD35220FD180700ECBF97 /* LatoBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = LatoBold.ttf; path = ../assets/fonts/LatoBold.ttf; sourceTree = "<group>"; };
-		23FDFA3E22896E5500179997 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Otto/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2AF38BF7740943F8AF722187 /* libSplashScreen.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libSplashScreen.a; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* Otto-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Otto-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* Otto-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Otto-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -726,9 +722,7 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				2316F9032108724C00B743C8 /* Firebase.h */,
-				23FDFA3E22896E5500179997 /* GoogleService-Info.plist */,
 				23AC08B02282F74600946957 /* GoogleService-Info-Dev.plist */,
-				23AC08E72282F9B800946957 /* GoogleService-Info-Beta.plist */,
 			);
 			name = Otto;
 			sourceTree = "<group>";
@@ -1641,14 +1635,12 @@
 				72076B6549534E7682E28AA0 /* MaterialCommunityIcons.ttf in Resources */,
 				21CEDB62D0514764AD075B97 /* MaterialIcons.ttf in Resources */,
 				23FAD35420FD180700ECBF97 /* LatoBold.ttf in Resources */,
-				23FDFA7422896E5500179997 /* GoogleService-Info.plist in Resources */,
 				239814352201FCBB002CA2F9 /* RobotoBold.ttf in Resources */,
 				F97CCD46D3B9427A98096C92 /* Octicons.ttf in Resources */,
 				7CF02086C8534962B98627C8 /* SimpleLineIcons.ttf in Resources */,
 				23AC08E62282F74700946957 /* GoogleService-Info-Dev.plist in Resources */,
 				D59344C07A6B43089A051A76 /* Zocial.ttf in Resources */,
 				23FAD34E20FD067700ECBF97 /* Helvetica.ttc in Resources */,
-				23AC08E82282F9B900946957 /* GoogleService-Info-Beta.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1925,7 +1917,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_NAME = "Otto";
+				PRODUCT_NAME = Otto;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};

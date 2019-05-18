@@ -44,7 +44,7 @@ export default class Screen extends Component {
           onHidePress={onHideNotConnectedModal}
           template='NotConnected' />
         <Footer>
-          <Card text={message} />
+          <Card theme='light' text={message} />
         </Footer>
       </Container>
     )
