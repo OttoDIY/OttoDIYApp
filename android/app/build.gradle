@@ -165,6 +165,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-ble-manager')
     compile project(':react-native-bluetooth-serial')
     compile project(':react-native-video')
     compile project(':react-native-linear-gradient')

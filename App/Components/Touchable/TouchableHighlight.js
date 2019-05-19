@@ -29,7 +29,7 @@ TouchableHighlight.propTypes = {
 
 TouchableHighlight.defaultProps = {
   style: {},
-  debounceTime: 500
+  debounceTime: 100
 }
 
 export default TouchableHighlight

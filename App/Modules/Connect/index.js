@@ -31,13 +31,14 @@ export class ConnectContainer extends Component {
     const { enabled, error } = await Bluetooth.isEnabled()
     this.setState({enabled, error})
     if (enabled) {
+      this.setState({ scanning: true })
       this.showDevices()
     }
   }
 
   showDevices = async () => {
-    const { devices, error } = await Bluetooth.list()
-    this.setState({devices, error})
+    const { devices, error } = await Bluetooth.scan()
+    this.setState({scanning: false, devices, error})
   }
 
   onConnectTo = (connectTo) => {
@@ -52,15 +53,32 @@ export class ConnectContainer extends Component {
     const { enabled, error } = await Bluetooth.enable()
     this.setState({enabled, error})
     if (enabled) {
-      this.showDevices()
+      this.setState({ scanning: true })
+      // TODO Small timeout because BLE scan hangs otherwise
+      setTimeout(() => { this.showDevices() }, 100)
     }
   }
 
   onScan = async () => {
     this.setState({scanning: true})
+    // Scan BLE and paired devices first
     const { devices, error } = await Bluetooth.scan()
     if (!error) {
-      this.setState({scanning: false, devices, error})
+      this.setState({devices, error: null})
+
+      // Scan unpaired devices second as it's quite slow
+      const { unpairedDevices, error } = await Bluetooth.scanUnpaired()
+      if (!error) {
+        const allDevices = devices.concat(
+          unpairedDevices.filter((unpairedDevice) =>
+            devices.findIndex((device) => device.id === unpairedDevice.id) < 0
+          )
+        )
+
+        this.setState({scanning: false, devices: allDevices, error: null})
+      } else {
+        this.setState({scanning: false, error})
+      }
     } else {
       this.setState({scanning: false, error})
     }

@@ -55,7 +55,7 @@ export default class DefaultListItem extends Component {
           </View>
         )}
         <View style={s.textView}>
-          <Text style={textStyle}>{title.toUpperCase()}</Text>
+          {title && <Text style={textStyle}>{title.toUpperCase()}</Text>}
           {text && <Text style={[textStyle, s.text_medium]}>{text}</Text>}
         </View>
         {button && (

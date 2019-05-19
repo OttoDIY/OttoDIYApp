@@ -29,7 +29,7 @@ TouchableOpacity.propTypes = {
 
 TouchableOpacity.defaultProps = {
   style: {},
-  debounceTime: 500
+  debounceTime: 100
 }
 
 export default TouchableOpacity

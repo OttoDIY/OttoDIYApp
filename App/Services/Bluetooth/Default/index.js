@@ -1,10 +1,12 @@
-
 import BluetoothSerial from 'react-native-bluetooth-serial'
+
+import BleManager from './BleManager'
 
 class ConnectedDevice {
   device = null
 }
 
+const bleManager = BleManager.getInstance()
 const connectedDevice = new ConnectedDevice()
 
 BluetoothSerial.on('error', (err) => console.log(`Error: ${err.message}`))
@@ -23,7 +25,9 @@ const isEnabled = async () => {
 
 const isConnected = async () => {
   try {
-    return await BluetoothSerial.isConnected()
+    return (connectedDevice.device && connectedDevice.device.isBle)
+      ? true
+      : await BluetoothSerial.isConnected()
   } catch (error) {
     return false
   }
@@ -42,24 +46,15 @@ const enable = async () => {
   }
 }
 
-const list = async () => {
-  try {
-    const devices = await BluetoothSerial.list()
-    return {devices: devices, error: null}
-  } catch (error) {
-    return {devices: [], error}
-  }
-}
-
 const scan = async () => {
   try {
-    const deviceList = await BluetoothSerial.list()
-    const unpairedDevices = await BluetoothSerial.discoverUnpairedDevices()
+    const bleDevices = await bleManager.scan()
 
-    // Contact unpaired devices to the list but remove any duplicates
-    const devices = deviceList.concat(
-      unpairedDevices.filter((unpairedDevice) =>
-        deviceList.findIndex((device) => device.id === unpairedDevice.id) < 0
+    const serialDevices = await BluetoothSerial.list()
+
+    const devices = bleDevices.concat(
+      serialDevices.filter((serialDevice) =>
+        bleDevices.findIndex((device) => device.id === serialDevice.id) < 0
       )
     )
 
@@ -69,10 +64,24 @@ const scan = async () => {
   }
 }
 
+const scanUnpaired = async () => {
+  try {
+    const unpairedDevices = await BluetoothSerial.discoverUnpairedDevices()
+
+    return {unpairedDevices, error: null}
+  } catch (error) {
+    return {unpairedDevices: [], error}
+  }
+}
+
 const connect = async (device) => {
   try {
-    await BluetoothSerial.connect(device.id)
-    connectedDevice.device = device
+    if (device.isBle) {
+      connectedDevice.device = await bleManager.connect(device)
+    } else {
+      await BluetoothSerial.connect(device.id)
+      connectedDevice.device = device
+    }
     return {connected: true, error: null}
   } catch (error) {
     return {connected: false, error}
@@ -81,7 +90,13 @@ const connect = async (device) => {
 
 const disconnect = async () => {
   try {
-    await BluetoothSerial.disconnect()
+    if (connectedDevice.device && connectedDevice.device.isBle) {
+      await bleManager.disconnect(connectedDevice.device)
+    } else {
+      await BluetoothSerial.disconnect()
+    }
+
+    connectedDevice.device = null
     return {error: null}
   } catch (error) {
     return {error}
@@ -89,8 +104,15 @@ const disconnect = async () => {
 }
 
 const write = async (s) => {
-  const ok = await BluetoothSerial.write(s + '\r')
+  const ok = (connectedDevice.device.isBle)
+    ? await bleManager.write(connectedDevice.device, s + '\r')
+    : await BluetoothSerial.write(s + '\r')
   return { ok }
+}
+
+const stopService = async () => {
+  await disconnect()
+  bleManager.removeListeners()
 }
 
 export default {
@@ -98,9 +120,10 @@ export default {
   isConnected,
   getConnectedDevice,
   enable,
-  list,
   scan,
+  scanUnpaired,
   connect,
   disconnect,
-  write
+  write,
+  stopService
 }

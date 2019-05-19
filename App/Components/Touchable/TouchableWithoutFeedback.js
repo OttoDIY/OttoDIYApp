@@ -29,7 +29,7 @@ TouchableWithoutFeedback.propTypes = {
 
 TouchableWithoutFeedback.defaultProps = {
   style: {},
-  debounceTime: 500
+  debounceTime: 100
 }
 
 export default TouchableWithoutFeedback
