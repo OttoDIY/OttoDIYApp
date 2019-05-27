@@ -23,6 +23,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		175BDDCD16134D0D9AD54357 /* libBleClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 782B25072DB94F90845D0FCB /* libBleClient.a */; };
 		1EE87A3AB81C4F3281A06347 /* libRNOpenAppSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 652F9218FF3D4BD5A956C677 /* libRNOpenAppSettings.a */; };
 		21CEDB62D0514764AD075B97 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5002CE609FEA482A96F27695 /* MaterialIcons.ttf */; };
 		2316F8FA2108723300B743C8 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2316F8F12108723200B743C8 /* FirebaseAnalytics.framework */; };
@@ -34,6 +35,7 @@
 		2316F9002108723300B743C8 /* FirebaseCoreDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2316F8F72108723300B743C8 /* FirebaseCoreDiagnostics.framework */; };
 		2316F9012108723300B743C8 /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2316F8F82108723300B743C8 /* GTMSessionFetcher.framework */; };
 		2316F9022108723300B743C8 /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2316F8F92108723300B743C8 /* FirebaseInstanceID.framework */; };
+		23368766229C4567002E2817 /* Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23368765229C4567002E2817 /* Bridge.swift */; };
 		239814352201FCBB002CA2F9 /* RobotoBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 239814332201FCBA002CA2F9 /* RobotoBold.ttf */; };
 		239814362201FCBB002CA2F9 /* RobotoMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 239814342201FCBB002CA2F9 /* RobotoMedium.ttf */; };
 		23AC08E62282F74700946957 /* GoogleService-Info-Dev.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23AC08B02282F74600946957 /* GoogleService-Info-Dev.plist */; };
@@ -77,7 +79,6 @@
 		F411788F3A03408DA04375E2 /* libRCTBluetoothSerial.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7043272667B49B5941885D9 /* libRCTBluetoothSerial.a */; };
 		F97CCD46D3B9427A98096C92 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 408BDF84B2A14BBA9FF4AB9F /* Octicons.ttf */; };
 		FC74D31C87254E3692E7F91B /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 117723CE7BB54684B689930C /* Foundation.ttf */; };
-		99B0586A642849CB9914E7FF /* libBleManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58ED855971D24551AF0C67BF /* libBleManager.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,6 +165,13 @@
 			proxyType = 2;
 			remoteGlobalIDString = 134814201AA4EA6300B7C361;
 			remoteInfo = RNFirebase;
+		};
+		2336875F229C453B002E2817 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 776F9825A23E43019EFFB6D6 /* BleClient.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D73F06E81D48E17B00AD5963;
+			remoteInfo = BleClient;
 		};
 		2342FE3E21DFA01F008F8DFB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -500,6 +508,8 @@
 		2316F8F82108723300B743C8 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GTMSessionFetcher.framework; path = Firebase/GTMSessionFetcher.framework; sourceTree = "<group>"; };
 		2316F8F92108723300B743C8 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Firebase/FirebaseInstanceID.framework; sourceTree = "<group>"; };
 		2316F9032108724C00B743C8 /* Firebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Firebase/Firebase.h; sourceTree = "<group>"; };
+		23368764229C4567002E2817 /* Otto-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Otto-Bridging-Header.h"; sourceTree = "<group>"; };
+		23368765229C4567002E2817 /* Bridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Bridge.swift; path = Otto/Bridge.swift; sourceTree = "<group>"; };
 		239814332201FCBA002CA2F9 /* RobotoBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = RobotoBold.ttf; path = ../assets/fonts/RobotoBold.ttf; sourceTree = "<group>"; };
 		239814342201FCBB002CA2F9 /* RobotoMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = RobotoMedium.ttf; path = ../assets/fonts/RobotoMedium.ttf; sourceTree = "<group>"; };
 		23AC08B02282F74600946957 /* GoogleService-Info-Dev.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info-Dev.plist"; path = "Otto/GoogleService-Info-Dev.plist"; sourceTree = "<group>"; };
@@ -530,6 +540,8 @@
 		652F9218FF3D4BD5A956C677 /* libRNOpenAppSettings.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNOpenAppSettings.a; sourceTree = "<group>"; };
 		671610D992A242D2B577E4EA /* libRNVectorIcons.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNVectorIcons.a; sourceTree = "<group>"; };
 		7656FFF0A9494CBB993B55D5 /* RNSentry.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNSentry.xcodeproj; path = "../node_modules/react-native-sentry/ios/RNSentry.xcodeproj"; sourceTree = "<group>"; };
+		776F9825A23E43019EFFB6D6 /* BleClient.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = BleClient.xcodeproj; path = "../node_modules/react-native-ble-plx/ios/BleClient.xcodeproj"; sourceTree = "<group>"; };
+		782B25072DB94F90845D0FCB /* libBleClient.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libBleClient.a; sourceTree = "<group>"; };
 		788EBE27BF4B4636AD85A925 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
@@ -550,8 +562,6 @@
 		E9FE5B898B0D407B8B6F7AC1 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		F68BAD0B69AB4D6EA37B0369 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		F825B18C613A440E93F87FF7 /* libjschelpers.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libjschelpers.a; sourceTree = "<group>"; };
-		A14394C56A784FE7917FE990 /* BleManager.xcodeproj */ = {isa = PBXFileReference; name = "BleManager.xcodeproj"; path = "../node_modules/react-native-ble-manager/ios/BleManager.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
-		58ED855971D24551AF0C67BF /* libBleManager.a */ = {isa = PBXFileReference; name = "libBleManager.a"; path = "libBleManager.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -606,7 +616,7 @@
 				0363B7F228794868A471DC4C /* libBVLinearGradient.a in Frameworks */,
 				E4174D6755BD427D9F055803 /* libRCTVideo.a in Frameworks */,
 				F411788F3A03408DA04375E2 /* libRCTBluetoothSerial.a in Frameworks */,
-				99B0586A642849CB9914E7FF /* libBleManager.a in Frameworks */,
+				175BDDCD16134D0D9AD54357 /* libBleClient.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -726,6 +736,8 @@
 				13B07FB71A68108700A75B9A /* main.m */,
 				2316F9032108724C00B743C8 /* Firebase.h */,
 				23AC08B02282F74600946957 /* GoogleService-Info-Dev.plist */,
+				23368765229C4567002E2817 /* Bridge.swift */,
+				23368764229C4567002E2817 /* Otto-Bridging-Header.h */,
 			);
 			name = Otto;
 			sourceTree = "<group>";
@@ -768,6 +780,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		2336875C229C453B002E2817 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23368760229C453B002E2817 /* libBleClient.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		234608D72175D9B300533B5F /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -793,6 +813,8 @@
 				1DDB46D021824DD6AF617CBC /* libBVLinearGradient.a */,
 				B70893341FE94B688CC47C7A /* libRCTVideo.a */,
 				E7043272667B49B5941885D9 /* libRCTBluetoothSerial.a */,
+				58ED855971D24551AF0C67BF /* libBleManager.a */,
+				782B25072DB94F90845D0FCB /* libBleClient.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -961,7 +983,7 @@
 				AB68D73B6C7A415E812FCE04 /* BVLinearGradient.xcodeproj */,
 				DA0A2DF28EED4C66AD2C004A /* RCTVideo.xcodeproj */,
 				B878BD9E77914666B5636D5D /* RCTBluetoothSerial.xcodeproj */,
-				A14394C56A784FE7917FE990 /* BleManager.xcodeproj */,
+				776F9825A23E43019EFFB6D6 /* BleClient.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1103,6 +1125,7 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = B423242B9Q;
+						LastSwiftMigration = 1010;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -1135,6 +1158,10 @@
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = 2336875C229C453B002E2817 /* Products */;
+					ProjectRef = 776F9825A23E43019EFFB6D6 /* BleClient.xcodeproj */;
+				},
 				{
 					ProductGroup = 2396A76321DFA586007C79F2 /* Products */;
 					ProjectRef = AB68D73B6C7A415E812FCE04 /* BVLinearGradient.xcodeproj */;
@@ -1318,6 +1345,13 @@
 			fileType = archive.ar;
 			path = libRNFirebase.a;
 			remoteRef = 2316F94B21087C1B00B743C8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		23368760229C453B002E2817 /* libBleClient.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libBleClient.a;
+			remoteRef = 2336875F229C453B002E2817 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		2342FE3F21DFA01F008F8DFB /* libRNVectorIcons-tvOS.a */ = {
@@ -1725,6 +1759,7 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				23368766229C4567002E2817 /* Bridge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1764,6 +1799,7 @@
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = B423242B9Q;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1784,16 +1820,13 @@
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-bluetooth-serial/ios/RCTBluetoothSerial",
-					"$(SRCROOT)/../node_modules/react-native-ble-manager/ios",
+					"$(SRCROOT)/../node_modules/react-native-ble-plx/ios/**",
 				);
 				INFOPLIST_FILE = OttoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1807,6 +1840,7 @@
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = B423242B9Q;
@@ -1824,16 +1858,13 @@
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-bluetooth-serial/ios/RCTBluetoothSerial",
-					"$(SRCROOT)/../node_modules/react-native-ble-manager/ios",
+					"$(SRCROOT)/../node_modules/react-native-ble-plx/ios/**",
 				);
 				INFOPLIST_FILE = OttoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1851,6 +1882,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				BUNDLE_ID_PREFIX = "Otto-Dev";
 				BUNDLE_ID_SUFFIX = .dev;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Otto/Otto Dev.entitlements";
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
@@ -1873,7 +1905,7 @@
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-bluetooth-serial/ios/RCTBluetoothSerial",
-					"$(SRCROOT)/../node_modules/react-native-ble-manager/ios",
+					"$(SRCROOT)/../node_modules/react-native-ble-plx/ios/**",
 				);
 				INFOPLIST_FILE = Otto/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1884,6 +1916,9 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = "Otto Dev";
+				SWIFT_OBJC_BRIDGING_HEADER = "Otto-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1896,6 +1931,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				BUNDLE_ID_PREFIX = Otto;
 				BUNDLE_ID_SUFFIX = "";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Otto/Otto Dev.entitlements";
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B423242B9Q;
@@ -1917,7 +1953,7 @@
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-bluetooth-serial/ios/RCTBluetoothSerial",
-					"$(SRCROOT)/../node_modules/react-native-ble-manager/ios",
+					"$(SRCROOT)/../node_modules/react-native-ble-plx/ios/**",
 				);
 				INFOPLIST_FILE = Otto/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1928,6 +1964,8 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = Otto;
+				SWIFT_OBJC_BRIDGING_HEADER = "Otto-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1975,6 +2013,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				BUNDLE_ID_PREFIX = "Otto-Beta";
 				BUNDLE_ID_SUFFIX = .beta;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Otto/Otto Dev.entitlements";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
@@ -1999,7 +2038,7 @@
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-bluetooth-serial/ios/RCTBluetoothSerial",
-					"$(SRCROOT)/../node_modules/react-native-ble-manager/ios",
+					"$(SRCROOT)/../node_modules/react-native-ble-plx/ios/**",
 				);
 				INFOPLIST_FILE = Otto/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2011,6 +2050,8 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = "Otto Beta";
+				SWIFT_OBJC_BRIDGING_HEADER = "Otto-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -2019,6 +2060,7 @@
 		23CA225A20F8DC49001B12A0 /* Beta */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
@@ -2038,16 +2080,13 @@
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-bluetooth-serial/ios/RCTBluetoothSerial",
-					"$(SRCROOT)/../node_modules/react-native-ble-manager/ios",
+					"$(SRCROOT)/../node_modules/react-native-ble-plx/ios/**",
 				);
 				INFOPLIST_FILE = OttoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -2084,15 +2123,12 @@
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-bluetooth-serial/ios/RCTBluetoothSerial",
-					"$(SRCROOT)/../node_modules/react-native-ble-manager/ios",
+					"$(SRCROOT)/../node_modules/react-native-ble-plx/ios/**",
 				);
 				INFOPLIST_FILE = "Otto-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -2121,9 +2157,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Otto-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2159,15 +2192,12 @@
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-bluetooth-serial/ios/RCTBluetoothSerial",
-					"$(SRCROOT)/../node_modules/react-native-ble-manager/ios",
+					"$(SRCROOT)/../node_modules/react-native-ble-plx/ios/**",
 				);
 				INFOPLIST_FILE = "Otto-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -2207,15 +2237,12 @@
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-bluetooth-serial/ios/RCTBluetoothSerial",
-					"$(SRCROOT)/../node_modules/react-native-ble-manager/ios",
+					"$(SRCROOT)/../node_modules/react-native-ble-plx/ios/**",
 				);
 				INFOPLIST_FILE = "Otto-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -2244,9 +2271,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Otto-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2271,9 +2295,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Otto-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
