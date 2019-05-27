@@ -1,6 +1,10 @@
 # Otto DIY
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](http://standardjs.com/)
 
+## Open Source
+
+The Otto DIY App is completly FREE under the [MIT license](https://github.com/OttoDIY/DIY/blob/master/LICENSE). You can even use it commercially and we welcome all contributions, see our [contributing guide](https://github.com/OttoDIY/DIY/blob/master/CONTRIBUTING.md) to get started.
+
 ## :rocket: How to setup and run the app
 
 If you're new to mobile app development with React Native then here are some crash courses to bring you up to speed:
@@ -70,6 +74,10 @@ If you see the error "Operation not permitted, lstat" then try the following:
   * ```npm start -- --reset-cache```
 
 2. Run the app in a different terminal or command prompt, see **Step 7** above
+
+#### Could not dispatch a message to the daemon
+
+If you see the error "Could not dispatch a message to the daemon" then run ```adb devices``` and make sure that the daemon is running or starts successfully and also that your attached device is listed.
 
 ### App Properties
 
