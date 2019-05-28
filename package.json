@@ -105,7 +105,7 @@
     "jsdom": "^11.7.0",
     "mockery": "^2.1.0",
     "properties-reader": "^0.0.16",
-    "react-dom": "16.0.0",
+    "react-dom": "16.0.1",
     "react-native-mock-render": "^0.0.22",
     "react-native-schemes-manager": "^1.0.4",
     "react-test-renderer": "16.0.0",
