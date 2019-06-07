@@ -9,5 +9,8 @@ export default {
   },
   joystick: {
     arrows: require('App/Images/Joystick/arrows.png')
+  },
+  buttons: {
+    border: require('App/Images/Buttons/Border/border.png')
   }
 }
