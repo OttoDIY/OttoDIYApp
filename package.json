@@ -43,7 +43,7 @@
     "lodash": "^4.17.4",
     "moment": "^2.22.2",
     "prop-types": "15.6.0",
-    "querystringify": "1.0.0",
+    "querystringify": "2.0.0",
     "ramda": "^0.25.0",
     "react": "16.0.0",
     "react-native": "0.51.0",
