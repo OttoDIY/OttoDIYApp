@@ -43,7 +43,7 @@ export default class Screen extends Component {
         </List>
         <List title='Explore'>
           <ListItem
-            image={Images.controls}
+            image={Images.controls.controls}
             title='Drive Mode'
             text='Let’s get moving'
             onPress={onPress.drive} />
