@@ -4,7 +4,7 @@ export default {
   bluetooth: require('App/Images/Bluetooth/bluetooth.png'),
   done: require('App/Images/Done/done.png'),
   controls: {
-    controls: require('App/Images/Controls/controls.png'),  
+    controls: require('App/Images/Controls/controls.png'),
     control: require('App/Images/Controls/control.png'),
     backward: require('App/Images/Controls/backward.png'),
     forward: require('App/Images/Controls/forward.png'),
