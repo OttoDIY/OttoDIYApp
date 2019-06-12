@@ -18,7 +18,7 @@ storiesOf('ListItem', module)
     <ListItem icon='message-text' iconSet='Material' iconStyle={{marginTop: 4}} title='Beep beep' text='Beep bop boopity beep' onPress={() => {}} />
   ))
   .add('Drive', () => (
-    <ListItem image={Images.controls} title='Drive Mode' text='Let’s get moving' onPress={() => {}} />
+    <ListItem image={Images.controls.controls} title='Drive Mode' text='Let’s get moving' onPress={() => {}} />
   ))
   .add('Disabled', () => (
     <ListItem title='Pro Level' text='Go up a level' button='Locked' disabled onPress={() => {}} />
