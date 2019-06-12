@@ -19,7 +19,7 @@ export default {
   },
   buttons: {
     ascend: require('App/Images/Buttons/Ascend/ascend.png'),
-    batery: require('App/Images/Buttons/Batery/batery.png'),
+    battery: require('App/Images/Buttons/Battery/battery.png'),
     beep: require('App/Images/Buttons/Beeps/beep.png'),
     bendleft: require('App/Images/Buttons/Bend/bendleft.png'),
     bendright: require('App/Images/Buttons/Bend/bendright.png'),
