@@ -15,4 +15,8 @@ export const FullScreenDecorator = (getStory) => (
   <View style={{ backgroundColor: Colors.offwhite, height: '100%' }}>{getStory()}</View>
 )
 
+export const FullScreenDarkDecorator = (getStory) => (
+  <View style={{ backgroundColor: Colors.primary, height: '100%' }}>{getStory()}</View>
+)
+
 export default Decorator
