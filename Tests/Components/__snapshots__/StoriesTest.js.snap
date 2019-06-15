@@ -1362,6 +1362,97 @@ exports[`Storyshots Carousel Dilbert 1`] = `
 </View>
 `;
 
+exports[`Storyshots ChamferImageButton Default 1`] = `
+<View
+  style={
+    Object {
+      "margin": 16,
+    }
+  }
+>
+  <View
+    accessibilityComponentType={undefined}
+    accessibilityLabel={undefined}
+    accessibilityTraits={undefined}
+    accessible={true}
+    collapsable={undefined}
+    hasTVPreferredFocus={undefined}
+    hitSlop={undefined}
+    isTVSelectable={true}
+    nativeID={undefined}
+    onLayout={undefined}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+    testID={undefined}
+    tvParallaxProperties={undefined}
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "borderColor": "#2D2D64",
+            "borderWidth": 2,
+            "height": 56,
+            "left": 0,
+            "position": "absolute",
+            "top": 0,
+            "width": 56,
+            "zIndex": 9990,
+          },
+          Object {
+            "borderColor": "white",
+          },
+        ]
+      }
+    />
+    <Image
+      source={
+        Object {
+          "process": [Function],
+        }
+      }
+      style={
+        Object {
+          "height": 56,
+          "left": 0,
+          "position": "absolute",
+          "top": 0,
+          "width": 56,
+          "zIndex": 9999,
+        }
+      }
+    />
+    <Image
+      source={
+        Object {
+          "process": [Function],
+        }
+      }
+      style={
+        Object {
+          "backgroundColor": "#2D2D64",
+          "height": 54,
+          "left": 0,
+          "position": "absolute",
+          "top": 0,
+          "width": 54,
+          "zIndex": 9980,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
 exports[`Storyshots CodeLab Nav Default 1`] = `
 <View
   style={
