@@ -87,12 +87,12 @@ export default class Screen extends Component {
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
-                image={Images.buttons.updown}
+                image={Images.buttons.tiptoe}
                 onPress={() => {}} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
-                image={Images.buttons.updown}
+                image={Images.buttons.moves}
                 onPress={() => {}} />
             </View>
             <View style={s.buttonView}>
@@ -131,27 +131,27 @@ export default class Screen extends Component {
           <View style={s.buttonsRowView}>
             <View style={s.buttonView}>
               <ChamferImageButton
-                image={Images.buttons.updown}
+                image={Images.buttons.flapfront}
                 onPress={() => {}} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
-                image={Images.buttons.updown}
+                image={Images.buttons.moonwalkright}
                 onPress={() => {}} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
-                image={Images.buttons.updown}
+                image={Images.buttons.shakeright}
                 onPress={() => {}} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
-                image={Images.buttons.updown}
+                image={Images.buttons.bendright}
                 onPress={() => {}} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
-                image={Images.buttons.updown}
+                image={Images.buttons.crossright}
                 onPress={() => {}} />
             </View>
           </View>
