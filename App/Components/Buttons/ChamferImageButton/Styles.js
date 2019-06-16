@@ -4,6 +4,10 @@ import { Styles, Colors } from 'App/Themes'
 
 export default StyleSheet.create({
   ...Styles,
+  touchable: {
+    width: 56,
+    height: 56
+  },
   buttonBackground: {
     position: 'absolute',
     top: 0,

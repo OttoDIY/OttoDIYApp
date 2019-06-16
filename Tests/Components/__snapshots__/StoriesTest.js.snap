@@ -1601,7 +1601,9 @@ exports[`Storyshots ChamferImageButton Default 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Object {
+        "height": 56,
         "opacity": 1,
+        "width": 56,
       }
     }
     testID={undefined}

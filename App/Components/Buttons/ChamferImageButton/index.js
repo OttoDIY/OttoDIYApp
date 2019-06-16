@@ -18,7 +18,7 @@ export default class ChamferImageButton extends Component {
   render () {
     const {image, backgroundColor = Colors.primary, onPress} = this.props
     return (
-      <TouchableOpacity onPress={onPress}>
+      <TouchableOpacity style={s.touchable} onPress={onPress}>
         <View style={[s.buttonBackground, {borderColor: backgroundColor}]} />
         <Image style={s.button} source={Images.buttons.border} />
         <Image style={s.image} source={image} />

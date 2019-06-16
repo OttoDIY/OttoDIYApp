@@ -3,20 +3,22 @@ import React from 'react'
 import { shallow } from 'enzyme'
 import toJson from 'enzyme-to-json'
 
-import Screen from 'App/Modules/Play/Drive/Screen'
+import Screen from 'App/Modules/Play/Player/Screen'
 
-describe('Drive', () => {
+describe('Player', () => {
   let wrapper
 
   beforeEach(() => {
     wrapper = shallow(
       <Screen
         navigation={{navigate: () => {}}}
-        message='Use joystick to drive'
+        speed='medium'
         showNotConnectedModal={false}
-        onDraggableMove={(touch) => {}}
-        onDraggableRelease={(touch) => {}}
-        onDraggableStart={() => {}}
+        onUp={() => {}}
+        onDown={() => {}}
+        onLeft={() => {}}
+        onRight={() => {}}
+        onToggleSpeed={() => {}}
         onHideNotConnectedModal={() => {}} />)
   })
 

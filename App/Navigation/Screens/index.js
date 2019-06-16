@@ -5,6 +5,7 @@ import {
   Settings,
   Connect,
   Play,
+  Player,
   Drive,
   Beep,
   Discover,
@@ -51,6 +52,12 @@ export default {
     screen: Play,
     navigationOptions: ({navigation}) => ({
       title: 'Play & Explore'
+    })
+  },
+  PlayerScreen: {
+    screen: Player,
+    navigationOptions: ({navigation}) => ({
+      title: null
     })
   },
   DriveScreen: {
