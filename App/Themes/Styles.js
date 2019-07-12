@@ -19,6 +19,11 @@ export const Styles = {
     backgroundColor: Colors.background,
     height: Metrics.screenHeight
   },
+  container_dark: {
+    flex: 1,
+    backgroundColor: Colors.primary,
+    height: Metrics.screenHeight
+  },
   center: {
     flex: 1,
     alignItems: 'center',

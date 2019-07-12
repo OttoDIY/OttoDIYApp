@@ -35,17 +35,19 @@ export default {
     moonwalkright: require('App/Images/Buttons/Moonwalk/moonwalkright.png'),
     shakeleft: require('App/Images/Buttons/Shake/shakeleft.png'),
     shakeright: require('App/Images/Buttons/Shake/shakeright.png'),
-    slow: require('App/Images/Buttons/Speed/slow.png'),
-    medium: require('App/Images/Buttons/Speed/medium.png'),
-    fast: require('App/Images/Buttons/Speed/fast.png'),
+    speed: {
+      slow: require('App/Images/Buttons/Speed/slow.png'),
+      medium: require('App/Images/Buttons/Speed/medium.png'),
+      fast: require('App/Images/Buttons/Speed/fast.png')
+    },
     swing: require('App/Images/Buttons/Swing/swing.png'),
     tiptoe: require('App/Images/Buttons/Tiptoe/tiptoe.png'),
     ultrasound: require('App/Images/Buttons/Ultrasound/ultrasound.png'),
     updown: require('App/Images/Buttons/Updown/updown.png'),
-    moves: require('App/Images/Buttons/Moves/moves.png')
-  },
-  gestures: {
-    happy: require('App/Images/Buttons/Gestures/Happy/happy.png')
+    moves: require('App/Images/Buttons/Moves/moves.png'),
+    gestures: {
+      happy: require('App/Images/Buttons/Gestures/Happy/happy.png')
+    }
   },
   robots: {
     plus: require('App/Images/Robots/Plus/plus.png')
