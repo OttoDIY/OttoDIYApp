@@ -11,6 +11,7 @@ import {
 import { Images } from 'App/Themes'
 
 import s from './Styles'
+import { on } from 'cluster';
 
 const speedButtonImages = {
   slow: Images.buttons.speed.slow,
@@ -28,11 +29,12 @@ export default class Screen extends Component {
     onupdown: PropTypes.func,
     onmoonwalkright: PropTypes.func,
     onmoonwalkleft: PropTypes.func,
+    onswing: PropTypes.func,
     oncrossright: PropTypes.func,
     oncrossleft: PropTypes.func,
     onflapfront: PropTypes.func,
     onflapback: PropTypes.func,
-    onswing: PropTypes.func,
+    ontiptoe: PropTypes.func,
     onbendright: PropTypes.func,
     onbendleft: PropTypes.func,
     onshakeright: PropTypes.func,
@@ -54,9 +56,11 @@ export default class Screen extends Component {
       onupdown,
       onmoonwalkright,
       oncrossright,
+      oncrossleft,
+      onswing,
       onflapfront,
       onflapback,
-      onswing,
+      ontiptoe,
       onbendright,
       onbendleft,
       onshakeright,
@@ -103,17 +107,17 @@ export default class Screen extends Component {
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.jitter}
-                onPress={() => {}} />
+                onPress={onjitter} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.swing}
-                onPress={() => {}} />
+                onPress={onswing} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.tiptoe}
-                onPress={() => {}} />
+                onPress={ontiptoe} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
@@ -123,61 +127,61 @@ export default class Screen extends Component {
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.updown}
-                onPress={() => {}} />
+                onPress={updown} />
             </View>
           </View>
           <View style={s.buttonsRowView}>
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.flapback}
-                onPress={() => {}} />
+                onPress={flapback} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.moonwalkleft}
-                onPress={() => {}} />
+                onPress={moonwalkright} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.shakeleft}
-                onPress={() => {}} />
+                onPress={shakeleft} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.bendleft}
-                onPress={() => {}} />
+                onPress={bendleft} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.crossleft}
-                onPress={() => {}} />
+                onPress={crossleft} />
             </View>
           </View>
           <View style={s.buttonsRowView}>
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.flapfront}
-                onPress={() => {}} />
+                onPress={flapfront} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.moonwalkright}
-                onPress={() => {}} />
+                onPress={moonwalkright} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.shakeright}
-                onPress={() => {}} />
+                onPress={shakeright} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.bendright}
-                onPress={() => {}} />
+                onPress={bendright} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.crossright}
-                onPress={() => {}} />
+                onPress={crossright} />
             </View>
           </View>
         </View>
@@ -195,12 +199,12 @@ export default class Screen extends Component {
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.updown}
-                onPress={() => {}} />
+                onPress={updown} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.beep}
-                onPress={() => {}} />
+                onPress={beep} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton

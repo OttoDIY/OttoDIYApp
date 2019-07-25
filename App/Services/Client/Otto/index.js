@@ -44,6 +44,36 @@ const cmdFromInstruction = (instruction) => {
     return 'M 4' // left
   } else if (instruction === STOP) {
     return 'M 0' // stop
+  } else if (instruction === 'updown') {
+    return 'M 5' // updown
+  } else if (instruction === 'moonwalkright') {
+    return 'M 6' // moonwalkright
+  } else if (instruction === 'moonwalkleft') {
+    return 'M 7' // moonwalkleft
+  } else if (instruction === 'swing') {
+    return 'M 8' // swing
+  } else if (instruction === 'crossright') {
+    return 'M 9' // crossright
+  } else if (instruction === 'crossleft') {
+    return 'M 10' // crossleft
+  } else if (instruction === 'flapfront') {
+    return 'M 12' // flapfront
+  } else if (instruction === 'flapback') {
+    return 'M 13' // flapback
+  } else if (instruction === 'tiptoe') {
+    return 'M 14' // tiptoe
+  } else if (instruction === 'bendright') {
+    return 'M 15' // bendright
+  } else if (instruction === 'bendleft') {
+    return 'M 16' // bendleft
+  } else if (instruction === 'shakeright') {
+    return 'M 17' // shakeright
+  } else if (instruction === 'shakeleft') {
+    return 'M 18' // shakeleft
+  } else if (instruction === 'jitter') {
+    return 'M 19' // jitter
+  } else if (instruction === 'ascend') {
+    return 'M 20' // ascend
   } else {
     return 'M 0'
   }
