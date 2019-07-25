@@ -53,6 +53,76 @@ export class PlayerContainer extends Component {
       this.client.run(['right'])
     }
   }
+  onupdown = async () => {
+    if (await this.checkIsConnected()) {
+      this.client.run(['updown'])
+    }
+  }
+  onmoonwalkright = async () => {
+    if (await this.checkIsConnected()) {
+      this.client.run(['moonwalkright'])
+    }
+  }
+  onmoonwalkleft = async () => {
+    if (await this.checkIsConnected()) {
+      this.client.run(['moonwalkleft'])
+    }
+  }
+  oncrossright = async () => {
+    if (await this.checkIsConnected()) {
+      this.client.run(['crossright'])
+    }
+  }
+  oncrossrighleft = async () => {
+    if (await this.checkIsConnected()) {
+      this.client.run(['crossrighleft'])
+    }
+  }
+  onflapfront = async () => {
+    if (await this.checkIsConnected()) {
+      this.client.run(['flapfront'])
+    }
+  }
+  onflapback = async () => {
+    if (await this.checkIsConnected()) {
+      this.client.run(['flapback'])
+    }
+  }
+  onswing = async () => {
+    if (await this.checkIsConnected()) {
+      this.client.run(['swing'])
+    }
+  }
+  onbendright = async () => {
+    if (await this.checkIsConnected()) {
+      this.client.run(['bendright'])
+    }
+  }
+  onbendleft = async () => {
+    if (await this.checkIsConnected()) {
+      this.client.run(['bendleft'])
+    }
+  }
+  onshakeright = async () => {
+    if (await this.checkIsConnected()) {
+      this.client.run(['shakeright'])
+    }
+  }
+  onshakeleft = async () => {
+    if (await this.checkIsConnected()) {
+      this.client.run(['shakeleft'])
+    }
+  }
+  onjitter = async () => {
+    if (await this.checkIsConnected()) {
+      this.client.run(['jitter'])
+    }
+  }
+  onascend = async () => {
+    if (await this.checkIsConnected()) {
+      this.client.run(['ascend'])
+    }
+  }
 
   onToggleSpeed = () => {
     const { speed } = this.state
