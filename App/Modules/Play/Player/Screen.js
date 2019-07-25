@@ -121,67 +121,67 @@ export default class Screen extends Component {
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
-                image={Images.buttons.moves}
-                onPress={() => {}} />
+                image={Images.buttons.ascend}
+                onPress={onascend} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.updown}
-                onPress={updown} />
+                onPress={onupdown} />
             </View>
           </View>
           <View style={s.buttonsRowView}>
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.flapback}
-                onPress={flapback} />
+                onPress={onflapback} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.moonwalkleft}
-                onPress={moonwalkright} />
+                onPress={onmoonwalkright} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.shakeleft}
-                onPress={shakeleft} />
+                onPress={onshakeleft} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.bendleft}
-                onPress={bendleft} />
+                onPress={onbendleft} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.crossleft}
-                onPress={crossleft} />
+                onPress={oncrossleft} />
             </View>
           </View>
           <View style={s.buttonsRowView}>
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.flapfront}
-                onPress={flapfront} />
+                onPress={onflapfront} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.moonwalkright}
-                onPress={moonwalkright} />
+                onPress={onmoonwalkright} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.shakeright}
-                onPress={shakeright} />
+                onPress={onshakeright} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.bendright}
-                onPress={bendright} />
+                onPress={onbendright} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.crossright}
-                onPress={crossright} />
+                onPress={oncrossright} />
             </View>
           </View>
         </View>
@@ -199,12 +199,12 @@ export default class Screen extends Component {
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.updown}
-                onPress={updown} />
+                onPress={onupdown} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.beep}
-                onPress={beep} />
+                onPress={onbeep} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
