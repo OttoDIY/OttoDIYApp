@@ -75,7 +75,7 @@ export class PlayerContainer extends Component {
   }
   oncrossrighleft = async () => {
     if (await this.checkIsConnected()) {
-      this.client.run(['crossrighleft'])
+      this.client.run(['crossleft'])
     }
   }
   onflapfront = async () => {
@@ -153,6 +153,21 @@ export class PlayerContainer extends Component {
         onDown={this.onDown}
         onLeft={this.onLeft}
         onRight={this.onRight}
+        onjitter={this.onjitter}
+        onswing={this.onswing}
+        onupdown={this.onupdown}
+        onmoonwalkleft={this.onmoonwalkleft}
+        onmoonwalkright={this.onmoonwalkright}
+        oncrossright={this.oncrossright}
+        oncrossleft={this.oncrossleft}
+        onflapfront={this.onflapfront}
+        onflapback={this.onflapback}
+        ontiptope={this.ontiptoe}
+        onbendright={this.onbendright}
+        onbendleft={this.onbendleft}
+        onshakeright={this.onshakeright}
+        onshakeleft={this.onshakeleft}
+        onascend={this.onascend}
         onToggleSpeed={this.onToggleSpeed}
         onHideNotConnectedModal={this.onHideNotConnectedModal}
       />

@@ -11,7 +11,6 @@ import {
 import { Images } from 'App/Themes'
 
 import s from './Styles'
-import { on } from 'cluster';
 
 const speedButtonImages = {
   slow: Images.buttons.speed.slow,
@@ -204,7 +203,7 @@ export default class Screen extends Component {
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.beep}
-                onPress={onbeep} />
+                onPress={() => {}} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
