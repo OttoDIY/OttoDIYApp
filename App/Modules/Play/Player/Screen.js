@@ -25,7 +25,21 @@ export default class Screen extends Component {
     onUp: PropTypes.func,
     onDown: PropTypes.func,
     onLeft: PropTypes.func,
-    onRight: PropTypes.func,
+    onupdown: PropTypes.func,
+    onmoonwalkright: PropTypes.func,
+    onmoonwalkleft: PropTypes.func,
+    onswing: PropTypes.func,
+    oncrossright: PropTypes.func,
+    oncrossleft: PropTypes.func,
+    onflapfront: PropTypes.func,
+    onflapback: PropTypes.func,
+    ontiptoe: PropTypes.func,
+    onbendright: PropTypes.func,
+    onbendleft: PropTypes.func,
+    onshakeright: PropTypes.func,
+    onshakeleft: PropTypes.func,
+    onjitter: PropTypes.func,
+    onascend: PropTypes.func,
     onToggleSpeed: PropTypes.func,
     onHideNotConnectedModal: PropTypes.func.isRequired
   }
@@ -38,6 +52,20 @@ export default class Screen extends Component {
       onDown,
       onLeft,
       onRight,
+      onupdown,
+      onmoonwalkright,
+      oncrossright,
+      oncrossleft,
+      onswing,
+      onflapfront,
+      onflapback,
+      ontiptoe,
+      onbendright,
+      onbendleft,
+      onshakeright,
+      onshakeleft,
+      onjitter,
+      onascend,
       onToggleSpeed,
       onHideNotConnectedModal
     } = this.props
@@ -78,81 +106,81 @@ export default class Screen extends Component {
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.jitter}
-                onPress={() => {}} />
+                onPress={onjitter} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.swing}
-                onPress={() => {}} />
+                onPress={onswing} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.tiptoe}
-                onPress={() => {}} />
+                onPress={ontiptoe} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
-                image={Images.buttons.moves}
-                onPress={() => {}} />
+                image={Images.buttons.ascend}
+                onPress={onascend} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.updown}
-                onPress={() => {}} />
+                onPress={onupdown} />
             </View>
           </View>
           <View style={s.buttonsRowView}>
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.flapback}
-                onPress={() => {}} />
+                onPress={onflapback} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.moonwalkleft}
-                onPress={() => {}} />
+                onPress={onmoonwalkright} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.shakeleft}
-                onPress={() => {}} />
+                onPress={onshakeleft} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.bendleft}
-                onPress={() => {}} />
+                onPress={onbendleft} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.crossleft}
-                onPress={() => {}} />
+                onPress={oncrossleft} />
             </View>
           </View>
           <View style={s.buttonsRowView}>
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.flapfront}
-                onPress={() => {}} />
+                onPress={onflapfront} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.moonwalkright}
-                onPress={() => {}} />
+                onPress={onmoonwalkright} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.shakeright}
-                onPress={() => {}} />
+                onPress={onshakeright} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.bendright}
-                onPress={() => {}} />
+                onPress={onbendright} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.crossright}
-                onPress={() => {}} />
+                onPress={oncrossright} />
             </View>
           </View>
         </View>
@@ -170,7 +198,7 @@ export default class Screen extends Component {
             <View style={s.buttonView}>
               <ChamferImageButton
                 image={Images.buttons.updown}
-                onPress={() => {}} />
+                onPress={onupdown} />
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton

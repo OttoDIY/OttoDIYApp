@@ -87,7 +87,7 @@ export default {
   LearnScreen: {
     screen: Lessons,
     navigationOptions: ({navigation}) => ({
-      title: 'Learn'
+      title: 'Build & Learn'
     })
   },
   GetStartedScreen: {
@@ -99,7 +99,7 @@ export default {
   LabScreen: {
     screen: Lab,
     navigationOptions: ({navigation}) => ({
-      title: 'Lab'
+      title: 'Design Lab'
     })
   }
 }

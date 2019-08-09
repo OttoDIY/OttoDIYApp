@@ -53,6 +53,81 @@ export class PlayerContainer extends Component {
       this.client.run(['right'])
     }
   }
+  onupdown = async () => {
+    if (await this.checkIsConnected()) {
+      this.client.run(['updown'])
+    }
+  }
+  onmoonwalkright = async () => {
+    if (await this.checkIsConnected()) {
+      this.client.run(['moonwalkright'])
+    }
+  }
+  onmoonwalkleft = async () => {
+    if (await this.checkIsConnected()) {
+      this.client.run(['moonwalkleft'])
+    }
+  }
+  oncrossright = async () => {
+    if (await this.checkIsConnected()) {
+      this.client.run(['crossright'])
+    }
+  }
+  oncrossleft = async () => {
+    if (await this.checkIsConnected()) {
+      this.client.run(['crossleft'])
+    }
+  }
+  onflapfront = async () => {
+    if (await this.checkIsConnected()) {
+      this.client.run(['flapfront'])
+    }
+  }
+  onflapback = async () => {
+    if (await this.checkIsConnected()) {
+      this.client.run(['flapback'])
+    }
+  }
+  onswing = async () => {
+    if (await this.checkIsConnected()) {
+      this.client.run(['swing'])
+    }
+  }
+  onbendright = async () => {
+    if (await this.checkIsConnected()) {
+      this.client.run(['bendright'])
+    }
+  }
+  onbendleft = async () => {
+    if (await this.checkIsConnected()) {
+      this.client.run(['bendleft'])
+    }
+  }
+  onshakeright = async () => {
+    if (await this.checkIsConnected()) {
+      this.client.run(['shakeright'])
+    }
+  }
+  onshakeleft = async () => {
+    if (await this.checkIsConnected()) {
+      this.client.run(['shakeleft'])
+    }
+  }
+  onjitter = async () => {
+    if (await this.checkIsConnected()) {
+      this.client.run(['jitter'])
+    }
+  }
+  onascend = async () => {
+    if (await this.checkIsConnected()) {
+      this.client.run(['ascend'])
+    }
+  }
+  ontiptoe = async () => {
+    if (await this.checkIsConnected()) {
+      this.client.run(['tiptoe'])
+    }
+  }
 
   onToggleSpeed = () => {
     const { speed } = this.state
@@ -83,6 +158,21 @@ export class PlayerContainer extends Component {
         onDown={this.onDown}
         onLeft={this.onLeft}
         onRight={this.onRight}
+        onjitter={this.onjitter}
+        onswing={this.onswing}
+        onupdown={this.onupdown}
+        onmoonwalkleft={this.onmoonwalkleft}
+        onmoonwalkright={this.onmoonwalkright}
+        oncrossright={this.oncrossright}
+        oncrossleft={this.oncrossleft}
+        onflapfront={this.onflapfront}
+        onflapback={this.onflapback}
+        ontiptop={this.ontiptoe}
+        onbendright={this.onbendright}
+        onbendleft={this.onbendleft}
+        onshakeright={this.onshakeright}
+        onshakeleft={this.onshakeleft}
+        onascend={this.onascend}
         onToggleSpeed={this.onToggleSpeed}
         onHideNotConnectedModal={this.onHideNotConnectedModal}
       />
