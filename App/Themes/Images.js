@@ -45,7 +45,19 @@ export default {
     moves: require('App/Images/Buttons/Moves/moves.png')
   },
   gestures: {
-    happy: require('App/Images/Buttons/Gestures/Happy/happy.png')
+    happy: require('App/Images/Buttons/Gestures/Happy/happy.png'),
+    sad: require('App/Images/Buttons/Gestures/Sad/sad.png'),
+    superhappy: require('App/Images/Buttons/Gestures/SuperHappy/superhappy.png'),
+    confused: require('App/Images/Buttons/Gestures/Confused/confused.png'),
+    sleeping: require('App/Images/Buttons/Gestures/Sleeping/sleeping.png'),
+    angry: require('App/Images/Buttons/Gestures/Angry/angry.png'),
+    fail: require('App/Images/Buttons/Gestures/Fail/fail.png'),
+    fart: require('App/Images/Buttons/Gestures/Fart/fart.png'),
+    wave: require('App/Images/Buttons/Gestures/Wave/wave.png'),
+    love: require('App/Images/Buttons/Gestures/Love/love.png'),
+    magic: require('App/Images/Buttons/Gestures/Magic/magic.png'),
+    freetful: require('App/Images/Buttons/Gestures/Freetful/freetful.png'),
+    victory: require('App/Images/Buttons/Gestures/Victory/victory.png')
   },
   robots: {
     plus: require('App/Images/Robots/Plus/plus.png')
