@@ -73,7 +73,7 @@ export class PlayerContainer extends Component {
       this.client.run(['crossright'])
     }
   }
-  oncrossrighleft = async () => {
+  oncrossleft = async () => {
     if (await this.checkIsConnected()) {
       this.client.run(['crossleft'])
     }
@@ -123,6 +123,11 @@ export class PlayerContainer extends Component {
       this.client.run(['ascend'])
     }
   }
+  ontiptoe = async () => {
+    if (await this.checkIsConnected()) {
+      this.client.run(['tiptoe'])
+    }
+  }
 
   onToggleSpeed = () => {
     const { speed } = this.state
@@ -162,7 +167,7 @@ export class PlayerContainer extends Component {
         oncrossleft={this.oncrossleft}
         onflapfront={this.onflapfront}
         onflapback={this.onflapback}
-        ontiptope={this.ontiptoe}
+        ontiptop={this.ontiptoe}
         onbendright={this.onbendright}
         onbendleft={this.onbendleft}
         onshakeright={this.onshakeright}
