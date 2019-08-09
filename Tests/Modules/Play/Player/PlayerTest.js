@@ -18,6 +18,20 @@ describe('Player', () => {
         onDown={() => {}}
         onLeft={() => {}}
         onRight={() => {}}
+        onupdown={() => {}}
+        onmoonwalkright={() => {}}
+        oncrossright={() => {}}
+        oncrossleft={() => {}}
+        onswing={() => {}}
+        onflapfront={() => {}}
+        onflapback={() => {}}
+        ontiptoe={() => {}}
+        onbendright={() => {}}
+        onbendleft={() => {}}
+        onshakeright={() => {}}
+        onshakeleft={() => {}}
+        onjitter={() => {}}
+        onascend={() => {}}
         onToggleSpeed={() => {}}
         onHideNotConnectedModal={() => {}} />)
   })

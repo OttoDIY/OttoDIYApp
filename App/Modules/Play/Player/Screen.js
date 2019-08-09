@@ -207,7 +207,7 @@ export default class Screen extends Component {
             </View>
             <View style={s.buttonView}>
               <ChamferImageButton
-                image={Images.buttons.gestures.happy}
+                image={Images.gestures.happy}
                 onPress={() => {}} />
             </View>
             <View style={s.buttonView}>
