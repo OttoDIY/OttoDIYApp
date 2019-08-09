@@ -5,6 +5,7 @@ import {
   Settings,
   Connect,
   Play,
+  Player,
   Drive,
   Beep,
   Discover,
@@ -53,6 +54,12 @@ export default {
       title: 'Play & Explore'
     })
   },
+  PlayerScreen: {
+    screen: Player,
+    navigationOptions: ({navigation}) => ({
+      title: null
+    })
+  },
   DriveScreen: {
     screen: Drive,
     navigationOptions: ({navigation}) => ({
@@ -80,7 +87,7 @@ export default {
   LearnScreen: {
     screen: Lessons,
     navigationOptions: ({navigation}) => ({
-      title: 'Learn'
+      title: 'Build & Learn'
     })
   },
   GetStartedScreen: {
@@ -92,7 +99,7 @@ export default {
   LabScreen: {
     screen: Lab,
     navigationOptions: ({navigation}) => ({
-      title: 'Lab'
+      title: 'Design Lab'
     })
   }
 }

@@ -1,0 +1,603 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Player Component renders correctly 1`] = `
+<Container
+  dark={true}
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "margin": 16,
+        "marginBottom": 0,
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "process": [Function],
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    />
+    <Image
+      source={
+        Object {
+          "process": [Function],
+        }
+      }
+    />
+    <Image
+      source={
+        Object {
+          "process": [Function],
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "margin": 16,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "height": 30,
+          "width": 30,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "borderTopColor": "white",
+            "borderTopWidth": 2,
+            "height": 20,
+            "marginLeft": -14,
+            "transform": Array [
+              Object {
+                "rotate": "135deg",
+              },
+            ],
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "borderTopColor": "white",
+          "borderTopWidth": 2,
+          "flex": 1,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "height": 30,
+          "width": 30,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "borderTopColor": "white",
+            "borderTopWidth": 2,
+            "height": 20,
+            "marginRight": -14,
+            "transform": Array [
+              Object {
+                "rotate": "-135deg",
+              },
+            ],
+          }
+        }
+      />
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "width": "100%",
+      }
+    }
+  >
+    <ChamferImageButton
+      image={
+        Object {
+          "process": [Function],
+        }
+      }
+      onPress={[Function]}
+    />
+    <View
+      style={
+        Object {
+          "marginHorizontal": 16,
+        }
+      }
+    >
+      <ArrowJoystick
+        onDown={[Function]}
+        onLeft={[Function]}
+        onRight={[Function]}
+        onUp={[Function]}
+      />
+    </View>
+    <ChamferImageButton
+      image={
+        Object {
+          "process": [Function],
+        }
+      }
+      onPress={[Function]}
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "marginVertical": 16,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "margin": 8,
+          }
+        }
+      >
+        <ChamferImageButton
+          image={
+            Object {
+              "process": [Function],
+            }
+          }
+          onPress={[Function]}
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "margin": 8,
+          }
+        }
+      >
+        <ChamferImageButton
+          image={
+            Object {
+              "process": [Function],
+            }
+          }
+          onPress={[Function]}
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "margin": 8,
+          }
+        }
+      >
+        <ChamferImageButton
+          image={
+            Object {
+              "process": [Function],
+            }
+          }
+          onPress={[Function]}
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "margin": 8,
+          }
+        }
+      >
+        <ChamferImageButton
+          image={
+            Object {
+              "process": [Function],
+            }
+          }
+          onPress={[Function]}
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "margin": 8,
+          }
+        }
+      >
+        <ChamferImageButton
+          image={
+            Object {
+              "process": [Function],
+            }
+          }
+          onPress={[Function]}
+        />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "margin": 8,
+          }
+        }
+      >
+        <ChamferImageButton
+          image={
+            Object {
+              "process": [Function],
+            }
+          }
+          onPress={[Function]}
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "margin": 8,
+          }
+        }
+      >
+        <ChamferImageButton
+          image={
+            Object {
+              "process": [Function],
+            }
+          }
+          onPress={[Function]}
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "margin": 8,
+          }
+        }
+      >
+        <ChamferImageButton
+          image={
+            Object {
+              "process": [Function],
+            }
+          }
+          onPress={[Function]}
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "margin": 8,
+          }
+        }
+      >
+        <ChamferImageButton
+          image={
+            Object {
+              "process": [Function],
+            }
+          }
+          onPress={[Function]}
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "margin": 8,
+          }
+        }
+      >
+        <ChamferImageButton
+          image={
+            Object {
+              "process": [Function],
+            }
+          }
+          onPress={[Function]}
+        />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "margin": 8,
+          }
+        }
+      >
+        <ChamferImageButton
+          image={
+            Object {
+              "process": [Function],
+            }
+          }
+          onPress={[Function]}
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "margin": 8,
+          }
+        }
+      >
+        <ChamferImageButton
+          image={
+            Object {
+              "process": [Function],
+            }
+          }
+          onPress={[Function]}
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "margin": 8,
+          }
+        }
+      >
+        <ChamferImageButton
+          image={
+            Object {
+              "process": [Function],
+            }
+          }
+          onPress={[Function]}
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "margin": 8,
+          }
+        }
+      >
+        <ChamferImageButton
+          image={
+            Object {
+              "process": [Function],
+            }
+          }
+          onPress={[Function]}
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "margin": 8,
+          }
+        }
+      >
+        <ChamferImageButton
+          image={
+            Object {
+              "process": [Function],
+            }
+          }
+          onPress={[Function]}
+        />
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "margin": 16,
+        "transform": Array [
+          Object {
+            "rotate": "180deg",
+          },
+        ],
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "height": 30,
+          "width": 30,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "borderTopColor": "white",
+            "borderTopWidth": 2,
+            "height": 20,
+            "marginLeft": -14,
+            "transform": Array [
+              Object {
+                "rotate": "135deg",
+              },
+            ],
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "borderTopColor": "white",
+          "borderTopWidth": 2,
+          "flex": 1,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "height": 30,
+          "width": 30,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "borderTopColor": "white",
+            "borderTopWidth": 2,
+            "height": 20,
+            "marginRight": -14,
+            "transform": Array [
+              Object {
+                "rotate": "-135deg",
+              },
+            ],
+          }
+        }
+      />
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "marginVertical": 0,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "margin": 8,
+          }
+        }
+      >
+        <ChamferImageButton
+          image={
+            Object {
+              "process": [Function],
+            }
+          }
+          onPress={[Function]}
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "margin": 8,
+          }
+        }
+      >
+        <ChamferImageButton
+          image={
+            Object {
+              "process": [Function],
+            }
+          }
+          onPress={[Function]}
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "margin": 8,
+          }
+        }
+      >
+        <ChamferImageButton
+          image={
+            Object {
+              "process": [Function],
+            }
+          }
+          onPress={[Function]}
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "margin": 8,
+          }
+        }
+      >
+        <ChamferImageButton
+          image={
+            Object {
+              "process": [Function],
+            }
+          }
+          onPress={[Function]}
+        />
+      </View>
+    </View>
+  </View>
+  <Modal
+    navigation={
+      Object {
+        "navigate": [Function],
+      }
+    }
+    onHidePress={[Function]}
+    show={false}
+    template="NotConnected"
+  />
+</Container>
+`;

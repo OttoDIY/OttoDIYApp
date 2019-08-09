@@ -40,7 +40,7 @@
     "google-libphonenumber": "^3.1.15",
     "identity-obj-proxy": "^3.0.0",
     "joystick-component-lib": "^0.1.2",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.13",
     "moment": "^2.22.2",
     "prop-types": "15.6.0",
     "querystringify": "2.0.0",

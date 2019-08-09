@@ -17,7 +17,7 @@ describe('Drive', () => {
         onDraggableMove={(touch) => {}}
         onDraggableRelease={(touch) => {}}
         onDraggableStart={() => {}}
-        onHideNotConnectedModal={(touch) => {}} />)
+        onHideNotConnectedModal={() => {}} />)
   })
 
   it('Component renders correctly', () => {
