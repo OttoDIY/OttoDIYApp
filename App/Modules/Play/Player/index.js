@@ -167,7 +167,7 @@ export class PlayerContainer extends Component {
         oncrossleft={this.oncrossleft}
         onflapfront={this.onflapfront}
         onflapback={this.onflapback}
-        ontiptop={this.ontiptoe}
+        ontiptoe={this.ontiptoe}
         onbendright={this.onbendright}
         onbendleft={this.onbendleft}
         onshakeright={this.onshakeright}
