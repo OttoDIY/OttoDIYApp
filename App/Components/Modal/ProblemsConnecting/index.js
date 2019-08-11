@@ -26,9 +26,7 @@ export default class ProblemsConnecting extends Component {
     return (
       <Card
         image={Images.bluetooth}
-        text={'1. Check the device you are pairing with is discoverable. Often, you’ll see a blue light on when it’s ready.\n\n2. Turn Bluetooth off and then on again on this device.\n\n3. If a passcode is needed and you don’t have it, try 0000 or 1234.\n\n4. Restart this device.'}
-        link='See more troubleshooting steps'
-        onLinkPress={this.onLinkPress} />
+        text={'1. Check the device you are pairing with is discoverable. Often, you’ll see a blue light on when it’s ready.\n\n2. Turn Bluetooth off and then on again on this device.\n\n3. If a passcode is needed and you don’t have it, try 0000 or 1234.\n\n4. Restart this device.'} />
     )
   }
 }

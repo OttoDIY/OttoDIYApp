@@ -225,6 +225,8 @@ exports[`Storyshots BottomNav Default 1`] = `
     style={
       Object {
         "backgroundColor": "#2D2D64",
+        "borderTopColor": "#FAFAFA",
+        "borderTopWidth": 1,
         "bottom": 0,
         "left": 0,
         "minHeight": 80,
@@ -232,6 +234,7 @@ exports[`Storyshots BottomNav Default 1`] = `
         "paddingTop": 0,
         "position": "absolute",
         "width": "100%",
+        "zIndex": 9999,
       }
     }
   >
@@ -1202,6 +1205,8 @@ exports[`Storyshots Carousel Default 1`] = `
     style={
       Object {
         "backgroundColor": "#2D2D64",
+        "borderTopColor": "#FAFAFA",
+        "borderTopWidth": 1,
         "bottom": 0,
         "justifyContent": "center",
         "left": 0,
@@ -1210,6 +1215,7 @@ exports[`Storyshots Carousel Default 1`] = `
         "paddingTop": 0,
         "position": "absolute",
         "width": "100%",
+        "zIndex": 9999,
       }
     }
   >
@@ -1450,6 +1456,8 @@ exports[`Storyshots Carousel Dilbert 1`] = `
     style={
       Object {
         "backgroundColor": "#2D2D64",
+        "borderTopColor": "#FAFAFA",
+        "borderTopWidth": 1,
         "bottom": 0,
         "justifyContent": "center",
         "left": 0,
@@ -1458,6 +1466,7 @@ exports[`Storyshots Carousel Dilbert 1`] = `
         "paddingTop": 0,
         "position": "absolute",
         "width": "100%",
+        "zIndex": 9999,
       }
     }
   >
@@ -9087,57 +9096,6 @@ exports[`Storyshots Modal Problems Connecting 1`] = `
 3. If a passcode is needed and you don’t have it, try 0000 or 1234.
 
 4. Restart this device.
-            </Text>
-          </View>
-          <View
-            accessibilityComponentType={undefined}
-            accessibilityLabel={undefined}
-            accessibilityTraits={undefined}
-            accessible={true}
-            collapsable={undefined}
-            hasTVPreferredFocus={undefined}
-            hitSlop={undefined}
-            isTVSelectable={true}
-            nativeID={undefined}
-            onLayout={undefined}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
-            style={
-              Object {
-                "alignItems": "center",
-                "display": "flex",
-                "justifyContent": "center",
-                "opacity": 1,
-                "width": "100%",
-              }
-            }
-            testID={undefined}
-            tvParallaxProperties={undefined}
-          >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Array [
-                  Object {
-                    "color": "#354052",
-                    "fontFamily": "Roboto-Medium",
-                    "fontSize": 18,
-                    "textAlign": "center",
-                    "textDecorationLine": "underline",
-                  },
-                  Object {
-                    "fontSize": undefined,
-                  },
-                ]
-              }
-            >
-              See more troubleshooting steps
             </Text>
           </View>
         </View>

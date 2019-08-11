@@ -26,6 +26,10 @@ export default class Simulator {
     return sounds
   }
 
+  setSpeed = async (speed) => {
+    // TODO
+  }
+
   play = (sound) => {
     socket.emit({event: 'play', sound})
   }

@@ -34,13 +34,6 @@ exports[`Player Component renders correctly 1`] = `
         }
       }
     />
-    <Image
-      source={
-        Object {
-          "process": [Function],
-        }
-      }
-    />
   </View>
   <View
     style={
@@ -505,96 +498,13 @@ exports[`Player Component renders correctly 1`] = `
       />
     </View>
   </View>
-  <View
-    style={
-      Object {
-        "marginVertical": 0,
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "alignItems": "center",
-          "display": "flex",
-          "flexDirection": "row",
-          "justifyContent": "center",
-          "width": "100%",
-        }
-      }
-    >
-      <View
-        style={
-          Object {
-            "margin": 8,
-          }
-        }
-      >
-        <ChamferImageButton
-          image={
-            Object {
-              "process": [Function],
-            }
-          }
-          onPress={[Function]}
-        />
-      </View>
-      <View
-        style={
-          Object {
-            "margin": 8,
-          }
-        }
-      >
-        <ChamferImageButton
-          image={
-            Object {
-              "process": [Function],
-            }
-          }
-          onPress={[Function]}
-        />
-      </View>
-      <View
-        style={
-          Object {
-            "margin": 8,
-          }
-        }
-      >
-        <ChamferImageButton
-          image={
-            Object {
-              "process": [Function],
-            }
-          }
-          onPress={[Function]}
-        />
-      </View>
-      <View
-        style={
-          Object {
-            "margin": 8,
-          }
-        }
-      >
-        <ChamferImageButton
-          image={
-            Object {
-              "process": [Function],
-            }
-          }
-          onPress={[Function]}
-        />
-      </View>
-    </View>
-  </View>
   <Modal
     navigation={
       Object {
         "navigate": [Function],
       }
     }
+    onBack={[Function]}
     onHidePress={[Function]}
     show={false}
     template="NotConnected"

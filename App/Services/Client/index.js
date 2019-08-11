@@ -35,6 +35,13 @@ export default class Client {
     return (client) ? client.getSounds() : []
   }
 
+  setSpeed = async (speed) => {
+    const client = this.getClient()
+    if (client) {
+      client.setSpeed(speed)
+    }
+  }
+
   play = async (sound) => {
     const client = this.getClient()
     if (client) {

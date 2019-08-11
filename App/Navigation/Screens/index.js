@@ -57,7 +57,7 @@ export default {
   PlayerScreen: {
     screen: Player,
     navigationOptions: ({navigation}) => ({
-      title: null
+      header: null
     })
   },
   DriveScreen: {

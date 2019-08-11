@@ -10,6 +10,7 @@ export class PlayerContainer extends Component {
     super(props)
     this.client = new Client()
     this.state = {
+      connected: false,
       speed: 'medium',
       showNotConnectedModal: false
     }
@@ -17,17 +18,21 @@ export class PlayerContainer extends Component {
 
   async componentWillMount () {
     const connected = await isConnected()
-    if (!connected) {
-      this.setState({showNotConnectedModal: true})
-    }
+    this.setState({showNotConnectedModal: !connected, connected})
   }
 
   checkIsConnected = async () => {
     const connected = await isConnected()
-    if (!connected) {
-      this.setState({showNotConnectedModal: true})
-    }
+    this.setState({showNotConnectedModal: !connected, connected})
     return connected
+  }
+
+  onConnect = async () => {
+    const connected = await isConnected()
+    if (connected) {
+      const { speed } = this.state
+      this.client.setSpeed(speed)
+    }
   }
 
   onUp = async () => {
@@ -131,13 +136,23 @@ export class PlayerContainer extends Component {
 
   onToggleSpeed = () => {
     const { speed } = this.state
+    let newSpeed = null
     if (speed === 'medium') {
-      this.setState({speed: 'fast'})
+      newSpeed = 'fast'
     } else if (speed === 'fast') {
-      this.setState({speed: 'slow'})
+      newSpeed = 'slow'
     } else if (speed === 'slow') {
-      this.setState({speed: 'medium'})
+      newSpeed = 'medium'
     }
+    this.client.setSpeed(newSpeed)
+    this.setState({speed: newSpeed})
+  }
+
+  onHelp = () => {
+    this.props.navigation.navigate('WebScreen', {
+      source: 'https://wikifactory.com/+OttoDIY/otto-diy-plus',
+      title: 'Otto DIY+'
+    })
   }
 
   onHideNotConnectedModal = () => {
@@ -145,15 +160,17 @@ export class PlayerContainer extends Component {
   }
 
   render () {
-    const {speed, showNotConnectedModal} = this.state
+    const {connected, speed, showNotConnectedModal} = this.state
     return (
       <Screen
         ref={(ref) => {
           this.screen = ref
         }}
         {...this.props}
+        connected={connected}
         speed={speed}
         showNotConnectedModal={showNotConnectedModal}
+        onConnect={this.onConnect}
         onUp={this.onUp}
         onDown={this.onDown}
         onLeft={this.onLeft}
@@ -174,6 +191,7 @@ export class PlayerContainer extends Component {
         onshakeleft={this.onshakeleft}
         onascend={this.onascend}
         onToggleSpeed={this.onToggleSpeed}
+        onHelp={this.onHelp}
         onHideNotConnectedModal={this.onHideNotConnectedModal}
       />
     )

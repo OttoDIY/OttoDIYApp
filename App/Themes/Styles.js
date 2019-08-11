@@ -43,7 +43,10 @@ export const Styles = {
     minHeight: 80,
     backgroundColor: Colors.footer.background,
     paddingTop: Metrics.unit * 4,
-    paddingBottom: (isIphoneX()) ? Metrics.unit * 5 : Metrics.unit * 4
+    paddingBottom: (isIphoneX()) ? Metrics.unit * 5 : Metrics.unit * 4,
+    zIndex: 9999,
+    borderTopWidth: 1,
+    borderTopColor: Colors.background
   },
 
   // Typography
