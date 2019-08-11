@@ -29,7 +29,8 @@ export class ConnectContainer extends Component {
 
   async componentWillMount () {
     const { enabled, error } = await Bluetooth.isEnabled()
-    this.setState({enabled, error})
+    // TODO default connectTo to device because simulator not yet supported
+    this.setState({enabled, error, connectTo: 'device'})
     if (enabled) {
       this.setState({ scanning: true })
       this.showDevices()

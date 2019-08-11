@@ -21,7 +21,7 @@ export default {
   background: palette.offwhite,
   background_disabled: palette.lightgrey,
   statusBar: {
-    background: palette.offwhite
+    background: palette.primary
   },
   nav: {
     background: palette.offwhite,

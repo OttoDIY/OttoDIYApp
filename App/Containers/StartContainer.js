@@ -23,7 +23,7 @@ class StartContainer extends Component {
     SplashScreen.hide()
 
     const loggedIn = (credentials && credentials.user != null && credentials.jwt != null)
-    const routeName = 'HomeScreen' // Optionally change initial route here, e.g. depending if user is logged in
+    const routeName = 'PlayerScreen' // Optionally change initial route here, e.g. depending if user is logged in
     const user = (loggedIn) ? credentials.user : null
 
     if (loggedIn) {

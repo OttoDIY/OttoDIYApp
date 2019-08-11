@@ -13,7 +13,9 @@ describe('Player', () => {
       <Screen
         navigation={{navigate: () => {}}}
         speed='medium'
+        connected
         showNotConnectedModal={false}
+        onConnect={() => {}}
         onUp={() => {}}
         onDown={() => {}}
         onLeft={() => {}}
@@ -33,6 +35,7 @@ describe('Player', () => {
         onjitter={() => {}}
         onascend={() => {}}
         onToggleSpeed={() => {}}
+        onHelp={() => {}}
         onHideNotConnectedModal={() => {}} />)
   })
 

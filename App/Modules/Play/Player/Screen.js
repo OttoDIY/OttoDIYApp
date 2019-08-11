@@ -20,8 +20,10 @@ const speedButtonImages = {
 
 export default class Screen extends Component {
   static propTypes = {
+    connected: PropTypes.bool.isRequired,
     speed: PropTypes.string.isRequired,
     showNotConnectedModal: PropTypes.bool.isRequired,
+    onConnect: PropTypes.func,
     onUp: PropTypes.func,
     onDown: PropTypes.func,
     onLeft: PropTypes.func,
@@ -41,13 +43,16 @@ export default class Screen extends Component {
     onjitter: PropTypes.func,
     onascend: PropTypes.func,
     onToggleSpeed: PropTypes.func,
+    onHelp: PropTypes.func,
     onHideNotConnectedModal: PropTypes.func.isRequired
   }
 
   render () {
     const {
+      connected,
       speed,
       showNotConnectedModal,
+      onConnect,
       onUp,
       onDown,
       onLeft,
@@ -67,6 +72,7 @@ export default class Screen extends Component {
       onjitter,
       onascend,
       onToggleSpeed,
+      onHelp,
       onHideNotConnectedModal
     } = this.props
     return (
@@ -74,8 +80,8 @@ export default class Screen extends Component {
         <View style={s.header}>
           <Image source={Images.robots.plus} />
           <View style={s.headerCenter} />
-          <Image source={Images.buttons.battery} />
-          <Image source={Images.buttons.bluetooth} />
+          {/* <Image source={Images.buttons.battery} /> */}
+          {connected && <Image source={Images.buttons.bluetooth} />}
         </View>
         <View style={s.separator}>
           <View style={s.separatorDiagonal}>
@@ -99,7 +105,7 @@ export default class Screen extends Component {
           </View>
           <ChamferImageButton
             image={Images.buttons.help}
-            onPress={() => {}} />
+            onPress={onHelp} />
         </View>
         <View style={s.buttonsView}>
           <View style={s.buttonsRowView}>
@@ -193,7 +199,7 @@ export default class Screen extends Component {
             <View style={s.separatorDiagonalRight} />
           </View>
         </View>
-        <View style={s.buttonsBottomView}>
+        {/* <View style={s.buttonsBottomView}>
           <View style={s.buttonsRowView}>
             <View style={s.buttonView}>
               <ChamferImageButton
@@ -216,11 +222,12 @@ export default class Screen extends Component {
                 onPress={() => {}} />
             </View>
           </View>
-        </View>
+        </View> */}
         <Modal
           navigation={this.props.navigation}
           show={showNotConnectedModal}
           onHidePress={onHideNotConnectedModal}
+          onBack={onConnect}
           template='NotConnected' />
       </Container>
     )

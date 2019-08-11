@@ -25,9 +25,9 @@ const cmdFromTouch = (touch) => {
   } else if (touch.dy >= 40) {
     return 'M 2' // down
   } else if (touch.dx >= 40) {
-    return 'M 3' // right
+    return 'M 4' // right
   } else if (touch.dx <= -40) {
-    return 'M 4' // left
+    return 'M 3' // left
   } else {
     return 'M 0'
   }
@@ -39,9 +39,9 @@ const cmdFromInstruction = (instruction) => {
   } else if (instruction === 'down') {
     return 'M 2' // down
   } else if (instruction === 'right') {
-    return 'M 3' // right
+    return 'M 4' // right
   } else if (instruction === 'left') {
-    return 'M 4' // left
+    return 'M 3' // left
   } else if (instruction === STOP) {
     return 'M 0' // stop
   } else if (instruction === 'updown') {
@@ -81,9 +81,20 @@ const cmdFromInstruction = (instruction) => {
 
 export default class Otto {
   lastCmdSent = null
+  speed = 1000
 
   getSounds = () => {
     return sounds
+  }
+
+  setSpeed = async (speed) => {
+    if (speed === 'medium') {
+      this.speed = 1000
+    } else if (speed === 'slow') {
+      this.speed = 1500
+    } else if (speed === 'fast') {
+      this.speed = 500
+    }
   }
 
   stop = async (delay) => {
@@ -99,7 +110,7 @@ export default class Otto {
   }
 
   move = (touch) => {
-    const cmd = cmdFromTouch(touch)
+    const cmd = cmdFromTouch(touch) + ' ' + this.speed
     if (!this.lastCmdSent || this.lastCmdSent !== cmd) {
       Bluetooth.write(cmd)
       this.lastCmdSent = cmd
@@ -116,7 +127,11 @@ export default class Otto {
     instructions.push(STOP) // Always finish with stop
     instructions.forEach((instruction) => {
       setTimeout(() => {
-        const cmd = cmdFromInstruction(instruction)
+        const cmd = (
+          instruction === 'up' || instruction === 'down' ||
+          instruction === 'right' || instruction === 'left')
+          ? cmdFromInstruction(instruction) + ' ' + this.speed
+          : cmdFromInstruction(instruction)
         Bluetooth.write(cmd)
       }, delay)
       delay += DELAY
