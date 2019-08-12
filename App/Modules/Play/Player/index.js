@@ -33,6 +33,7 @@ export class PlayerContainer extends Component {
       const { speed } = this.state
       this.client.setSpeed(speed)
     }
+    this.setState({connected})
   }
 
   onUp = async () => {
