@@ -23,9 +23,6 @@ exports[`Settings Component renders correctly 1`] = `
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#9B9B9B",

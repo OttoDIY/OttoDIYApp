@@ -5,7 +5,8 @@ import { connect } from 'react-redux'
 import StartupActions from '../Redux/StartupRedux'
 import ReduxPersist from '../Config/ReduxPersist'
 
-import firebase from 'react-native-firebase'
+// TODO Fix firebase code
+// import firebase from 'react-native-firebase'
 import DeviceInfo from 'react-native-device-info'
 
 import Bluetooth from 'App/Services/Bluetooth'
@@ -17,29 +18,30 @@ class RootContainer extends Component {
   componentDidMount () {
     this.appOpenedFromPushNotification = false
 
-    if (!this.isSimulator()) {
-      firebase.notifications().getInitialNotification()
-        .then((notificationOpen) => {
-          if (notificationOpen) {
-            // App was opened by a notification
-            // See https://github.com/invertase/react-native-firebase-docs/blob/master/docs/notifications/receiving-notifications.md
-            this.appOpenedFromPushNotification = true
-          }
-        })
-
-      this.notificationOpenedListener = firebase.notifications().onNotificationOpened((notificationOpen) => {
-        // App is in the foreground or background, notification was clicked / tapped / opened
-        // See https://github.com/invertase/react-native-firebase-docs/blob/master/docs/notifications/receiving-notifications.md
-        if (AppState.currentState === 'background') {
-          this.appOpenedFromPushNotification = true
-        }
-
-        const user = (this.props.credentials)
-          ? this.props.credentials.user
-          : undefined
-        trackEvent({user, event: Events.NOTIFICATION_OPENED})
-      })
-    }
+    // TODO Fix firebase code
+    // if (!this.isSimulator()) {
+    //   firebase.notifications().getInitialNotification()
+    //     .then((notificationOpen) => {
+    //       if (notificationOpen) {
+    //         // App was opened by a notification
+    //         // See https://github.com/invertase/react-native-firebase-docs/blob/master/docs/notifications/receiving-notifications.md
+    //         this.appOpenedFromPushNotification = true
+    //       }
+    //     })
+    //
+    //   this.notificationOpenedListener = firebase.notifications().onNotificationOpened((notificationOpen) => {
+    //     // App is in the foreground or background, notification was clicked / tapped / opened
+    //     // See https://github.com/invertase/react-native-firebase-docs/blob/master/docs/notifications/receiving-notifications.md
+    //     if (AppState.currentState === 'background') {
+    //       this.appOpenedFromPushNotification = true
+    //     }
+    //
+    //     const user = (this.props.credentials)
+    //       ? this.props.credentials.user
+    //       : undefined
+    //     trackEvent({user, event: Events.NOTIFICATION_OPENED})
+    //   })
+    // }
 
     this.sessionStartTime = new Date()
 
@@ -53,9 +55,10 @@ class RootContainer extends Component {
 
   componentWillUnmount () {
     Bluetooth.stopService()
-    if (!this.isSimulator()) {
-      this.notificationOpenedListener()
-    }
+    // TODO Fix firebase code
+    // if (!this.isSimulator()) {
+    //   this.notificationOpenedListener()
+    // }
     AppState.removeEventListener('change', this.appStateChange)
   }
 
@@ -92,19 +95,20 @@ class RootContainer extends Component {
     }
     this.appOpenedFromPushNotification = false
 
+    // TODO Fix firebase code
     // Need to check for push notification permission every time
     // just in case user has just accepted it or changed it in settings
-    if (!this.isSimulator()) {
-      firebase.messaging().hasPermission()
-        .then(enabled => {
-          if (enabled) {
-            properties.pushNotificationsEnabled = true
-          }
-          trackEvent({user, event: event, properties})
-        })
-    } else {
-      trackEvent({user, event: event, properties})
-    }
+    // if (!this.isSimulator()) {
+    //   firebase.messaging().hasPermission()
+    //     .then(enabled => {
+    //       if (enabled) {
+    //         properties.pushNotificationsEnabled = true
+    //       }
+    //       trackEvent({user, event: event, properties})
+    //     })
+    // } else {
+    trackEvent({user, event: event, properties})
+    // }
   }
 
   render () {

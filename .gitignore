@@ -65,6 +65,9 @@ api-*.json
 ios/Otto/GoogleService-Info-Beta.plist
 ios/Otto/GoogleService-Info.plist
 
+# Bundle artifact
+*.jsbundle
+
 # Misc
 #
 .env
