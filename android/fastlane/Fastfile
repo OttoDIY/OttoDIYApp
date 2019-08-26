@@ -27,7 +27,7 @@ platform :android do
     gradle(task: "clean assembleBetaRelease")
 
     upload_to_play_store(
-      package_name: 'com.codeandrobots.beta',
+      package_name: 'com.ottodiy.beta',
       track: 'internal'
     )
   end
