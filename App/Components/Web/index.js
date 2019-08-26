@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { View, WebView } from 'react-native'
+import { View } from 'react-native'
+import { WebView } from 'react-native-webview'
 import PropTypes from 'prop-types'
 
 import { LoadingIndicator } from 'App/Components'

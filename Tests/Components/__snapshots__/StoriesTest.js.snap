@@ -7939,17 +7939,20 @@ exports[`Storyshots Web Code&Robots 1`] = `
     style={
       Object {
         "flex": 1,
+        "overflow": "hidden",
       }
     }
   >
-    <RCTWebView
+    <RNCWKWebView
+      cacheEnabled={true}
       messagingEnabled={false}
+      onLoad={[Function]}
       onLoadingError={[Function]}
       onLoadingFinish={[Function]}
+      onLoadingProgress={[Function]}
       onLoadingStart={[Function]}
       onMessage={[Function]}
       onShouldStartLoadWithRequest={[Function]}
-      scalesPageToFit={true}
       source={
         Object {
           "uri": "http://codeandrobots.com",
@@ -7959,6 +7962,7 @@ exports[`Storyshots Web Code&Robots 1`] = `
         Array [
           Object {
             "flex": 1,
+            "overflow": "hidden",
           },
           Object {
             "backgroundColor": "#ffffff",
@@ -7968,6 +7972,7 @@ exports[`Storyshots Web Code&Robots 1`] = `
           },
         ]
       }
+      useSharedProcessPool={true}
     />
   </View>
   <View

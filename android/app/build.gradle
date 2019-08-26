@@ -168,6 +168,7 @@ android {
 }
 
 dependencies {
+    implementation project(':react-native-webview')
     compile project(':react-native-ble-plx')
     compile project(':react-native-bluetooth-serial')
     compile project(':react-native-video')
