@@ -1,10 +1,12 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react-native'
 
+import { FullScreenDecorator } from './Decorators'
 import Carousel from '../Carousel'
 import Card from '../Card'
 
 storiesOf('Carousel', module)
+  .addDecorator(FullScreenDecorator)
   .add('Default', () => (
     <Carousel>
       <Card title='Page 1' />

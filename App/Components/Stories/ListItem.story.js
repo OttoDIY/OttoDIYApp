@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react-native'
 
 import { Images } from 'App/Themes'
 
+import Decorator from './Decorators'
 import {
   ListItem,
   SquareListItem,
@@ -11,6 +12,7 @@ import {
   StatListItem } from '../ListItems'
 
 storiesOf('ListItem', module)
+  .addDecorator(Decorator)
   .add('Default', () => (
     <ListItem title='Play & Explore' text='Let’s play' button='Play' onPress={() => {}} />
   ))

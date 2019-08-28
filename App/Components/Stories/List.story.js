@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react-native'
 
 import { Images, Colors } from 'App/Themes'
 
+import Decorator from './Decorators'
 import List from '../Lists'
 import ListHeader from '../ListHeaders'
 import {
@@ -13,6 +14,7 @@ import {
   StatListItem } from '../ListItems'
 
 storiesOf('List', module)
+  .addDecorator(Decorator)
   .add('Default', () => (
     <List title='Explore'>
       <ListItem image={Images.controls.controls} title='Drive Mode' text='Let’s get moving' onPress={() => {}} />

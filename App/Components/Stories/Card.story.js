@@ -2,11 +2,13 @@ import React from 'react'
 import { Linking } from 'react-native'
 import { storiesOf } from '@storybook/react-native'
 
+import Decorator from './Decorators'
 import { Images, Videos } from 'App/Themes'
 
 import Card from '../Card'
 
 storiesOf('Card', module)
+  .addDecorator(Decorator)
   .add('Hello', () => (
     <Card
       image={Images.hello}

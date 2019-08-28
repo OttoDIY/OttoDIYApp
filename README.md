@@ -119,7 +119,6 @@ yarn test
 #### View app stories in Storybook mode
 
 1. Run the app packager `npm start`
-2. Run the app, e.g. `react-native run-ios`
-3. Wait for the app to start then **stop** the app packager from running
-4. Run the storybook `yarn storybook`
-5. Reload the app, e.g. `Cmd-R` in the iOS simulator, choose app stories from the Storybook menu
+2. In a new terminal, run storybook `yarn storybook`
+3. In a new terminal, Run the app in storybook mode `yarn run ios:storybook` or `yarn run android:storybook`
+4. Choose app stories from the Storybook navigator

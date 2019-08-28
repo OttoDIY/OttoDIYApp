@@ -1,9 +1,11 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react-native'
 
+import Decorator from './Decorators'
 import { Instruction } from '../CodeLab'
 
 storiesOf('Instruction', module)
+  .addDecorator(Decorator)
   .add('Action', () => (
     <Instruction icon='arrow-up' title='Move Up' onClose={() => {}} />
   ))
