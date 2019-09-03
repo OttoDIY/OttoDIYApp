@@ -24,7 +24,7 @@ platform :android do
   desc "Submit a new Beta Build to Internal Test Track on Google Play"
   lane :beta_internal do
     ENV["ENVFILE"] = ".env.beta"
-    gradle(task: "clean assembleBetaRelease")
+    gradle(task: "clean bundleBetaRelease")
 
     upload_to_play_store(
       package_name: 'com.ottodiy.beta',
@@ -35,7 +35,7 @@ platform :android do
   desc "Deploy a new version to the Google Play"
   lane :deploy do
     ENV["ENVFILE"] = ".env.production"
-    gradle(task: "clean assembleRelease")
+    gradle(task: "clean bundleRelease")
     upload_to_play_store
   end
 end
