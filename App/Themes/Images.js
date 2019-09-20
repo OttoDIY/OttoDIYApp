@@ -46,6 +46,27 @@ export default {
     updown: require('App/Images/Buttons/Updown/updown.png'),
     moves: require('App/Images/Buttons/Moves/moves.png')
   },
+  sing: {
+    beep: require('App/Images/Buttons/Sing/Beeps/beep.png'),
+    buttonPushed: require('App/Images/Buttons/Sing/Button/buttonPushed.png'),
+    confused: require('App/Images/Buttons/Sing/Confused/confused.png'),
+    cuddly: require('App/Images/Buttons/Sing/Cuddly/cuddly.png'),
+    disconnection: require('App/Images/Buttons/Sing/Disconnection/disconnection.png'),
+    fart1: require('App/Images/Buttons/Sing/Fart/fart1.png'),
+    fart2: require('App/Images/Buttons/Sing/Fart/fart2.png'),
+    fart3: require('App/Images/Buttons/Sing/Fart/fart3.png'),
+    happy: require('App/Images/Buttons/Sing/Happy/happy.png'),
+    happyShort: require('App/Images/Buttons/Sing/Happy_short/happy_short.png'),
+    mode1: require('App/Images/Buttons/Sing/Mode/mode1.png'),
+    mode2: require('App/Images/Buttons/Sing/Mode/mode2.png'),
+    mode3: require('App/Images/Buttons/Sing/Mode/mode3.png'),
+    ohooh: require('App/Images/Buttons/Sing/OhOoh/OhOoh.png'),
+    ohooh2: require('App/Images/Buttons/Sing/OhOoh/OhOoh2.png'),
+    sad: require('App/Images/Buttons/Sing/Sad/sad.png'),
+    sleeping: require('App/Images/Buttons/Sing/Sleeping/sleeping.png'),
+    superHappy: require('App/Images/Buttons/Sing/SuperHappy/superHappy.png'),
+    surprise: require('App/Images/Buttons/Sing/Surprise/surprise.png')
+  },
   gestures: {
     happy: require('App/Images/Buttons/Gestures/Happy/happy.png'),
     sad: require('App/Images/Buttons/Gestures/Sad/sad.png'),
