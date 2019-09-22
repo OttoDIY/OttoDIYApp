@@ -27,6 +27,8 @@ export default class Screen extends Component {
     onUp: PropTypes.func,
     onDown: PropTypes.func,
     onLeft: PropTypes.func,
+    onLongPress: PropTypes.func,
+    onLongPressOut: PropTypes.func,
     onupdown: PropTypes.func,
     onmoonwalkright: PropTypes.func,
     onmoonwalkleft: PropTypes.func,
@@ -57,6 +59,8 @@ export default class Screen extends Component {
       onDown,
       onLeft,
       onRight,
+      onLongPress,
+      onLongPressOut,
       onupdown,
       onmoonwalkright,
       oncrossright,
@@ -101,7 +105,9 @@ export default class Screen extends Component {
               onUp={onUp}
               onDown={onDown}
               onLeft={onLeft}
-              onRight={onRight} />
+              onRight={onRight}
+              onLongPress={onLongPress}
+              onLongPressOut={onLongPressOut} />
           </View>
           <ChamferImageButton
             image={Images.buttons.help}

@@ -59,6 +59,19 @@ export class PlayerContainer extends Component {
       this.client.run(['right'])
     }
   }
+
+  onLongPress = async (direction) => {
+    if (await this.checkIsConnected()) {
+      this.client.run([direction], false)
+    }
+  }
+
+  onLongPressOut = async () => {
+    if (await this.checkIsConnected()) {
+      this.client.stop()
+    }
+  }
+
   onupdown = async () => {
     if (await this.checkIsConnected()) {
       this.client.run(['updown'])
@@ -176,6 +189,8 @@ export class PlayerContainer extends Component {
         onDown={this.onDown}
         onLeft={this.onLeft}
         onRight={this.onRight}
+        onLongPress={this.onLongPress}
+        onLongPressOut={this.onLongPressOut}
         onjitter={this.onjitter}
         onswing={this.onswing}
         onupdown={this.onupdown}
