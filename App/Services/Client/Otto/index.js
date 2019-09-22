@@ -122,9 +122,12 @@ export default class Otto {
     this.stop(DELAY)
   }
 
-  run = (instructions) => {
+  run = (instructions, stopAtEnd = true) => {
     let delay = 0
-    instructions.push(STOP) // Always finish with stop
+    if (stopAtEnd) {
+      // Always finish with stop if stopAtEnd is true
+      instructions.push(STOP)
+    }
     instructions.forEach((instruction) => {
       setTimeout(() => {
         const cmd = (

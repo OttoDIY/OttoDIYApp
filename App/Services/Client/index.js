@@ -42,6 +42,13 @@ export default class Client {
     }
   }
 
+  stop = async (delay) => {
+    const client = this.getClient()
+    if (client) {
+      client.stop(delay)
+    }
+  }
+
   play = async (sound) => {
     const client = this.getClient()
     if (client) {
@@ -63,10 +70,10 @@ export default class Client {
     }
   }
 
-  run = async (instructions) => {
+  run = async (instructions, stopAtEnd = true) => {
     const client = this.getClient()
     if (client) {
-      client.run(instructions)
+      client.run(instructions, stopAtEnd)
     }
   }
 }

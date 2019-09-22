@@ -30,6 +30,13 @@ export default class Simulator {
     // TODO
   }
 
+  stop = async (delay) => {
+    if (!delay) {
+      // TODO Stop command not supported right now
+    }
+    setTimeout(() => { this.stop() }, delay)
+  }
+
   play = (sound) => {
     socket.emit({event: 'play', sound})
   }
@@ -45,7 +52,7 @@ export default class Simulator {
     }
   }
 
-  run = (instructions) => {
+  run = (instructions, stopAtEnd = true) => {
     let delay = 0
     instructions.forEach((instruction) => {
       setTimeout(() => {
