@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Onboarding Component renders correctly 1`] = `
+<Container>
+  <Carousel
+    buttons={
+      Array [
+        "Next",
+        "Next",
+        "Done",
+      ]
+    }
+    onDone={[Function]}
+    onPress={
+      Array [
+        null,
+        null,
+        null,
+      ]
+    }
+  >
+    <Card
+      image={
+        Object {
+          "process": [Function],
+        }
+      }
+      style={
+        Object {
+          "titleViewText": Object {
+            "fontSize": 22,
+          },
+        }
+      }
+      text="Where your Otto comes alive"
+      title="Welcome to the Otto DIY App"
+    />
+    <Card
+      image={
+        Object {
+          "process": [Function],
+        }
+      }
+      style={
+        Object {
+          "titleViewText": Object {
+            "fontSize": 22,
+          },
+        }
+      }
+      text="Otto DIY+ & Humanoid supported out of the box, more robots coming soon!"
+      title="Otto awaits your commands"
+    />
+    <Card
+      image={
+        Object {
+          "process": [Function],
+        }
+      }
+      style={
+        Object {
+          "titleViewText": Object {
+            "fontSize": 22,
+          },
+        }
+      }
+      text="Learn to code, customize your Otto and so much more..."
+      title="Lots more to come! 🎉"
+    />
+  </Carousel>
+</Container>
+`;

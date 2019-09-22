@@ -1,5 +1,9 @@
+import React from 'react'
 import { Start, Web } from 'App/Containers'
+import { NavButton } from 'App/Components/Buttons'
+import { Colors } from 'App/Themes'
 import {
+  Onboarding,
   Home,
   Rate,
   Settings,
@@ -24,10 +28,20 @@ export default {
   WebScreen: {
     screen: Web
   },
+  OnboardingScreen: {
+    screen: Onboarding,
+    navigationOptions: (navigation) => {
+      const { navigate } = navigation.navigation
+      return {
+        headerRight: <NavButton style={{text: {color: Colors.primaryDark}}} onPress={() => navigate('PlayerScreen')} text='Skip' />
+      }
+    }
+  },
   HomeScreen: {
     screen: Home,
     navigationOptions: ({navigation}) => ({
-      title: 'Otto DIY'
+      title: 'Otto DIY',
+      headerLeft: null
     })
   },
   RateScreen: {

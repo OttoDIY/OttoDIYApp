@@ -4,8 +4,8 @@ import PropTypes from 'prop-types'
 
 import Video from 'react-native-video'
 
+import { getImageSize } from 'App/Services/ImageUtils'
 import { TouchableOpacity, Button, Link, IconButton, Icon } from 'App/Components'
-
 import { Metrics } from 'App/Themes'
 
 import s from './Styles'
@@ -38,7 +38,7 @@ export default class Card extends Component {
     this._isMounted = true
     const { image } = this.props
     if (image && image.uri) {
-      const { width, height } = await this.getImageSize(image.uri)
+      const { width, height } = await getImageSize(image.uri)
       if (this._isMounted) {
         this.setState({ imageWidth: width, imageHeight: height })
       }
@@ -47,20 +47,6 @@ export default class Card extends Component {
 
   componentWillUnmount () {
     this._isMounted = false
-  }
-
-  getImageSize (imageUri) {
-    return new Promise((resolve, reject) => {
-      Image.getSize(imageUri,
-        (width, height) => {
-          const maxWidth = Metrics.screenWidth - (Metrics.unit * 4)
-          const size = (maxWidth < width)
-            ? { width: maxWidth, height: height * (maxWidth / width) }
-            : { width, height }
-          resolve(size)
-        },
-        reject)
-    })
   }
 
   onVideoToggle = () => {
@@ -133,7 +119,7 @@ export default class Card extends Component {
         )}
         {title && (
           <View style={[s.titleView, (textAlign === 'center') ? s.centered : s.titleView_padded, style.titleView]}>
-            <Text style={[textStyle, (textAlign === 'center') ? s.text_center : null]}>{title}</Text>
+            <Text style={[textStyle, (textAlign === 'center') ? s.text_center : null, style.titleViewText]}>{title}</Text>
           </View>
         )}
         {text && (

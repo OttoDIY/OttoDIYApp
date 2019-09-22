@@ -1,3 +1,4 @@
+export { default as Onboarding } from './Onboarding'
 export { default as Home } from './Home'
 export { default as Rate } from './Rate'
 export { default as Settings } from './Settings'

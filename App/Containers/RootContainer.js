@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { AppState, View, StatusBar } from 'react-native'
-import ReduxNavigation from '../Navigation/ReduxNavigation'
+import ReduxNavigation from 'App/Navigation/ReduxNavigation'
 import { connect } from 'react-redux'
-import StartupActions from '../Redux/StartupRedux'
-import ReduxPersist from '../Config/ReduxPersist'
+import StartupActions from 'App/Redux/StartupRedux'
+import ReduxPersist from 'App/Config/ReduxPersist'
 
 // TODO Fix firebase code
 // import firebase from 'react-native-firebase'

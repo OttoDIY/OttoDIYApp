@@ -762,6 +762,7 @@ exports[`Storyshots Card Atlas 1`] = `
             Object {
               "textAlign": "center",
             },
+            undefined,
           ]
         }
       >
@@ -895,6 +896,7 @@ exports[`Storyshots Card Hello 1`] = `
             Object {
               "textAlign": "center",
             },
+            undefined,
           ]
         }
       >
@@ -1000,8 +1002,29 @@ exports[`Storyshots Carousel Default 1`] = `
 >
   <View>
     <View
+      config={
+        Object {
+          "directionalOffsetThreshold": 80,
+          "velocityThreshold": 0.1,
+        }
+      }
+      onMoveShouldSetResponder={[Function]}
+      onMoveShouldSetResponderCapture={[Function]}
+      onResponderEnd={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderReject={[Function]}
+      onResponderRelease={[Function]}
+      onResponderStart={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      onStartShouldSetResponderCapture={[Function]}
+      onSwipeLeft={[Function]}
+      onSwipeRight={[Function]}
       style={
         Object {
+          "backgroundColor": "transparent",
           "height": "100%",
           "marginHorizontal": 8,
         }
@@ -1035,6 +1058,7 @@ exports[`Storyshots Carousel Default 1`] = `
                 Object {
                   "textAlign": "center",
                 },
+                undefined,
               ]
             }
           >
@@ -1053,8 +1077,8 @@ exports[`Storyshots Carousel Default 1`] = `
           "justifyContent": "center",
           "left": 0,
           "minHeight": 80,
-          "paddingBottom": 0,
-          "paddingTop": 0,
+          "paddingBottom": 16,
+          "paddingTop": 16,
           "position": "absolute",
           "width": "100%",
           "zIndex": 9999,
@@ -1184,8 +1208,29 @@ exports[`Storyshots Carousel Dilbert 1`] = `
 >
   <View>
     <View
+      config={
+        Object {
+          "directionalOffsetThreshold": 80,
+          "velocityThreshold": 0.1,
+        }
+      }
+      onMoveShouldSetResponder={[Function]}
+      onMoveShouldSetResponderCapture={[Function]}
+      onResponderEnd={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderReject={[Function]}
+      onResponderRelease={[Function]}
+      onResponderStart={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      onStartShouldSetResponderCapture={[Function]}
+      onSwipeLeft={[Function]}
+      onSwipeRight={[Function]}
       style={
         Object {
+          "backgroundColor": "transparent",
           "height": "100%",
           "marginHorizontal": 8,
         }
@@ -1238,6 +1283,7 @@ exports[`Storyshots Carousel Dilbert 1`] = `
                 Object {
                   "textAlign": "center",
                 },
+                undefined,
               ]
             }
           >
@@ -1290,8 +1336,8 @@ exports[`Storyshots Carousel Dilbert 1`] = `
           "justifyContent": "center",
           "left": 0,
           "minHeight": 80,
-          "paddingBottom": 0,
-          "paddingTop": 0,
+          "paddingBottom": 16,
+          "paddingTop": 16,
           "position": "absolute",
           "width": "100%",
           "zIndex": 9999,

@@ -11,6 +11,11 @@ export default {
     left: require('App/Images/Controls/left.png'),
     right: require('App/Images/Controls/right.png')
   },
+  onboarding: {
+    one: require('App/Images/Onboarding/One/onboarding_one.png'),
+    two: require('App/Images/Onboarding/Two/onboarding_two.png'),
+    three: require('App/Images/Onboarding/Three/onboarding_three.png')
+  },
   featured: {
     led: require('App/Images/Featured/LED/led.png')
   },
@@ -20,7 +25,6 @@ export default {
   buttons: {
     ascend: require('App/Images/Buttons/Ascend/ascend.png'),
     battery: require('App/Images/Buttons/Battery/battery.png'),
-    beep: require('App/Images/Buttons/Beeps/beep.png'),
     bendleft: require('App/Images/Buttons/Bend/bendleft.png'),
     bendright: require('App/Images/Buttons/Bend/bendright.png'),
     bluetooth: require('App/Images/Buttons/Bluetooth/bluetooth.png'),
