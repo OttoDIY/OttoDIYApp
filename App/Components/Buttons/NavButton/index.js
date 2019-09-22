@@ -13,7 +13,7 @@ export default class NavButton extends Component {
   }
 
   render () {
-    const { text, onPress } = this.props
+    const { style = {}, text, onPress } = this.props
     if (Platform.OS === 'ios') {
       return (
         <Button title={text} onPress={onPress} />
@@ -22,7 +22,7 @@ export default class NavButton extends Component {
       return (
         <View style={s.view}>
           <TouchableOpacity style={s.button} onPress={onPress}>
-            <Text style={s.text}>{text}</Text>
+            <Text style={[s.text, style.text]}>{text}</Text>
           </TouchableOpacity>
         </View>
       )

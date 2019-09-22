@@ -7,14 +7,15 @@
 import { Component } from 'react'
 import { connect } from 'react-redux'
 import { NavigationActions } from 'react-navigation'
-
 import SplashScreen from 'react-native-splash-screen'
+
+import StartupActions from 'App/Redux/StartupRedux'
 
 import { captureUser } from 'App/Services/CrashReporting'
 
 class StartContainer extends Component {
   componentWillReceiveProps (nextProps) {
-    const { startupTime, credentials } = nextProps
+    const { startupTime, installedAt, credentials } = nextProps
     if (!startupTime) {
       // Store still loading
       return
@@ -23,7 +24,9 @@ class StartContainer extends Component {
     SplashScreen.hide()
 
     const loggedIn = (credentials && credentials.user != null && credentials.jwt != null)
-    const routeName = 'PlayerScreen' // Optionally change initial route here, e.g. depending if user is logged in
+
+    // Optionally change initial route here, e.g. depending if user is logged in
+    const routeName = (installedAt != null) ? 'PlayerScreen' : 'OnboardingScreen'
     const user = (loggedIn) ? credentials.user : null
 
     if (loggedIn) {
@@ -42,6 +45,10 @@ class StartContainer extends Component {
         }
       ]
     }))
+
+    if (!installedAt) {
+      this.props.setInstalledAt()
+    }
   }
 
   render () {
@@ -52,11 +59,13 @@ class StartContainer extends Component {
 const mapStateToProps = (state) => {
   return {
     startupTime: (state.startup) ? state.startup.time : null,
+    installedAt: (state.startup) ? state.startup.installedAt : null,
     credentials: state.credentials
   }
 }
 
 const mapDispatchToProps = (dispatch) => ({
+  setInstalledAt: () => dispatch(StartupActions.setInstalledAt())
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(StartContainer)

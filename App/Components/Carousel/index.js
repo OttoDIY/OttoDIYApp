@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { View } from 'react-native'
 import PropTypes from 'prop-types'
+import GestureRecognizer from 'react-native-swipe-gestures'
 
 import { Button } from 'App/Components'
 
@@ -20,6 +21,14 @@ export default class Carousel extends Component {
     this.state = {
       page: 0
     }
+  }
+
+  onSwipeLeft = (gestureState) => {
+    this.nextPage()
+  }
+
+  onSwipeRight = (gestureState) => {
+    this.prevPage()
   }
 
   getPage = () => {
@@ -95,9 +104,16 @@ export default class Carousel extends Component {
 
     return (
       <View>
-        <View style={s.page}>
+        <GestureRecognizer
+          onSwipeLeft={this.onSwipeLeft}
+          onSwipeRight={this.onSwipeRight}
+          config={{
+            velocityThreshold: 0.1,
+            directionalOffsetThreshold: 80
+          }}
+          style={s.page}>
           { children[page] }
-        </View>
+        </GestureRecognizer>
         <View style={s.footer}>
           { this.renderControls() }
         </View>
