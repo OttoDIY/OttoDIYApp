@@ -126,6 +126,10 @@ jest.mock('react-native-firebase', () => {
 
 jest.mock('react-native-video', () => 'react-native-video')
 
+jest.mock('global', () =>
+  Object.assign(global, { window: { STORYBOOK_HOOKS_CONTEXT: '' } })
+)
+
 global.requestAnimationFrame = function (callback) {
   setTimeout(callback, 0)
 }
