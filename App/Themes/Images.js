@@ -86,7 +86,26 @@ export default {
     freetful: require('App/Images/Buttons/Gestures/Freetful/freetful.png'),
     victory: require('App/Images/Buttons/Gestures/Victory/victory.png')
   },
+  humanoid: {
+    bendleft: require('App/Images/Buttons/Humanoid/Bend/bendleft.png'),
+    bendright: require('App/Images/Buttons/Humanoid/Bend/bendright.png'),
+    crossleft: require('App/Images/Buttons/Humanoid/Cross/crossleft.png'),
+    crossright: require('App/Images/Buttons/Humanoid/Cross/crossright.png'),
+    flapback: require('App/Images/Buttons/Humanoid/Flap/flapback.png'),
+    flapfront: require('App/Images/Buttons/Humanoid/Flap/flapfront.png'),
+    help: require('App/Images/Buttons/Help/Humanoid/help.png'),
+    moonwalkleft: require('App/Images/Buttons/Humanoid/Moonwalk/moonwalkleft.png'),
+    moonwalkright: require('App/Images/Buttons/Humanoid/Moonwalk/moonwalkright.png'),
+    shakeleft: require('App/Images/Buttons/Humanoid/Shake/shakeleft.png'),
+    shakeright: require('App/Images/Buttons/Humanoid/Shake/shakeright.png'),
+    swing: require('App/Images/Buttons/Humanoid/Swing/swing.png'),
+    updown: require('App/Images/Buttons/Humanoid/Updown/updown.png'),
+    handleft: require('App/Images/Buttons/Humanoid/Hand/handleft.png'),
+    handright: require('App/Images/Buttons/Humanoid/Hand/handright.png'),
+    handsup: require('App/Images/Buttons/Humanoid/Hand/handsup.png')
+  },
   robots: {
-    plus: require('App/Images/Robots/Plus/plus.png')
+    plus: require('App/Images/Robots/Plus/plus.png'),
+    humanoid: require('App/Images/Robots/Humanoid/humanoid.png')
   }
 }
