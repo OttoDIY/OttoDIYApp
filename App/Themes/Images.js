@@ -83,7 +83,7 @@ export default {
     wave: require('App/Images/Buttons/Gestures/Wave/wave.png'),
     love: require('App/Images/Buttons/Gestures/Love/love.png'),
     magic: require('App/Images/Buttons/Gestures/Magic/magic.png'),
-    freetful: require('App/Images/Buttons/Gestures/Freetful/freetful.png'),
+    fretful: require('App/Images/Buttons/Gestures/Freetful/freetful.png'),
     victory: require('App/Images/Buttons/Gestures/Victory/victory.png')
   },
   humanoid: {
@@ -93,7 +93,7 @@ export default {
     crossright: require('App/Images/Buttons/Humanoid/Cross/crossright.png'),
     flapback: require('App/Images/Buttons/Humanoid/Flap/flapback.png'),
     flapfront: require('App/Images/Buttons/Humanoid/Flap/flapfront.png'),
-    help: require('App/Images/Buttons/Help/Humanoid/help.png'),
+    help: require('App/Images/Buttons/Humanoid/Help/help.png'),
     moonwalkleft: require('App/Images/Buttons/Humanoid/Moonwalk/moonwalkleft.png'),
     moonwalkright: require('App/Images/Buttons/Humanoid/Moonwalk/moonwalkright.png'),
     shakeleft: require('App/Images/Buttons/Humanoid/Shake/shakeleft.png'),

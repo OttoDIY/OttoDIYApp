@@ -38,72 +38,6 @@ exports[`Player Component renders correctly 1`] = `
   <View
     style={
       Object {
-        "flexDirection": "row",
-        "margin": 16,
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "height": 30,
-          "width": 30,
-        }
-      }
-    >
-      <View
-        style={
-          Object {
-            "borderTopColor": "white",
-            "borderTopWidth": 2,
-            "height": 20,
-            "marginLeft": -14,
-            "transform": Array [
-              Object {
-                "rotate": "135deg",
-              },
-            ],
-          }
-        }
-      />
-    </View>
-    <View
-      style={
-        Object {
-          "borderTopColor": "white",
-          "borderTopWidth": 2,
-          "flex": 1,
-        }
-      }
-    />
-    <View
-      style={
-        Object {
-          "height": 30,
-          "width": 30,
-        }
-      }
-    >
-      <View
-        style={
-          Object {
-            "borderTopColor": "white",
-            "borderTopWidth": 2,
-            "height": 20,
-            "marginRight": -14,
-            "transform": Array [
-              Object {
-                "rotate": "-135deg",
-              },
-            ],
-          }
-        }
-      />
-    </View>
-  </View>
-  <View
-    style={
-      Object {
         "alignItems": "center",
         "display": "flex",
         "flexDirection": "row",
@@ -130,6 +64,8 @@ exports[`Player Component renders correctly 1`] = `
       <ArrowJoystick
         onDown={[Function]}
         onLeft={[Function]}
+        onLongPress={[Function]}
+        onLongPressOut={[Function]}
         onRight={[Function]}
         onUp={[Function]}
       />
@@ -151,6 +87,7 @@ exports[`Player Component renders correctly 1`] = `
     }
   >
     <View
+      key="0"
       style={
         Object {
           "alignItems": "center",
@@ -162,6 +99,7 @@ exports[`Player Component renders correctly 1`] = `
       }
     >
       <View
+        key="1"
         style={
           Object {
             "margin": 8,
@@ -178,6 +116,7 @@ exports[`Player Component renders correctly 1`] = `
         />
       </View>
       <View
+        key="2"
         style={
           Object {
             "margin": 8,
@@ -194,6 +133,7 @@ exports[`Player Component renders correctly 1`] = `
         />
       </View>
       <View
+        key="3"
         style={
           Object {
             "margin": 8,
@@ -210,6 +150,7 @@ exports[`Player Component renders correctly 1`] = `
         />
       </View>
       <View
+        key="4"
         style={
           Object {
             "margin": 8,
@@ -226,6 +167,7 @@ exports[`Player Component renders correctly 1`] = `
         />
       </View>
       <View
+        key="5"
         style={
           Object {
             "margin": 8,
@@ -243,6 +185,7 @@ exports[`Player Component renders correctly 1`] = `
       </View>
     </View>
     <View
+      key="6"
       style={
         Object {
           "alignItems": "center",
@@ -254,6 +197,7 @@ exports[`Player Component renders correctly 1`] = `
       }
     >
       <View
+        key="7"
         style={
           Object {
             "margin": 8,
@@ -270,6 +214,7 @@ exports[`Player Component renders correctly 1`] = `
         />
       </View>
       <View
+        key="8"
         style={
           Object {
             "margin": 8,
@@ -286,6 +231,7 @@ exports[`Player Component renders correctly 1`] = `
         />
       </View>
       <View
+        key="9"
         style={
           Object {
             "margin": 8,
@@ -302,6 +248,7 @@ exports[`Player Component renders correctly 1`] = `
         />
       </View>
       <View
+        key="10"
         style={
           Object {
             "margin": 8,
@@ -318,6 +265,7 @@ exports[`Player Component renders correctly 1`] = `
         />
       </View>
       <View
+        key="11"
         style={
           Object {
             "margin": 8,
@@ -335,6 +283,7 @@ exports[`Player Component renders correctly 1`] = `
       </View>
     </View>
     <View
+      key="12"
       style={
         Object {
           "alignItems": "center",
@@ -346,6 +295,7 @@ exports[`Player Component renders correctly 1`] = `
       }
     >
       <View
+        key="13"
         style={
           Object {
             "margin": 8,
@@ -362,6 +312,7 @@ exports[`Player Component renders correctly 1`] = `
         />
       </View>
       <View
+        key="14"
         style={
           Object {
             "margin": 8,
@@ -378,6 +329,7 @@ exports[`Player Component renders correctly 1`] = `
         />
       </View>
       <View
+        key="15"
         style={
           Object {
             "margin": 8,
@@ -394,6 +346,7 @@ exports[`Player Component renders correctly 1`] = `
         />
       </View>
       <View
+        key="16"
         style={
           Object {
             "margin": 8,
@@ -410,6 +363,7 @@ exports[`Player Component renders correctly 1`] = `
         />
       </View>
       <View
+        key="17"
         style={
           Object {
             "margin": 8,
@@ -429,74 +383,404 @@ exports[`Player Component renders correctly 1`] = `
   </View>
   <View
     style={
-      Object {
-        "flexDirection": "row",
-        "margin": 16,
-        "transform": Array [
-          Object {
-            "rotate": "180deg",
-          },
-        ],
-      }
+      Array [
+        Object {
+          "backgroundColor": "#2D2D64",
+          "borderTopColor": "#FAFAFA",
+          "borderTopWidth": 1,
+          "bottom": 0,
+          "left": 0,
+          "minHeight": 80,
+          "paddingBottom": 32,
+          "paddingTop": 32,
+          "position": "absolute",
+          "width": "100%",
+          "zIndex": 9999,
+        },
+        Object {
+          "borderTopWidth": 0,
+        },
+      ]
     }
   >
-    <View
-      style={
-        Object {
-          "height": 30,
-          "width": 30,
-        }
-      }
-    >
-      <View
-        style={
+    <BottomNav
+      onTabPress={[Function]}
+      tabs={
+        Array [
           Object {
-            "borderTopColor": "white",
-            "borderTopWidth": 2,
-            "height": 20,
-            "marginLeft": -14,
-            "transform": Array [
+            "category": "Moves",
+            "id": "moves",
+            "image": Object {
+              "process": [Function],
+            },
+            "items": Array [
               Object {
-                "rotate": "135deg",
+                "cmd": "M 19",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": true,
+                "title": "Jitter",
+              },
+              Object {
+                "cmd": "M 8",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": true,
+                "title": "Swing",
+              },
+              Object {
+                "cmd": "M 14",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": true,
+                "title": "Tiptoe",
+              },
+              Object {
+                "cmd": "M 20",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": true,
+                "title": "Ascend",
+              },
+              Object {
+                "cmd": "M 5",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": true,
+                "title": "Up Down",
+              },
+              Object {
+                "cmd": "M 13",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": true,
+                "title": "Flap Back",
+              },
+              Object {
+                "cmd": "M 7",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": true,
+                "title": "Moonwalk Left",
+              },
+              Object {
+                "cmd": "M 17",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": true,
+                "title": "Shake Left",
+              },
+              Object {
+                "cmd": "M 15",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": true,
+                "title": "Bend Left",
+              },
+              Object {
+                "cmd": "M 10",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": true,
+                "title": "Cross Left",
+              },
+              Object {
+                "cmd": "M 12",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": true,
+                "title": "Flap Front",
+              },
+              Object {
+                "cmd": "M 6",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": true,
+                "title": "Moonwalk Right",
+              },
+              Object {
+                "cmd": "M 18",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": true,
+                "title": "Shake Right",
+              },
+              Object {
+                "cmd": "M 16",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": true,
+                "title": "Bend Right",
+              },
+              Object {
+                "cmd": "M 9",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": true,
+                "title": "Cross Right",
               },
             ],
-          }
-        }
-      />
-    </View>
-    <View
-      style={
-        Object {
-          "borderTopColor": "white",
-          "borderTopWidth": 2,
-          "flex": 1,
-        }
+          },
+          Object {
+            "category": "Sounds",
+            "id": "sounds",
+            "image": Object {
+              "process": [Function],
+            },
+            "items": Array [
+              Object {
+                "cmd": "K 16",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": false,
+                "title": "Mode 1",
+              },
+              Object {
+                "cmd": "K 17",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": false,
+                "title": "Mode 2",
+              },
+              Object {
+                "cmd": "K 18",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": false,
+                "title": "Mode 3",
+              },
+              Object {
+                "cmd": "K 4",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": false,
+                "title": "OhOoh",
+              },
+              Object {
+                "cmd": "K 19",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": false,
+                "title": "Button Pushed",
+              },
+              Object {
+                "cmd": "K 10",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": false,
+                "title": "Happy Short",
+              },
+              Object {
+                "cmd": "K 8",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": false,
+                "title": "Happy",
+              },
+              Object {
+                "cmd": "K 9",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": false,
+                "title": "Super Happy",
+              },
+              Object {
+                "cmd": "K 11",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": false,
+                "title": "Sad",
+              },
+              Object {
+                "cmd": "K 7",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": false,
+                "title": "Sleeping",
+              },
+              Object {
+                "cmd": "K 3",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": false,
+                "title": "Surprise",
+              },
+              Object {
+                "cmd": "K 2",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": false,
+                "title": "Disconnection",
+              },
+              Object {
+                "cmd": "K 12",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": false,
+                "title": "Confused",
+              },
+              Object {
+                "cmd": "K 15",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": false,
+                "title": "Fart3",
+              },
+              Object {
+                "cmd": "K 6",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": false,
+                "title": "Cuddly",
+              },
+            ],
+          },
+          Object {
+            "category": "Gestures",
+            "id": "gestures",
+            "image": Object {
+              "process": [Function],
+            },
+            "items": Array [
+              Object {
+                "cmd": "H 1",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": false,
+                "title": "Happy",
+              },
+              Object {
+                "cmd": "H 2",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": false,
+                "title": "Super Happy",
+              },
+              Object {
+                "cmd": "H 7",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": false,
+                "title": "Love",
+              },
+              Object {
+                "cmd": "H 3",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": false,
+                "title": "Sad",
+              },
+              Object {
+                "cmd": "H 13",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": false,
+                "title": "Fail",
+              },
+              Object {
+                "cmd": "H 6",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": false,
+                "title": "Confused",
+              },
+              Object {
+                "cmd": "H 5",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": false,
+                "title": "Fart",
+              },
+              Object {
+                "cmd": "H 9",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": false,
+                "title": "Fretful",
+              },
+              Object {
+                "cmd": "H 8",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": false,
+                "title": "Angry",
+              },
+              Object {
+                "cmd": "H 4",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": false,
+                "title": "Sleeping",
+              },
+              Object {
+                "cmd": "H 10",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": false,
+                "title": "Magic",
+              },
+              Object {
+                "cmd": "H 12",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": false,
+                "title": "Victory",
+              },
+              Object {
+                "cmd": "H 11",
+                "image": Object {
+                  "process": [Function],
+                },
+                "stopAtEnd": false,
+                "title": "Wave",
+              },
+            ],
+          },
+        ]
       }
     />
-    <View
-      style={
-        Object {
-          "height": 30,
-          "width": 30,
-        }
-      }
-    >
-      <View
-        style={
-          Object {
-            "borderTopColor": "white",
-            "borderTopWidth": 2,
-            "height": 20,
-            "marginRight": -14,
-            "transform": Array [
-              Object {
-                "rotate": "-135deg",
-              },
-            ],
-          }
-        }
-      />
-    </View>
   </View>
   <Modal
     navigation={

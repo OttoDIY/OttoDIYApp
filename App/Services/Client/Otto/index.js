@@ -1,6 +1,8 @@
 
 import Bluetooth from 'App/Services/Bluetooth'
 
+import Config from './Config'
+
 const STOP = 'stop'
 
 const DELAY = 600 // Delay between commands
@@ -75,13 +77,17 @@ const cmdFromInstruction = (instruction) => {
   } else if (instruction === 'ascend') {
     return 'M 20' // ascend
   } else {
-    return 'M 0'
+    return instruction
   }
 }
 
 export default class Otto {
   lastCmdSent = null
   speed = 1000
+
+  getConfig = () => {
+    return Config
+  }
 
   getSounds = () => {
     return sounds
@@ -119,6 +125,11 @@ export default class Otto {
 
   moveAndStop = (touch) => {
     this.move(touch)
+    this.stop(DELAY)
+  }
+
+  doSkill = (cmd, stopAtEnd) => {
+    Bluetooth.write(cmd)
     this.stop(DELAY)
   }
 

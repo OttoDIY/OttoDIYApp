@@ -21,9 +21,8 @@ export default class WebSocket {
     if (WebSocket.myInstance == null) {
       WebSocket.myInstance = new WebSocket()
       if (isSimulator()) {
-        // If in simulator then connect automatically to room 10000
+        // If in simulator then use room 10000
         WebSocket.myInstance.room = '10000'
-        WebSocket.myInstance.connect()
       } else {
         WebSocket.myInstance.room = randomFourDigitNumber()
       }

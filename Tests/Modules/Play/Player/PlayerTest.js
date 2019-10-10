@@ -4,6 +4,7 @@ import { shallow } from 'enzyme'
 import toJson from 'enzyme-to-json'
 
 import Screen from 'App/Modules/Play/Player/Screen'
+import Config from 'App/Services/Client/Otto/Config'
 
 describe('Player', () => {
   let wrapper
@@ -14,6 +15,7 @@ describe('Player', () => {
         navigation={{navigate: () => {}}}
         speed='medium'
         connected
+        config={Config}
         showNotConnectedModal={false}
         onConnect={() => {}}
         onUp={() => {}}
@@ -21,19 +23,9 @@ describe('Player', () => {
         onLeft={() => {}}
         onRight={() => {}}
         onupdown={() => {}}
-        onmoonwalkright={() => {}}
-        oncrossright={() => {}}
-        oncrossleft={() => {}}
-        onswing={() => {}}
-        onflapfront={() => {}}
-        onflapback={() => {}}
-        ontiptoe={() => {}}
-        onbendright={() => {}}
-        onbendleft={() => {}}
-        onshakeright={() => {}}
-        onshakeleft={() => {}}
-        onjitter={() => {}}
-        onascend={() => {}}
+        onLongPress={() => {}}
+        onLongPressOut={() => {}}
+        onSkillPress={() => {}}
         onToggleSpeed={() => {}}
         onHelp={() => {}}
         onHideNotConnectedModal={() => {}} />)
