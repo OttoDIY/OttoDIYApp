@@ -1,12 +1,16 @@
 import React, { Component } from 'react'
 import { View, Image } from 'react-native'
 import PropTypes from 'prop-types'
+import uuid from 'react-native-uuid'
 
 import {
   Container,
   ChamferImageButton,
   ArrowJoystick,
+  BottomTabs,
   Modal} from 'App/Components'
+
+import { splitItemsByRow } from 'App/Services/UIUtils'
 
 import { Images } from 'App/Themes'
 
@@ -21,6 +25,7 @@ const speedButtonImages = {
 export default class Screen extends Component {
   static propTypes = {
     connected: PropTypes.bool.isRequired,
+    config: PropTypes.any,
     speed: PropTypes.string.isRequired,
     showNotConnectedModal: PropTypes.bool.isRequired,
     onConnect: PropTypes.func,
@@ -29,29 +34,28 @@ export default class Screen extends Component {
     onLeft: PropTypes.func,
     onLongPress: PropTypes.func,
     onLongPressOut: PropTypes.func,
-    onupdown: PropTypes.func,
-    onmoonwalkright: PropTypes.func,
-    onmoonwalkleft: PropTypes.func,
-    onswing: PropTypes.func,
-    oncrossright: PropTypes.func,
-    oncrossleft: PropTypes.func,
-    onflapfront: PropTypes.func,
-    onflapback: PropTypes.func,
-    ontiptoe: PropTypes.func,
-    onbendright: PropTypes.func,
-    onbendleft: PropTypes.func,
-    onshakeright: PropTypes.func,
-    onshakeleft: PropTypes.func,
-    onjitter: PropTypes.func,
-    onascend: PropTypes.func,
+    onSkillPress: PropTypes.func,
     onToggleSpeed: PropTypes.func,
     onHelp: PropTypes.func,
     onHideNotConnectedModal: PropTypes.func.isRequired
   }
 
+  constructor (props) {
+    super(props)
+
+    this.state = {
+      activeTabIndex: 0
+    }
+  }
+
+  onTabPress = (tab, i) => {
+    this.setState({ activeTabIndex: i })
+  }
+
   render () {
     const {
       connected,
+      config,
       speed,
       showNotConnectedModal,
       onConnect,
@@ -61,24 +65,25 @@ export default class Screen extends Component {
       onRight,
       onLongPress,
       onLongPressOut,
-      onupdown,
-      onmoonwalkright,
-      oncrossright,
-      oncrossleft,
-      onswing,
-      onflapfront,
-      onflapback,
-      ontiptoe,
-      onbendright,
-      onbendleft,
-      onshakeright,
-      onshakeleft,
-      onjitter,
-      onascend,
+      onSkillPress,
       onToggleSpeed,
       onHelp,
       onHideNotConnectedModal
     } = this.props
+
+    const { activeTabIndex } = this.state
+
+    const { skills } = config || {}
+
+    const showPlayerBottomNav = config && skills && skills.length > 0
+
+    const activeSkills = (showPlayerBottomNav && skills.length > activeTabIndex)
+      ? skills[activeTabIndex].items
+      : []
+    const skillsInRows = (showPlayerBottomNav)
+      ? splitItemsByRow(activeSkills, true)
+      : []
+
     return (
       <Container dark>
         <View style={s.header}>
@@ -87,15 +92,17 @@ export default class Screen extends Component {
           {/* <Image source={Images.buttons.battery} /> */}
           {connected && <Image source={Images.buttons.bluetooth} />}
         </View>
-        <View style={s.separator}>
-          <View style={s.separatorDiagonal}>
-            <View style={s.separatorDiagonalLeft} />
+        {/*
+          <View style={s.separator}>
+            <View style={s.separatorDiagonal}>
+              <View style={s.separatorDiagonalLeft} />
+            </View>
+            <View style={s.separatorCenter} />
+            <View style={s.separatorDiagonal}>
+              <View style={s.separatorDiagonalRight} />
+            </View>
           </View>
-          <View style={s.separatorCenter} />
-          <View style={s.separatorDiagonal}>
-            <View style={s.separatorDiagonalRight} />
-          </View>
-        </View>
+        */}
         <View style={s.driveView}>
           <ChamferImageButton
             image={speedButtonImages[speed]}
@@ -114,88 +121,27 @@ export default class Screen extends Component {
             onPress={onHelp} />
         </View>
         <View style={s.buttonsView}>
-          <View style={s.buttonsRowView}>
-            <View style={s.buttonView}>
-              <ChamferImageButton
-                image={Images.buttons.jitter}
-                onPress={onjitter} />
-            </View>
-            <View style={s.buttonView}>
-              <ChamferImageButton
-                image={Images.buttons.swing}
-                onPress={onswing} />
-            </View>
-            <View style={s.buttonView}>
-              <ChamferImageButton
-                image={Images.buttons.tiptoe}
-                onPress={ontiptoe} />
-            </View>
-            <View style={s.buttonView}>
-              <ChamferImageButton
-                image={Images.buttons.ascend}
-                onPress={onascend} />
-            </View>
-            <View style={s.buttonView}>
-              <ChamferImageButton
-                image={Images.buttons.updown}
-                onPress={onupdown} />
-            </View>
-          </View>
-          <View style={s.buttonsRowView}>
-            <View style={s.buttonView}>
-              <ChamferImageButton
-                image={Images.buttons.flapback}
-                onPress={onflapback} />
-            </View>
-            <View style={s.buttonView}>
-              <ChamferImageButton
-                image={Images.buttons.moonwalkleft}
-                onPress={onmoonwalkright} />
-            </View>
-            <View style={s.buttonView}>
-              <ChamferImageButton
-                image={Images.buttons.shakeleft}
-                onPress={onshakeleft} />
-            </View>
-            <View style={s.buttonView}>
-              <ChamferImageButton
-                image={Images.buttons.bendleft}
-                onPress={onbendleft} />
-            </View>
-            <View style={s.buttonView}>
-              <ChamferImageButton
-                image={Images.buttons.crossleft}
-                onPress={oncrossleft} />
-            </View>
-          </View>
-          <View style={s.buttonsRowView}>
-            <View style={s.buttonView}>
-              <ChamferImageButton
-                image={Images.buttons.flapfront}
-                onPress={onflapfront} />
-            </View>
-            <View style={s.buttonView}>
-              <ChamferImageButton
-                image={Images.buttons.moonwalkright}
-                onPress={onmoonwalkright} />
-            </View>
-            <View style={s.buttonView}>
-              <ChamferImageButton
-                image={Images.buttons.shakeright}
-                onPress={onshakeright} />
-            </View>
-            <View style={s.buttonView}>
-              <ChamferImageButton
-                image={Images.buttons.bendright}
-                onPress={onbendright} />
-            </View>
-            <View style={s.buttonView}>
-              <ChamferImageButton
-                image={Images.buttons.crossright}
-                onPress={oncrossright} />
-            </View>
-          </View>
+          {skillsInRows.map((skillsInRow) => {
+            return (
+              <View key={uuid.v4()} style={s.buttonsRowView}>
+                {skillsInRow.map((skill) => {
+                  return (skill)
+                    ? (
+                      <View key={uuid.v4()} style={s.buttonView}>
+                        <ChamferImageButton
+                          image={skill.image}
+                          onPress={() => { onSkillPress(skill) }} />
+                      </View>
+                    )
+                    : (
+                      <View key={uuid.v4()} />
+                    )
+                })}
+              </View>
+            )
+          })}
         </View>
+        {/*
         <View style={s.separator_flipped}>
           <View style={s.separatorDiagonal}>
             <View style={s.separatorDiagonalLeft} />
@@ -205,6 +151,7 @@ export default class Screen extends Component {
             <View style={s.separatorDiagonalRight} />
           </View>
         </View>
+        */}
         {/* <View style={s.buttonsBottomView}>
           <View style={s.buttonsRowView}>
             <View style={s.buttonView}>
@@ -229,6 +176,13 @@ export default class Screen extends Component {
             </View>
           </View>
         </View> */}
+        { showPlayerBottomNav &&
+          <View style={[s.footer, {borderTopWidth: 0}]}>
+            <BottomTabs
+              tabs={skills}
+              onTabPress={this.onTabPress} />
+          </View>
+        }
         <Modal
           navigation={this.props.navigation}
           show={showNotConnectedModal}

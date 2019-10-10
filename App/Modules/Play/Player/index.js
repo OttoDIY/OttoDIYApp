@@ -10,6 +10,7 @@ export class PlayerContainer extends Component {
     super(props)
     this.client = new Client()
     this.state = {
+      config: null,
       connected: false,
       speed: 'medium',
       showNotConnectedModal: false
@@ -18,6 +19,10 @@ export class PlayerContainer extends Component {
 
   async componentWillMount () {
     const connected = await isConnected()
+    if (connected) {
+      const config = await this.client.getConfig()
+      this.setState({ config })
+    }
     this.setState({showNotConnectedModal: !connected, connected})
   }
 
@@ -30,6 +35,8 @@ export class PlayerContainer extends Component {
   onConnect = async () => {
     const connected = await isConnected()
     if (connected) {
+      const config = await this.client.getConfig()
+      this.setState({ config })
       const { speed } = this.state
       this.client.setSpeed(speed)
     }
@@ -72,79 +79,9 @@ export class PlayerContainer extends Component {
     }
   }
 
-  onupdown = async () => {
+  onSkillPress = async (skill) => {
     if (await this.checkIsConnected()) {
-      this.client.run(['updown'])
-    }
-  }
-  onmoonwalkright = async () => {
-    if (await this.checkIsConnected()) {
-      this.client.run(['moonwalkright'])
-    }
-  }
-  onmoonwalkleft = async () => {
-    if (await this.checkIsConnected()) {
-      this.client.run(['moonwalkleft'])
-    }
-  }
-  oncrossright = async () => {
-    if (await this.checkIsConnected()) {
-      this.client.run(['crossright'])
-    }
-  }
-  oncrossleft = async () => {
-    if (await this.checkIsConnected()) {
-      this.client.run(['crossleft'])
-    }
-  }
-  onflapfront = async () => {
-    if (await this.checkIsConnected()) {
-      this.client.run(['flapfront'])
-    }
-  }
-  onflapback = async () => {
-    if (await this.checkIsConnected()) {
-      this.client.run(['flapback'])
-    }
-  }
-  onswing = async () => {
-    if (await this.checkIsConnected()) {
-      this.client.run(['swing'])
-    }
-  }
-  onbendright = async () => {
-    if (await this.checkIsConnected()) {
-      this.client.run(['bendright'])
-    }
-  }
-  onbendleft = async () => {
-    if (await this.checkIsConnected()) {
-      this.client.run(['bendleft'])
-    }
-  }
-  onshakeright = async () => {
-    if (await this.checkIsConnected()) {
-      this.client.run(['shakeright'])
-    }
-  }
-  onshakeleft = async () => {
-    if (await this.checkIsConnected()) {
-      this.client.run(['shakeleft'])
-    }
-  }
-  onjitter = async () => {
-    if (await this.checkIsConnected()) {
-      this.client.run(['jitter'])
-    }
-  }
-  onascend = async () => {
-    if (await this.checkIsConnected()) {
-      this.client.run(['ascend'])
-    }
-  }
-  ontiptoe = async () => {
-    if (await this.checkIsConnected()) {
-      this.client.run(['tiptoe'])
+      this.client.doSkill(skill.cmd, skill.stopAtEnd)
     }
   }
 
@@ -174,7 +111,7 @@ export class PlayerContainer extends Component {
   }
 
   render () {
-    const {connected, speed, showNotConnectedModal} = this.state
+    const {connected, config, speed, showNotConnectedModal} = this.state
     return (
       <Screen
         ref={(ref) => {
@@ -182,6 +119,7 @@ export class PlayerContainer extends Component {
         }}
         {...this.props}
         connected={connected}
+        config={config}
         speed={speed}
         showNotConnectedModal={showNotConnectedModal}
         onConnect={this.onConnect}
@@ -191,21 +129,7 @@ export class PlayerContainer extends Component {
         onRight={this.onRight}
         onLongPress={this.onLongPress}
         onLongPressOut={this.onLongPressOut}
-        onjitter={this.onjitter}
-        onswing={this.onswing}
-        onupdown={this.onupdown}
-        onmoonwalkleft={this.onmoonwalkleft}
-        onmoonwalkright={this.onmoonwalkright}
-        oncrossright={this.oncrossright}
-        oncrossleft={this.oncrossleft}
-        onflapfront={this.onflapfront}
-        onflapback={this.onflapback}
-        ontiptoe={this.ontiptoe}
-        onbendright={this.onbendright}
-        onbendleft={this.onbendleft}
-        onshakeright={this.onshakeright}
-        onshakeleft={this.onshakeleft}
-        onascend={this.onascend}
+        onSkillPress={this.onSkillPress}
         onToggleSpeed={this.onToggleSpeed}
         onHelp={this.onHelp}
         onHideNotConnectedModal={this.onHideNotConnectedModal}

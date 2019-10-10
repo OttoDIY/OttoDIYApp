@@ -72,6 +72,13 @@ jest.mock('react-native-i18n', () => {
   }
 })
 
+jest.mock('react-native-uuid', () => {
+  let value = 0
+  return {
+    v4: () => value++
+  }
+})
+
 jest.mock('react-native-device-info', () => {
   return {
     getDeviceName: () => (null),

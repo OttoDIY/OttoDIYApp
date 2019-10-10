@@ -492,6 +492,159 @@ exports[`Storyshots BottomNav Default 1`] = `
 </RCTSafeAreaView>
 `;
 
+exports[`Storyshots BottomTabs Default 1`] = `
+<RCTSafeAreaView
+  emulateUnlessSupported={true}
+  style={
+    Object {
+      "backgroundColor": "#FAFAFA",
+      "height": "100%",
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#2D2D64",
+          "borderTopColor": "#FAFAFA",
+          "borderTopWidth": 1,
+          "bottom": 0,
+          "left": 0,
+          "minHeight": 80,
+          "paddingBottom": 32,
+          "paddingTop": 32,
+          "position": "absolute",
+          "width": "100%",
+          "zIndex": 9999,
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        accessible={true}
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "borderTopColor": "rgba(255, 255, 255, 0.8)",
+            "borderTopWidth": 1,
+            "display": "flex",
+            "flex": 0.3333333333333333,
+            "justifyContent": "center",
+            "opacity": 1,
+            "paddingVertical": 8,
+            "width": "100%",
+          }
+        }
+      >
+        <Image
+          source={
+            Object {
+              "process": [Function],
+            }
+          }
+          style={
+            Object {
+              "height": 54,
+              "width": 54,
+            }
+          }
+        />
+      </View>
+      <View
+        accessible={true}
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "borderTopColor": "transparent",
+            "borderTopWidth": 1,
+            "display": "flex",
+            "flex": 0.3333333333333333,
+            "justifyContent": "center",
+            "opacity": 1,
+            "paddingVertical": 8,
+            "width": "100%",
+          }
+        }
+      >
+        <Image
+          source={
+            Object {
+              "process": [Function],
+            }
+          }
+          style={
+            Object {
+              "height": 54,
+              "width": 54,
+            }
+          }
+        />
+      </View>
+      <View
+        accessible={true}
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "borderTopColor": "transparent",
+            "borderTopWidth": 1,
+            "display": "flex",
+            "flex": 0.3333333333333333,
+            "justifyContent": "center",
+            "opacity": 1,
+            "paddingVertical": 8,
+            "width": "100%",
+          }
+        }
+      >
+        <Image
+          source={
+            Object {
+              "process": [Function],
+            }
+          }
+          style={
+            Object {
+              "height": 54,
+              "width": 54,
+            }
+          }
+        />
+      </View>
+    </View>
+  </View>
+</RCTSafeAreaView>
+`;
+
 exports[`Storyshots Button Default 1`] = `
 <RCTSafeAreaView
   emulateUnlessSupported={true}

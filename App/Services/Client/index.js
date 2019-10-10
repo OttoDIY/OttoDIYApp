@@ -21,57 +21,69 @@ export const isConnected = async () => {
 }
 
 export default class Client {
-  getClient = () => {
+  getClient = async () => {
     if (isConnectedToSocket()) {
       return simulator
-    } else if (isConnectedToBluetooth()) {
+    } else if (await isConnectedToBluetooth()) {
       return otto
     }
     return null
   }
 
+  getConfig = async () => {
+    const client = await this.getClient()
+    return (client) ? client.getConfig() : null
+  }
+
   getSounds = async () => {
-    const client = this.getClient()
+    const client = await this.getClient()
     return (client) ? client.getSounds() : []
   }
 
   setSpeed = async (speed) => {
-    const client = this.getClient()
+    const client = await this.getClient()
     if (client) {
       client.setSpeed(speed)
     }
   }
 
   stop = async (delay) => {
-    const client = this.getClient()
+    const client = await this.getClient()
     if (client) {
       client.stop(delay)
     }
   }
 
   play = async (sound) => {
-    const client = this.getClient()
+    const client = await this.getClient()
     if (client) {
       client.play(sound)
     }
   }
 
   move = async (touch) => {
-    const client = this.getClient()
+    const client = await this.getClient()
     if (client) {
       client.move(touch)
     }
   }
 
   moveAndStop = async (touch) => {
-    const client = this.getClient()
+    const client = await this.getClient()
     if (client) {
       client.moveAndStop(touch)
     }
   }
 
+  doSkill = async (cmd, stopAtEnd) => {
+    const client = await this.getClient()
+    if (client) {
+      client.doSkill(cmd, stopAtEnd)
+    }
+  }
+
   run = async (instructions, stopAtEnd = true) => {
-    const client = this.getClient()
+    const client = await this.getClient()
     if (client) {
       client.run(instructions, stopAtEnd)
     }
