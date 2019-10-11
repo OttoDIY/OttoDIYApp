@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import { Provider } from 'react-redux'
 import RootContainer from './RootContainer'
 import createStore from '../Redux'
+import StorybookUI from '../../storybook'
 
 // See https://stackoverflow.com/a/52644367
 global.Symbol = require('core-js/es6/symbol')
@@ -21,12 +22,43 @@ const store = createStore()
  * We separate like this to play nice with React Native's hot reloading.
  */
 class App extends Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      storybook: false
+    }
+  }
+
+  async componentWillMount () {
+    if (__DEV__) {
+      const storybook = await this.checkStorybook()
+      this.setState({ storybook })
+    }
+  }
+
+  checkStorybook = async () => {
+    try {
+      const res = await fetch('http://localhost:7007')
+      return (res.ok)
+    } catch (e) {
+      console.log(e)
+      return false
+    }
+  }
+
   render () {
-    return (
-      <Provider store={store}>
-        <RootContainer />
-      </Provider>
-    )
+    // Check if the storybook server is running
+    // if true then load the storybook UI
+    // otherwise load the app
+    if (this.state.storybook) {
+      return <StorybookUI />
+    } else {
+      return (
+        <Provider store={store}>
+          <RootContainer />
+        </Provider>
+      )
+    }
   }
 }
 
