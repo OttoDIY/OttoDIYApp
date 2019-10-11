@@ -54,7 +54,7 @@ class RootContainer extends Component {
   }
 
   componentWillUnmount () {
-    Bluetooth.stopService()
+    Bluetooth.disconnect()
     // TODO Fix firebase code
     // if (!this.isSimulator()) {
     //   this.notificationOpenedListener()

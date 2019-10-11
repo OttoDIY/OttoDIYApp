@@ -119,5 +119,5 @@ yarn test
 #### View app stories in Storybook mode
 
 1. In a new terminal, run storybook `yarn storybook`
-2. In a new terminal, run the app in storybook mode `yarn run ios:storybook` or `yarn run android:storybook`
+2. In a new terminal, run the app `react-native run-ios` or `react-native run-android --variant=devDebug`
 3. Choose app stories from the Storybook navigator within the app or in the browser
