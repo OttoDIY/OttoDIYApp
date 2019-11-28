@@ -128,6 +128,9 @@ android {
         beta {
             applicationId "com.ottodiy.beta"
         }
+        production {
+            applicationId "com.ottodiy"
+        }
     }
     splits {
         abi {
