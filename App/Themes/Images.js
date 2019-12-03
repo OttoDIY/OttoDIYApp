@@ -106,6 +106,8 @@ export default {
   },
   robots: {
     plus: require('App/Images/Robots/Plus/plus.png'),
-    humanoid: require('App/Images/Robots/Humanoid/humanoid.png')
+    plusSmall: require('App/Images/Robots/Plus/plus_small.png'),
+    humanoid: require('App/Images/Robots/Humanoid/humanoid.png'),
+    humanoidSmall: require('App/Images/Robots/Humanoid/humanoid_small.png')
   }
 }

@@ -87,7 +87,7 @@ export default class Screen extends Component {
     return (
       <Container dark>
         <View style={s.header}>
-          <Image source={Images.robots.plus} />
+          <Image source={Images.robots.plusSmall} />
           <View style={s.headerCenter} />
           {/* <Image source={Images.buttons.battery} /> */}
           {connected && <Image source={Images.buttons.bluetooth} />}

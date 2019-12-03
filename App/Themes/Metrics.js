@@ -13,5 +13,8 @@ export default {
     radius: 100,
     minWidth: 112,
     border: 8
+  },
+  media: {
+    border: 10
   }
 }

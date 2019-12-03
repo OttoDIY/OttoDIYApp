@@ -8,7 +8,7 @@ export const Speed = {
 
 export default {
   name: 'Otto DIY',
-  image: Images.robots.otto,
+  image: Images.robots.plus,
   description: 'The open source robot that you can build yourself',
   links: [
     {

@@ -26,7 +26,7 @@ class StartContainer extends Component {
     const loggedIn = (credentials && credentials.user != null && credentials.jwt != null)
 
     // Optionally change initial route here, e.g. depending if user is logged in
-    const routeName = (installedAt != null) ? 'PlayerScreen' : 'OnboardingScreen'
+    const routeName = (installedAt != null) ? 'WhichRobotScreen' : 'OnboardingScreen'
     const user = (loggedIn) ? credentials.user : null
 
     if (loggedIn) {

@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react-native'
 
-import { Images } from 'App/Themes'
+import { Images, Videos } from 'App/Themes'
 
 import Decorator from './Decorators'
 import {
@@ -9,7 +9,8 @@ import {
   SquareListItem,
   CompactListItem,
   FeaturedListItem,
-  StatListItem } from '../ListItems'
+  StatListItem,
+  CardListItem } from '../ListItems'
 
 storiesOf('ListItem', module)
   .addDecorator(Decorator)
@@ -48,4 +49,17 @@ storiesOf('ListItem', module)
   ))
   .add('Stat', () => (
     <StatListItem icon='bluetooth' title='bluetooth' value='Connected' />
+  ))
+  .add('CardListItem Image', () => (
+    <CardListItem
+      image={Images.robots.otto}
+      title='Otto DIY'
+      text='The open source robot that you can build yourself' />
+  ))
+  .add('CardListItem Video', () => (
+    <CardListItem
+      video={Videos.atlas}
+      title='Otto DIY'
+      text='The open source robot that you can build yourself'
+    />
   ))
