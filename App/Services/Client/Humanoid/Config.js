@@ -7,19 +7,19 @@ export const Speed = {
 }
 
 export default {
-  name: 'Otto DIY',
-  image: Images.robots.plus,
-  imageSmall: Images.robots.plusSmall,
-  imageHelp: Images.buttons.help,
-  description: 'The open source robot that you can build yourself',
+  name: 'Humanoid',
+  image: Images.robots.humanoid,
+  imageSmall: Images.robots.humanoidSmall,
+  imageHelp: Images.humanoid.help,
+  description: 'Otto with arms, LED mouth and more sensors',
   links: [
     {
       title: 'Build Instructions',
-      url: 'https://wikifactory.com/+OttoDIY/otto-diy-plus'
+      url: 'https://wikifactory.com/+OttoDIY/humanoid'
     },
     {
       title: 'Build Video',
-      url: 'https://youtu.be/8R6thwyIeb8'
+      url: 'https://youtu.be/FNd-WwCCDQM'
     },
     {
       title: 'Website',
@@ -28,7 +28,7 @@ export default {
   ],
   connection: {
     type: 'bluetooth',
-    image: Images.robots.plusBluetooth
+    image: Images.robots.humanoidBluetooth
   },
   params: [
     {
@@ -50,29 +50,29 @@ export default {
     {
       id: 'moves',
       category: 'Moves',
-      image: Images.buttons.moves,
+      image: Images.humanoid.swing,
       items: [
-        { title: 'Jitter', image: Images.buttons.jitter, cmd: 'M 19', stopAtEnd: true },
-        { title: 'Swing', image: Images.buttons.swing, cmd: 'M 8', stopAtEnd: true },
-        { title: 'Tiptoe', image: Images.buttons.tiptoe, cmd: 'M 14', stopAtEnd: true },
-        { title: 'Ascend', image: Images.buttons.ascend, cmd: 'M 20', stopAtEnd: true },
-        { title: 'Up Down', image: Images.buttons.updown, cmd: 'M 5', stopAtEnd: true },
-        { title: 'Flap Back', image: Images.buttons.flapback, cmd: 'M 13', stopAtEnd: true },
-        { title: 'Moonwalk Left', image: Images.buttons.moonwalkleft, cmd: 'M 7', stopAtEnd: true },
-        { title: 'Shake Left', image: Images.buttons.shakeleft, cmd: 'M 17', stopAtEnd: true },
-        { title: 'Bend Left', image: Images.buttons.bendleft, cmd: 'M 15', stopAtEnd: true },
-        { title: 'Cross Left', image: Images.buttons.crossleft, cmd: 'M 10', stopAtEnd: true },
-        { title: 'Flap Front', image: Images.buttons.flapfront, cmd: 'M 12', stopAtEnd: true },
-        { title: 'Moonwalk Right', image: Images.buttons.moonwalkright, cmd: 'M 6', stopAtEnd: true },
-        { title: 'Shake Right', image: Images.buttons.shakeright, cmd: 'M 18', stopAtEnd: true },
-        { title: 'Bend Right', image: Images.buttons.bendright, cmd: 'M 16', stopAtEnd: true },
-        { title: 'Cross Right', image: Images.buttons.crossright, cmd: 'M 9', stopAtEnd: true }
+        { title: 'Right Hand', image: Images.humanoid.handright, cmd: 'M 22', stopAtEnd: true },
+        { title: 'Left Hand', image: Images.humanoid.handleft, cmd: 'M 23', stopAtEnd: true },
+        { title: 'Hands Up', image: Images.humanoid.handsup, cmd: 'M 21', stopAtEnd: true },
+        { title: 'Swing', image: Images.humanoid.swing, cmd: 'M 8', stopAtEnd: true },
+        { title: 'Up Down', image: Images.humanoid.updown, cmd: 'M 5', stopAtEnd: true },
+        { title: 'Flap Front', image: Images.humanoid.flapfront, cmd: 'M 12', stopAtEnd: true },
+        { title: 'Moonwalk Left', image: Images.humanoid.moonwalkleft, cmd: 'M 7', stopAtEnd: true },
+        { title: 'Bend Left', image: Images.humanoid.bendleft, cmd: 'M 16', stopAtEnd: true },
+        { title: 'Shake Left', image: Images.humanoid.shakeleft, cmd: 'M 18', stopAtEnd: true },
+        { title: 'Cross Left', image: Images.humanoid.crossleft, cmd: 'M 10', stopAtEnd: true },
+        { title: 'Flap Back', image: Images.humanoid.flapback, cmd: 'M 13', stopAtEnd: true },
+        { title: 'Moonwalk Right', image: Images.humanoid.moonwalkright, cmd: 'M 6', stopAtEnd: true },
+        { title: 'Bend Right', image: Images.humanoid.bendright, cmd: 'M 17', stopAtEnd: true },
+        { title: 'Shake Right', image: Images.humanoid.shakeright, cmd: 'M 18', stopAtEnd: true },
+        { title: 'Cross Right', image: Images.humanoid.crossright, cmd: 'M 9', stopAtEnd: true }
       ]
     },
     {
       id: 'sounds',
       category: 'Sounds',
-      image: Images.sing.beep,
+      image: Images.humanoid.beep,
       items: [
         { title: 'Mode 1', image: Images.sing.mode1, cmd: 'K 16', stopAtEnd: false },
         { title: 'Mode 2', image: Images.sing.mode2, cmd: 'K 17', stopAtEnd: false },

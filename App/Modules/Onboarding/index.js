@@ -5,7 +5,7 @@ import Screen from './Screen'
 
 export class OnboardingContainer extends Component {
   onDone = () => {
-    this.props.navigation.navigate('PlayerScreen', { hideBack: true })
+    this.props.navigation.navigate('WhichRobotScreen', { hideBack: true })
   }
 
   render () {

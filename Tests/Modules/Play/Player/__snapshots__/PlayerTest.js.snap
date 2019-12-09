@@ -13,13 +13,18 @@ exports[`Player Component renders correctly 1`] = `
       }
     }
   >
-    <Image
-      source={
-        Object {
-          "process": [Function],
+    <TouchableOpacity
+      activeOpacity={0.2}
+      onPress={[Function]}
+    >
+      <Image
+        source={
+          Object {
+            "process": [Function],
+          }
         }
-      }
-    />
+      />
+    </TouchableOpacity>
     <View
       style={
         Object {
@@ -27,13 +32,18 @@ exports[`Player Component renders correctly 1`] = `
         }
       }
     />
-    <Image
-      source={
-        Object {
-          "process": [Function],
+    <TouchableOpacity
+      activeOpacity={0.2}
+      onPress={[Function]}
+    >
+      <Image
+        source={
+          Object {
+            "process": [Function],
+          }
         }
-      }
-    />
+      />
+    </TouchableOpacity>
   </View>
   <View
     style={

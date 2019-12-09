@@ -28,7 +28,8 @@ describe('Player', () => {
         onSkillPress={() => {}}
         onToggleSpeed={() => {}}
         onHelp={() => {}}
-        onHideNotConnectedModal={() => {}} />)
+        onHideNotConnectedModal={() => {}}
+        onChooseRobotPress={() => {}} />)
   })
 
   it('Component renders correctly', () => {

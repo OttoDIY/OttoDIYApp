@@ -16,7 +16,12 @@ import {
   CodeLab,
   Lessons,
   GetStarted,
-  Lab} from 'App/Modules'
+  Lab,
+  WhichRobot,
+  ConnectRobot} from 'App/Modules'
+import {
+  dynamicTitleNavigationOptions
+} from 'App/Navigation/NavigationOptions'
 
 export default {
   StartScreen: {
@@ -33,7 +38,7 @@ export default {
     navigationOptions: (navigation) => {
       const { navigate } = navigation.navigation
       return {
-        headerRight: <NavButton style={{text: {color: Colors.primaryDark}}} onPress={() => navigate('PlayerScreen')} text='Skip' />
+        headerRight: <NavButton style={{text: {color: Colors.primaryDark}}} onPress={() => navigate('WhichRobotScreen')} text='Skip' />
       }
     }
   },
@@ -115,5 +120,15 @@ export default {
     navigationOptions: ({navigation}) => ({
       title: 'Design Lab'
     })
+  },
+  WhichRobotScreen: {
+    screen: WhichRobot,
+    navigationOptions: ({navigation}) => ({
+      title: 'Which Otto?'
+    })
+  },
+  ConnectRobotScreen: {
+    screen: ConnectRobot,
+    navigationOptions: dynamicTitleNavigationOptions
   }
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Image } from 'react-native'
+import { View, Image, TouchableOpacity } from 'react-native'
 import PropTypes from 'prop-types'
 import uuid from 'react-native-uuid'
 
@@ -37,7 +37,8 @@ export default class Screen extends Component {
     onSkillPress: PropTypes.func,
     onToggleSpeed: PropTypes.func,
     onHelp: PropTypes.func,
-    onHideNotConnectedModal: PropTypes.func.isRequired
+    onHideNotConnectedModal: PropTypes.func.isRequired,
+    onChooseRobotPress: PropTypes.func.isRequired
   }
 
   constructor (props) {
@@ -68,7 +69,8 @@ export default class Screen extends Component {
       onSkillPress,
       onToggleSpeed,
       onHelp,
-      onHideNotConnectedModal
+      onHideNotConnectedModal,
+      onChooseRobotPress
     } = this.props
 
     const { activeTabIndex } = this.state
@@ -87,10 +89,16 @@ export default class Screen extends Component {
     return (
       <Container dark>
         <View style={s.header}>
-          <Image source={Images.robots.plus} />
+          <TouchableOpacity onPress={onChooseRobotPress}>
+            <Image source={(config) ? config.imageSmall : null} />
+          </TouchableOpacity>
           <View style={s.headerCenter} />
           {/* <Image source={Images.buttons.battery} /> */}
-          {connected && <Image source={Images.buttons.bluetooth} />}
+          {connected &&
+            <TouchableOpacity onPress={onChooseRobotPress}>
+              <Image source={Images.buttons.bluetooth} />
+            </TouchableOpacity>
+          }
         </View>
         {/*
           <View style={s.separator}>
@@ -117,7 +125,7 @@ export default class Screen extends Component {
               onLongPressOut={onLongPressOut} />
           </View>
           <ChamferImageButton
-            image={Images.buttons.help}
+            image={(config) ? config.imageHelp : null}
             onPress={onHelp} />
         </View>
         <View style={s.buttonsView}>

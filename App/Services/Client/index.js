@@ -4,9 +4,24 @@ import WebSocket from 'App/Services/WebSocket'
 
 import Simulator from './Simulator'
 import Otto from './Otto'
+import Humanoid from './Humanoid'
+
+const robot = { name: null }
 
 const simulator = new Simulator()
 const otto = new Otto()
+const humanoid = new Humanoid()
+
+export const setRobot = async (robotName) => {
+  if (robot.name !== robotName) {
+    robot.name = robotName
+    const connectedToBluetooth = await isConnectedToBluetooth()
+    if (connectedToBluetooth) {
+      // Robot changed so best to disconnect
+      await Bluetooth.disconnect()
+    }
+  }
+}
 
 const isConnectedToSocket = () => {
   return WebSocket.getInstance().isConnected
@@ -22,12 +37,21 @@ export const isConnected = async () => {
 
 export default class Client {
   getClient = async () => {
-    if (isConnectedToSocket()) {
-      return simulator
-    } else if (await isConnectedToBluetooth()) {
+    if (robot.name === 'otto') {
       return otto
+    } else if (robot.name === 'humanoid') {
+      return humanoid
+    } else if (robot.name === 'simulator') {
+      return simulator
+    } else {
+      // Get client based on connection if possible
+      const connectedToBluetooth = await isConnectedToBluetooth()
+      if (connectedToBluetooth) {
+        return otto
+      } else {
+        return null
+      }
     }
-    return null
   }
 
   getConfig = async () => {

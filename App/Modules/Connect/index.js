@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Linking } from 'react-native'
 import { connect } from 'react-redux'
 
+import Client, { setRobot } from 'App/Services/Client'
 import Bluetooth from 'App/Services/Bluetooth'
 import WebSocket from 'App/Services/WebSocket'
 import { isSimulator } from 'App/Services/Properties'
@@ -12,9 +13,12 @@ import Screen from './Screen'
 export class ConnectContainer extends Component {
   constructor (props) {
     super(props)
+    this.client = new Client()
     this.socket = WebSocket.getInstance()
     const instructions = `To view the simulator, open the following link on another device (e.g. your laptop):\ncodeandrobots.com/simulator?room=${this.socket.room}`
     this.state = {
+      robot: null,
+      robotImage: null,
       error: null,
       connectTo: null,
       enabled: false,
@@ -28,18 +32,58 @@ export class ConnectContainer extends Component {
   }
 
   async componentWillMount () {
+    const { state } = this.props.navigation
+    const robot = state && state.params && state.params.robot
+    if (robot) {
+      await setRobot(robot)
+    }
+    const config = (robot)
+      ? await this.client.getConfig()
+      : null
+    this.props.navigation.setParams({
+      title: (config != null) ? `Connect ${config.name}` : 'Connect'}
+    )
+    const connectTo = (robot)
+      ? (robot === 'simulator')
+        ? 'simulator'
+        : 'device'
+      : null
+    const robotImage = (config && config.connection)
+      ? config.connection.image
+      : null
+
     const { enabled, error } = await Bluetooth.isEnabled()
-    // TODO default connectTo to device because simulator not yet supported
-    this.setState({enabled, error, connectTo: 'device'})
-    if (enabled) {
+    this.onConnectTo(connectTo)
+    this.setState({robot, robotImage, enabled, error})
+    if (robot !== 'simulator' && enabled) {
       this.setState({ scanning: true })
       this.showDevices()
     }
   }
 
+  // TODO Better sorting of bluetooth devices
+  //      See https://github.com/codeandrobots/codeandrobots-app/issues/29
+  sortDevices = (devices) => {
+    const { robot } = this.state
+    if (!robot) {
+      return devices
+    }
+    return devices.sort((deviceA, deviceB) => {
+      const deviceAMatch = deviceA.name != null && deviceA.name.toLowerCase().startsWith(robot)
+      const deviceBMatch = deviceB.name != null && deviceB.name.toLowerCase().startsWith(robot)
+      if (deviceAMatch) {
+        return -1
+      } else if (deviceBMatch) {
+        return 1
+      } else {
+        return 0
+      }
+    })
+  }
+
   showDevices = async () => {
     const { devices, error } = await Bluetooth.scan()
-    this.setState({scanning: false, devices, error})
+    this.setState({scanning: false, devices: this.sortDevices(devices), error})
   }
 
   onConnectTo = (connectTo) => {
@@ -112,11 +156,16 @@ export class ConnectContainer extends Component {
 
   onDone = () => {
     const { state } = this.props.navigation
-    const onBack = state && state.params && state.params.onBack
-    if (onBack) {
-      onBack()
+    const onDone = state && state.params && state.params.onDone
+    if (onDone) {
+      onDone()
+    } else {
+      const onBack = state && state.params && state.params.onBack
+      if (onBack) {
+        onBack()
+      }
+      this.props.navigation.goBack()
     }
-    this.props.navigation.goBack()
   }
 
   onEmailInstructions = () => {
@@ -153,6 +202,7 @@ export class ConnectContainer extends Component {
     const {
       error,
       connectTo,
+      robotImage,
       enabled,
       scanning,
       connecting,
@@ -169,6 +219,7 @@ export class ConnectContainer extends Component {
         {...this.props}
         error={error}
         connectTo={connectTo}
+        robotImage={robotImage}
         enabled={enabled}
         scanning={scanning}
         connecting={connecting}

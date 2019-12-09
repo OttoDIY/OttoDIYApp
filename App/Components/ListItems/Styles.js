@@ -46,6 +46,16 @@ export default StyleSheet.create({
   itemView_disabled: {
     backgroundColor: Colors.background_disabled
   },
+  itemView_card: {
+    flexDirection: 'row',
+    margin: Metrics.unit,
+    padding: Metrics.unit,
+    borderRadius: Metrics.unit,
+    backgroundColor: Colors.white
+  },
+  itemView_card_light: {
+    backgroundColor: Colors.primary
+  },
   itemOuterBorder: {
     padding: Metrics.unit,
     borderColor: Colors.lightgrey,
@@ -81,9 +91,34 @@ export default StyleSheet.create({
     flex: 1,
     margin: Metrics.unit
   },
+  imageView_card: {
+    maxWidth: 165,
+    maxHeight: 112,
+    padding: 40,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderWidth: 1,
+    borderRadius: Metrics.media.border,
+    borderColor: Colors.transparent,
+    flex: 1,
+    flexDirection: 'row'
+  },
+  imageView_card_light: {
+    borderColor: Colors.white,
+    backgroundColor: Colors.white
+  },
+  videoView_card: {
+    maxWidth: 165,
+    maxHeight: 112
+  },
   image: {
     maxWidth: 55,
     maxHeight: 55
+  },
+  image_card: {
+    maxWidth: 165,
+    maxHeight: 112,
+    resizeMode: 'contain'
   },
   image_compact: {
     maxWidth: 20,
@@ -106,13 +141,26 @@ export default StyleSheet.create({
     alignItems: 'center',
     marginTop: Metrics.unit * 2
   },
-  text_compact: {
+  textView_card: {
+    flex: 1,
+    flexDirection: 'column',
+    justifyContent: 'flex-start',
+    marginLeft: Metrics.unit
+  },
+  text_card: {
     ...Styles.text,
     color: Colors.primary
   },
-  text_featured: {
+  text_card_light: {
+    color: Colors.white
+  },
+  title_card: {
     ...Styles.text,
-    color: Colors.primary
+    color: Colors.primary,
+    marginVertical: Metrics.unit / 2
+  },
+  title_card_light: {
+    color: Colors.white
   },
   buttonView: {
     justifyContent: 'center',
@@ -142,7 +190,6 @@ export default StyleSheet.create({
   },
   statValue: {
     ...Styles.text,
-    color: Colors.primary,
     fontSize: Fonts.size.large
   }
 })

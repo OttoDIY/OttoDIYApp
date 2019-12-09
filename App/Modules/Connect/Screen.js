@@ -18,6 +18,7 @@ export default class Screen extends Component {
   static propTypes = {
     error: Types.error,
     connectTo: PropTypes.string,
+    robotImage: PropTypes.oneOfType([PropTypes.number, PropTypes.object]),
     enabled: PropTypes.bool.isRequired,
     scanning: PropTypes.bool.isRequired,
     devices: PropTypes.arrayOf(Types.bluetoothDevice).isRequired,
@@ -36,12 +37,19 @@ export default class Screen extends Component {
     onHideProblemsConnectingModal: PropTypes.func.isRequired
   }
 
+  getRobotImage = () => {
+    const { robotImage = Images.bluetooth } = this.props
+    return robotImage
+  }
+
   renderConnectTo = () => {
-    const { onConnectTo, onIsYourDeviceSupported } = this.props
+    const {
+      onConnectTo,
+      onIsYourDeviceSupported } = this.props
     return (
       <Container>
         <Card
-          image={Images.bluetooth}
+          image={this.getRobotImage()}
           link={'Is the device you want\nto connect to supported?'}
           onLinkPress={onIsYourDeviceSupported} />
         {this.renderIsYourDeviceSupportedModal()}
@@ -78,7 +86,7 @@ export default class Screen extends Component {
             style={{textView: {marginBottom: Metrics.unit * 2}}} />
         </Footer>
         <Card
-          image={Images.bluetooth}
+          image={this.getRobotImage()}
           title='Good job 👍' />
       </Container>
     )
@@ -100,7 +108,7 @@ export default class Screen extends Component {
             onLinkPress={onProblemsConnecting}
             style={{textView: {marginBottom: Metrics.unit * 2}}} />
         </Footer>
-        <Card image={Images.bluetooth} />
+        <Card image={this.getRobotImage()} />
         {this.renderProblemsConnectingModal()}
       </Container>
     )
