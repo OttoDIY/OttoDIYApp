@@ -26,7 +26,7 @@ export default class WhichRobotScreen extends Component {
             onPress={() => { onPress('humanoid') }} />
         </List>
         <Footer>
-          <Card theme='light' text='Choose the robot you want to play with' />
+          <Card theme='light' text='Choose which Otto you want to play with' />
         </Footer>
       </Container>
     )

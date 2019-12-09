@@ -110,6 +110,10 @@ export class PlayerContainer extends Component {
     this.setState({showNotConnectedModal: false})
   }
 
+  onChooseRobotPress = () => {
+    this.props.navigation.navigate('WhichRobotScreen', { hideSkip: true })
+  }
+
   render () {
     const {connected, config, speed, showNotConnectedModal} = this.state
     return (
@@ -133,6 +137,7 @@ export class PlayerContainer extends Component {
         onToggleSpeed={this.onToggleSpeed}
         onHelp={this.onHelp}
         onHideNotConnectedModal={this.onHideNotConnectedModal}
+        onChooseRobotPress={this.onChooseRobotPress}
       />
     )
   }
