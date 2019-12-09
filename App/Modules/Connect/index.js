@@ -18,6 +18,7 @@ export class ConnectContainer extends Component {
     const instructions = `To view the simulator, open the following link on another device (e.g. your laptop):\ncodeandrobots.com/simulator?room=${this.socket.room}`
     this.state = {
       robot: null,
+      robotImage: null,
       error: null,
       connectTo: null,
       enabled: false,
@@ -47,9 +48,13 @@ export class ConnectContainer extends Component {
         ? 'simulator'
         : 'device'
       : null
+    const robotImage = (config && config.connection)
+      ? config.connection.image
+      : null
+
     const { enabled, error } = await Bluetooth.isEnabled()
     this.onConnectTo(connectTo)
-    this.setState({robot, enabled, error})
+    this.setState({robot, robotImage, enabled, error})
     if (robot !== 'simulator' && enabled) {
       this.setState({ scanning: true })
       this.showDevices()
@@ -197,6 +202,7 @@ export class ConnectContainer extends Component {
     const {
       error,
       connectTo,
+      robotImage,
       enabled,
       scanning,
       connecting,
@@ -213,6 +219,7 @@ export class ConnectContainer extends Component {
         {...this.props}
         error={error}
         connectTo={connectTo}
+        robotImage={robotImage}
         enabled={enabled}
         scanning={scanning}
         connecting={connecting}

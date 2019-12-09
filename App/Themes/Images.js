@@ -87,6 +87,7 @@ export default {
     victory: require('App/Images/Buttons/Gestures/Victory/victory.png')
   },
   humanoid: {
+    beep: require('App/Images/Buttons/Humanoid/Beep/beep.png'),
     bendleft: require('App/Images/Buttons/Humanoid/Bend/bendleft.png'),
     bendright: require('App/Images/Buttons/Humanoid/Bend/bendright.png'),
     crossleft: require('App/Images/Buttons/Humanoid/Cross/crossleft.png'),
@@ -107,7 +108,9 @@ export default {
   robots: {
     plus: require('App/Images/Robots/Plus/plus.png'),
     plusSmall: require('App/Images/Robots/Plus/plus_small.png'),
+    plusBluetooth: require('App/Images/Robots/Plus/plus_bluetooth.png'),
     humanoid: require('App/Images/Robots/Humanoid/humanoid.png'),
+    humanoidBluetooth: require('App/Images/Robots/Humanoid/humanoid_bluetooth.png'),
     humanoidSmall: require('App/Images/Robots/Humanoid/humanoid_small.png')
   }
 }

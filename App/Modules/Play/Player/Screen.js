@@ -87,7 +87,7 @@ export default class Screen extends Component {
     return (
       <Container dark>
         <View style={s.header}>
-          <Image source={Images.robots.plusSmall} />
+          <Image source={(config) ? config.imageSmall : null} />
           <View style={s.headerCenter} />
           {/* <Image source={Images.buttons.battery} /> */}
           {connected && <Image source={Images.buttons.bluetooth} />}
@@ -117,7 +117,7 @@ export default class Screen extends Component {
               onLongPressOut={onLongPressOut} />
           </View>
           <ChamferImageButton
-            image={Images.buttons.help}
+            image={(config) ? config.imageHelp : null}
             onPress={onHelp} />
         </View>
         <View style={s.buttonsView}>

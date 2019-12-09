@@ -38,7 +38,7 @@ export default {
     navigationOptions: (navigation) => {
       const { navigate } = navigation.navigation
       return {
-        headerRight: <NavButton style={{text: {color: Colors.primaryDark}}} onPress={() => navigate('PlayerScreen')} text='Skip' />
+        headerRight: <NavButton style={{text: {color: Colors.primaryDark}}} onPress={() => navigate('WhichRobotScreen')} text='Skip' />
       }
     }
   },
