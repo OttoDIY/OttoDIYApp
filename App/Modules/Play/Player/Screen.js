@@ -55,7 +55,6 @@ export default class Screen extends Component {
 
   render () {
     const {
-      connected,
       config,
       speed,
       showNotConnectedModal,
@@ -94,11 +93,11 @@ export default class Screen extends Component {
           </TouchableOpacity>
           <View style={s.headerCenter} />
           {/* <Image source={Images.buttons.battery} /> */}
-          {connected &&
+          {/* connected &&
             <TouchableOpacity onPress={onChooseRobotPress}>
               <Image source={Images.buttons.bluetooth} />
             </TouchableOpacity>
-          }
+          */}
         </View>
         {/*
           <View style={s.separator}>

@@ -32,18 +32,6 @@ exports[`Player Component renders correctly 1`] = `
         }
       }
     />
-    <TouchableOpacity
-      activeOpacity={0.2}
-      onPress={[Function]}
-    >
-      <Image
-        source={
-          Object {
-            "process": [Function],
-          }
-        }
-      />
-    </TouchableOpacity>
   </View>
   <View
     style={
