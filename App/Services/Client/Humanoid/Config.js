@@ -64,8 +64,8 @@ export default {
         { title: 'Cross Left', image: Images.humanoid.crossleft, cmd: 'M 10', stopAtEnd: true },
         { title: 'Flap Back', image: Images.humanoid.flapback, cmd: 'M 13', stopAtEnd: true },
         { title: 'Moonwalk Right', image: Images.humanoid.moonwalkright, cmd: 'M 6', stopAtEnd: true },
-        { title: 'Bend Right', image: Images.humanoid.bendright, cmd: 'M 17', stopAtEnd: true },
-        { title: 'Shake Right', image: Images.humanoid.shakeright, cmd: 'M 18', stopAtEnd: true },
+        { title: 'Bend Right', image: Images.humanoid.bendright, cmd: 'M 15', stopAtEnd: true },
+        { title: 'Shake Right', image: Images.humanoid.shakeright, cmd: 'M 17', stopAtEnd: true },
         { title: 'Cross Right', image: Images.humanoid.crossright, cmd: 'M 9', stopAtEnd: true }
       ]
     },
