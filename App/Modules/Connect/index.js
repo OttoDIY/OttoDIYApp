@@ -145,6 +145,11 @@ export class ConnectContainer extends Component {
       activeDevice.error = error
     } else {
       activeDevice.isConnected = true
+
+      // TODO Some bluetooth modules (e.g. Otto BLE module) require an initial
+      // command before responding to further commands so sending a stop command
+      // after successfully connecting
+      await this.client.stop()
     }
     this.setState({activeDevice})
   }
