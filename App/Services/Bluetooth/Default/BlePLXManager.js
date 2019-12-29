@@ -28,19 +28,23 @@ export default class BlePLXManager {
     // }
 
     if (Platform.OS === 'android' && Platform.Version >= 23) {
-      PermissionsAndroid.check(PermissionsAndroid.PERMISSIONS.ACCESS_COARSE_LOCATION).then((result) => {
-        if (result) {
-          // Permission is OK
-        } else {
-          PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.ACCESS_COARSE_LOCATION).then((result) => {
-            if (result) {
-              // User accepted
-            } else {
-              // TODO User refused, what to do?
-            }
-          })
-        }
-      })
+      // Potential fix using 1 second timeout to 'Tried to use permissions API while not attached to an Activity'
+      // See https://github.com/facebook/react-native/issues/10009#issuecomment-380968524
+      setTimeout(() => {
+        PermissionsAndroid.check(PermissionsAndroid.PERMISSIONS.ACCESS_COARSE_LOCATION).then((result) => {
+          if (result) {
+            // Permission is OK
+          } else {
+            PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.ACCESS_COARSE_LOCATION).then((result) => {
+              if (result) {
+                // User accepted
+              } else {
+                // TODO User refused, what to do?
+              }
+            })
+          }
+        })
+      }, 1000)
     }
   }
 
