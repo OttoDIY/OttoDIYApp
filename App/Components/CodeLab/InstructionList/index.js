@@ -18,6 +18,7 @@ export default class InstructionList extends Component {
     instructions: PropTypes.arrayOf(PropTypes.shape({
       ...Types.instruction
     })).isRequired,
+    onSlidingComplete: PropTypes.func.isRequired,
     onChangeOrder: PropTypes.func.isRequired,
     onClose: PropTypes.func.isRequired
   }
@@ -34,14 +35,23 @@ export default class InstructionList extends Component {
   }
 
   renderRow = ({data, active}) => {
-    const { onClose } = this.props
-    return <Row data={data} active={active} onClose={onClose} />
+    const { onSlidingComplete, onClose } = this.props
+    return (
+      <Row
+        data={data}
+        active={active}
+        onSlidingComplete={(value) => { onSlidingComplete(data, value) }}
+        onClose={onClose} />
+    )
   }
 
   dataFromProps = (props) => {
     const data = {}
     for (const [index, instruction] of props.instructions.entries()) {
-      data[index] = {...instruction, key: instruction.key + '-' + uuid.v4()}
+      data[index] = {
+        ...instruction,
+        key: (instruction.id) ? instruction.id : uuid.v4()
+      }
     }
     return data
   }
@@ -57,8 +67,9 @@ export default class InstructionList extends Component {
   }
 
   render () {
+    const {style = undefined} = this.props
     return (
-      <View style={s.container}>
+      <View style={[s.container, style]}>
         <SortableList
           style={s.list}
           contentContainerStyle={s.contentContainer}

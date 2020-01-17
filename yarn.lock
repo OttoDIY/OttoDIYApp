@@ -1215,6 +1215,11 @@
     shell-quote "1.6.1"
     ws "^1.1.0"
 
+"@react-native-community/slider@1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@react-native-community/slider/-/slider-1.1.3.tgz#5f5e574ddf108880fc32d9cf98c7b51363353668"
+  integrity sha512-l5GRS+u+yeoiTcjME5laQfAMWdsKG2lPozUzwh0vBLl1rXDwZlMTvsGJPEWWYvCT1npu+isyHx10BFUEcIkCmg==
+
 "@sentry/cli@^1.43.0":
   version "1.47.1"
   resolved "https://registry.yarnpkg.com/@sentry/cli/-/cli-1.47.1.tgz#6a3238e5bfa4f618867bc0bc145b8e2ba191ff46"

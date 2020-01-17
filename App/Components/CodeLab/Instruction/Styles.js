@@ -5,8 +5,7 @@ import { Styles, Metrics, Colors, Fonts } from 'App/Themes'
 export default StyleSheet.create({
   ...Styles,
   view: {
-    ...Styles.row,
-    alignItems: 'center',
+    flex: 1,
     margin: Metrics.unit,
     paddingVertical: Metrics.unit / 2,
     paddingHorizontal: Metrics.unit,
@@ -21,16 +20,26 @@ export default StyleSheet.create({
   icon: {
     marginLeft: Metrics.unit / 2
   },
-  title: {
+  titleView: {
     flex: 1,
+    margin: Metrics.unit / 2,
+    justifyContent: 'center'
+  },
+  title: {
     ...Styles.text,
-    ...Styles.text_bold,
     fontSize: Fonts.size.large,
-    color: Colors.white,
-    margin: Metrics.unit / 2
+    color: Colors.white
+  },
+  title_default: {
+    color: Colors.primaryDark
   },
   close: {
     marginTop: 3,
     padding: Metrics.unit / 2
+  },
+  sliderView: {
+    ...Styles.row,
+    marginBottom: Metrics.unit,
+    marginRight: Metrics.unit
   }
 })

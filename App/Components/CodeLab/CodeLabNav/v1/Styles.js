@@ -6,10 +6,6 @@ import { isIphoneX } from 'App/Services/Properties'
 
 export default StyleSheet.create({
   ...Styles,
-  text: {
-    ...Styles.text,
-    color: Colors.primary
-  },
   view: {
     backgroundColor: Colors.white
   },
@@ -71,7 +67,7 @@ export default StyleSheet.create({
   separator: {
     width: 1,
     height: '100%',
-    backgroundColor: Colors.white_translucent,
+    backgroundColor: Colors.whiteTranslucent,
     margin: Metrics.unit
   },
   footer: {

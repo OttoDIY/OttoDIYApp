@@ -34,13 +34,16 @@ export default class Row extends Component {
   }
 
   render () {
-    const { data, onClose } = this.props
+    const { data, onSlidingComplete, onClose } = this.props
     return (
       <Animated.View style={[
         s.row,
         this._style
       ]}>
-        <Instruction {...data} onClose={() => { onClose(data) }} />
+        <Instruction
+          {...data}
+          onSlidingComplete={onSlidingComplete}
+          onClose={() => { onClose(data) }} />
       </Animated.View>
     )
   }
