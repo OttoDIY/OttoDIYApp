@@ -2,10 +2,13 @@ import { StyleSheet } from 'react-native'
 
 import { Styles, Colors, Metrics } from 'App/Themes'
 
+import { isIphoneX } from 'App/Services/Properties'
+
 export default StyleSheet.create({
   ...Styles,
   header: {
     margin: Metrics.unit * 2,
+    marginTop: (isIphoneX) ? Metrics.unit * 4 : Metrics.unit * 2,
     marginBottom: 0,
     flexDirection: 'row'
   },

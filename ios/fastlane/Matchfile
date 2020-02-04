@@ -1,4 +1,4 @@
-git_url("git@gitlab.com:codeandrobots/app-certs.git")
+git_url("git@gitlab.com:ottodiy/ottodiy-app-certs.git")
 
 type("development") # The default type, can be: appstore, adhoc, enterprise or development
 

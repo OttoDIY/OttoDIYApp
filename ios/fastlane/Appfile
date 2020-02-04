@@ -1,8 +1,8 @@
-app_identifier ENV["APP_IDENTIFIER"] || "com.codeandrobots.CodeAndRobots-Beta.beta" # The bundle identifier of your app
+app_identifier ENV["APP_IDENTIFIER"] || "com.ottodiy.OttoDIY" # The bundle identifier of your app
 apple_id("chico.charlesworth@googlemail.com") # Your Apple email address
 
-itc_team_id("1053963") # App Store Connect Team ID - see https://stackoverflow.com/a/46415415
-team_id("B423242B9Q") # Developer Portal Team ID - go to https://developer.apple.com/account/#/membership
+itc_team_id("120954391") # App Store Connect Team ID - see https://stackoverflow.com/a/46415415
+team_id("G549W9SJ4D") # Developer Portal Team ID - go to https://developer.apple.com/account/#/membership
 
 # For more information about the Appfile, see:
 #     https://docs.fastlane.tools/advanced/#appfile
