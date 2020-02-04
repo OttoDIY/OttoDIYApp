@@ -10,6 +10,7 @@ exports[`Player Component renders correctly 1`] = `
         "flexDirection": "row",
         "margin": 16,
         "marginBottom": 0,
+        "marginTop": 32,
       }
     }
   >

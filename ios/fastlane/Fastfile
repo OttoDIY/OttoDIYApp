@@ -18,19 +18,19 @@ default_platform(:ios)
 platform :ios do
   desc "Push a new beta build to TestFlight"
   lane :beta do
-    ENV["APP_IDENTIFIER"] = "com.codeandrobots.CodeAndRobots-Beta.beta"
+    ENV["APP_IDENTIFIER"] = "com.ottodiy.OttoDIY-Beta.beta"
     match(type: "appstore") # more information: https://codesigning.guide
     # increment_build_number build_number: ENV["CIRCLE_BUILD_NUM"] # unique circleci build number, testflight builds must be unique and also useful to link testflight build with circleci build
-    gym(scheme: "CodeAndRobotsBeta") # Build your app - more options available
+    gym(scheme: "OttoBeta") # Build your app - more options available
     pilot(skip_submission: true, skip_waiting_for_build_processing: true) # Upload to TestFlight and notify testers, skip submission prevents sending the build for external testing review
   end
 
   desc "Push a new release build"
   lane :release do
-    ENV["APP_IDENTIFIER"] = "com.codeandrobots.CodeAndRobots"
+    ENV["APP_IDENTIFIER"] = "com.ottodiy.OttoDIY"
     match(type: "appstore") # more information: https://codesigning.guide
     # increment_build_number build_number: ENV["CIRCLE_BUILD_NUM"] # unique circleci build number, testflight builds must be unique and also useful to link testflight build with circleci build
-    gym(scheme: "CodeAndRobotsProduction") # Build your app - more options available
+    gym(scheme: "OttoProduction") # Build your app - more options available
     pilot(skip_submission: true, skip_waiting_for_build_processing: true) # Upload to TestFlight and notify testers, skip submission prevents sending the build for external testing review
   end
 end
