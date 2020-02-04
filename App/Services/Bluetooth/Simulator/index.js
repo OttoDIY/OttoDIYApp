@@ -29,14 +29,14 @@ const list = async () => {
 }
 
 const scan = async () => {
-  // Wait 2 seconds to mimic scanning
-  await new Promise(resolve => setTimeout(resolve, 2000))
+  // Wait 0.5 seconds to mimic scanning
+  await new Promise(resolve => setTimeout(resolve, 500))
   return {devices: simulator.devices.concat(simulator.unpairedDevices), error: null}
 }
 
 const connect = async (device) => {
-  // Wait 2 seconds to mimic connecting
-  await new Promise(resolve => setTimeout(resolve, 2000))
+  // Wait 0.5 seconds to mimic connecting
+  await new Promise(resolve => setTimeout(resolve, 500))
 
   if (device && device.id === '2') {
     return {connected: false, error: {message: 'Not able to connect'}}

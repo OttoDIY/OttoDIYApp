@@ -5,8 +5,8 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
-		00523F7841D441AE8D5178FB /* libRNSentry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1E2FA9064FD4F5CBDEC1D68 /* libRNSentry.a */; };
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
 		00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302C01ABCB91800DB3ED1 /* libRCTImage.a */; };
@@ -64,23 +64,25 @@
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		686178080E9543A6AEE7B1BB /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88A12421F8684296BC83C698 /* EvilIcons.ttf */; };
 		72076B6549534E7682E28AA0 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9FE5B898B0D407B8B6F7AC1 /* MaterialCommunityIcons.ttf */; };
+		73FCFCACD4054001A4EA49D7 /* libRNSentry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BABCE79C5C674FFA9AAC0E81 /* libRNSentry.a */; };
+		7B79D650F5E94719A11BB6F3 /* libRNCWebView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E85C1C93614FF486CF48F5 /* libRNCWebView.a */; };
 		7CF02086C8534962B98627C8 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 788EBE27BF4B4636AD85A925 /* SimpleLineIcons.ttf */; };
 		7E8088348EF64BD591BCB07B /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F68BAD0B69AB4D6EA37B0369 /* Ionicons.ttf */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		8B50DC86979B4A27BCAE9A11 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 504204A088D04865AAB0456E /* libz.tbd */; };
 		A83EA7FAC219423CB4137527 /* libyoga.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E0748876A1A4BABB1C157F9 /* libyoga.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		BE91C7965D2F425CA6F0292B /* libRNVersionNumber.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59AAB9A4BCAC43C7ADD55200 /* libRNVersionNumber.a */; };
 		BE9B5CA5219C4FF09A60CB22 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8FBD1976DDDD4753A78F7ED2 /* Entypo.ttf */; };
 		C19BFB28A3F54A7699203D76 /* libRNFirebase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DCE7B9F57D34FC18AA1F0BA /* libRNFirebase.a */; };
+		CDFC7FFFF2B643A7A2DA2503 /* libRNSentry-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F766213077F400FA299F11E /* libRNSentry-tvOS.a */; };
 		D398DAB119A8499EB9122F84 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 671610D992A242D2B577E4EA /* libRNVectorIcons.a */; };
 		D59344C07A6B43089A051A76 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 31222A8C46B24E699C4B5AF9 /* Zocial.ttf */; };
 		E4174D6755BD427D9F055803 /* libRCTVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B70893341FE94B688CC47C7A /* libRCTVideo.a */; };
 		ECD1608B830D47CA9BD36BED /* libRNDeviceInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A506294C7804F59B9BC8540 /* libRNDeviceInfo.a */; };
+		EEADC531112844AC87EE6CCE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4DF67CF4E1475A9BF8F76B /* libz.tbd */; };
 		F411788F3A03408DA04375E2 /* libRCTBluetoothSerial.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7043272667B49B5941885D9 /* libRCTBluetoothSerial.a */; };
 		F97CCD46D3B9427A98096C92 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 408BDF84B2A14BBA9FF4AB9F /* Octicons.ttf */; };
 		FC74D31C87254E3692E7F91B /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 117723CE7BB54684B689930C /* Foundation.ttf */; };
-		7B79D650F5E94719A11BB6F3 /* libRNCWebView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E85C1C93614FF486CF48F5 /* libRNCWebView.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -273,12 +275,19 @@
 			remoteGlobalIDString = 64AA15081EF7F30100718508;
 			remoteInfo = "BVLinearGradient-tvOS";
 		};
-		23CF45FD212D5D3D0085F0A9 /* PBXContainerItemProxy */ = {
+		23C28B5023D278D500E71EA2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7656FFF0A9494CBB993B55D5 /* RNSentry.xcodeproj */;
+			containerPortal = D7D4F057D8264BD08B0EC746 /* RNSentry.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 134814201AA4EA6300B7C361;
 			remoteInfo = RNSentry;
+		};
+		23C28B5223D278D500E71EA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7D4F057D8264BD08B0EC746 /* RNSentry.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 274692C321B4414400BF91A8;
+			remoteInfo = "RNSentry-tvOS";
 		};
 		23D1A343227C8F3C009CB6D3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -350,12 +359,12 @@
 			remoteGlobalIDString = ED296FEE214C9CF800B7C4FE;
 			remoteInfo = "jsiexecutor-tvOS";
 		};
-		23DC35E1230E73B40000C391 /* PBXContainerItemProxy */ = {
+		23EC3ACA23D1B609004CE18E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7656FFF0A9494CBB993B55D5 /* RNSentry.xcodeproj */;
+			containerPortal = CEE19B8CCC0546338000A24C /* RNCWebView.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 274692C321B4414400BF91A8;
-			remoteInfo = "RNSentry-tvOS";
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNCWebView;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -550,6 +559,7 @@
 		2D02E4901E0B4A5D006451C7 /* Otto-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Otto-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D06B00211EF48E18CF50AAB /* RNFirebase.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNFirebase.xcodeproj; path = "../node_modules/react-native-firebase/ios/RNFirebase.xcodeproj"; sourceTree = "<group>"; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F766213077F400FA299F11E /* libRNSentry-tvOS.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = "libRNSentry-tvOS.a"; sourceTree = "<group>"; };
 		30DE76568AD942F1A39FBBF1 /* SplashScreen.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = SplashScreen.xcodeproj; path = "../node_modules/react-native-splash-screen/ios/SplashScreen.xcodeproj"; sourceTree = "<group>"; };
 		31222A8C46B24E699C4B5AF9 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		317F8ABEB3884A30831C9395 /* RNOpenAppSettings.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNOpenAppSettings.xcodeproj; path = "../node_modules/react-native-app-settings/ios/RNOpenAppSettings.xcodeproj"; sourceTree = "<group>"; };
@@ -558,13 +568,11 @@
 		4A4FBB52EB724EEB8680F3C2 /* libReactNativeConfig.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libReactNativeConfig.a; sourceTree = "<group>"; };
 		4A506294C7804F59B9BC8540 /* libRNDeviceInfo.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNDeviceInfo.a; sourceTree = "<group>"; };
 		5002CE609FEA482A96F27695 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
-		504204A088D04865AAB0456E /* libz.tbd */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		58209E8CCCB14540947C9FAE /* RNI18n.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNI18n.xcodeproj; path = "../node_modules/react-native-i18n/RNI18n.xcodeproj"; sourceTree = "<group>"; };
 		59AAB9A4BCAC43C7ADD55200 /* libRNVersionNumber.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNVersionNumber.a; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		652F9218FF3D4BD5A956C677 /* libRNOpenAppSettings.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNOpenAppSettings.a; sourceTree = "<group>"; };
 		671610D992A242D2B577E4EA /* libRNVectorIcons.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNVectorIcons.a; sourceTree = "<group>"; };
-		7656FFF0A9494CBB993B55D5 /* RNSentry.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNSentry.xcodeproj; path = "../node_modules/react-native-sentry/ios/RNSentry.xcodeproj"; sourceTree = "<group>"; };
 		776F9825A23E43019EFFB6D6 /* BleClient.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = BleClient.xcodeproj; path = "../node_modules/react-native-ble-plx/ios/BleClient.xcodeproj"; sourceTree = "<group>"; };
 		782B25072DB94F90845D0FCB /* libBleClient.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libBleClient.a; sourceTree = "<group>"; };
 		788EBE27BF4B4636AD85A925 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
@@ -579,16 +587,18 @@
 		B70893341FE94B688CC47C7A /* libRCTVideo.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTVideo.a; sourceTree = "<group>"; };
 		B878BD9E77914666B5636D5D /* RCTBluetoothSerial.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTBluetoothSerial.xcodeproj; path = "../node_modules/react-native-bluetooth-serial/ios/RCTBluetoothSerial.xcodeproj"; sourceTree = "<group>"; };
 		B8CA89F690CA490A85205D11 /* ReactNativeConfig.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeConfig.xcodeproj; path = "../node_modules/react-native-config/ios/ReactNativeConfig.xcodeproj"; sourceTree = "<group>"; };
+		BABCE79C5C674FFA9AAC0E81 /* libRNSentry.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNSentry.a; sourceTree = "<group>"; };
 		BC2063D680AA4BF49C7463F3 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		C0E85C1C93614FF486CF48F5 /* libRNCWebView.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNCWebView.a; sourceTree = "<group>"; };
+		CB4DF67CF4E1475A9BF8F76B /* libz.tbd */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		CEE19B8CCC0546338000A24C /* RNCWebView.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNCWebView.xcodeproj; path = "../node_modules/react-native-webview/ios/RNCWebView.xcodeproj"; sourceTree = "<group>"; };
+		D7D4F057D8264BD08B0EC746 /* RNSentry.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNSentry.xcodeproj; path = "../node_modules/@sentry/react-native/ios/RNSentry.xcodeproj"; sourceTree = "<group>"; };
 		DA0A2DF28EED4C66AD2C004A /* RCTVideo.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTVideo.xcodeproj; path = "../node_modules/react-native-video/ios/RCTVideo.xcodeproj"; sourceTree = "<group>"; };
-		E1E2FA9064FD4F5CBDEC1D68 /* libRNSentry.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNSentry.a; sourceTree = "<group>"; };
 		E7043272667B49B5941885D9 /* libRCTBluetoothSerial.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTBluetoothSerial.a; sourceTree = "<group>"; };
 		E9E43B9775A64CF08F66E683 /* RNVersionNumber.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVersionNumber.xcodeproj; path = "../node_modules/react-native-version-number/ios/RNVersionNumber.xcodeproj"; sourceTree = "<group>"; };
 		E9FE5B898B0D407B8B6F7AC1 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		F68BAD0B69AB4D6EA37B0369 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		F825B18C613A440E93F87FF7 /* libjschelpers.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libjschelpers.a; sourceTree = "<group>"; };
-		CEE19B8CCC0546338000A24C /* RNCWebView.xcodeproj */ = {isa = PBXFileReference; name = "RNCWebView.xcodeproj"; path = "../node_modules/react-native-webview/ios/RNCWebView.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
-		C0E85C1C93614FF486CF48F5 /* libRNCWebView.a */ = {isa = PBXFileReference; name = "libRNCWebView.a"; path = "libRNCWebView.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -637,8 +647,6 @@
 				0BD713CA69A54771AAFE2F39 /* libSplashScreen.a in Frameworks */,
 				BE91C7965D2F425CA6F0292B /* libRNVersionNumber.a in Frameworks */,
 				C19BFB28A3F54A7699203D76 /* libRNFirebase.a in Frameworks */,
-				00523F7841D441AE8D5178FB /* libRNSentry.a in Frameworks */,
-				8B50DC86979B4A27BCAE9A11 /* libz.tbd in Frameworks */,
 				1EE87A3AB81C4F3281A06347 /* libRNOpenAppSettings.a in Frameworks */,
 				0363B7F228794868A471DC4C /* libBVLinearGradient.a in Frameworks */,
 				E4174D6755BD427D9F055803 /* libRCTVideo.a in Frameworks */,
@@ -646,6 +654,8 @@
 				175BDDCD16134D0D9AD54357 /* libBleClient.a in Frameworks */,
 				2397367523132F9F00724B1B /* Protobuf.framework in Frameworks */,
 				7B79D650F5E94719A11BB6F3 /* libRNCWebView.a in Frameworks */,
+				73FCFCACD4054001A4EA49D7 /* libRNSentry.a in Frameworks */,
+				EEADC531112844AC87EE6CCE /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -661,6 +671,7 @@
 				2D02E4C61E0B4AEC006451C7 /* libRCTSettings-tvOS.a in Frameworks */,
 				2D02E4C71E0B4AEC006451C7 /* libRCTText-tvOS.a in Frameworks */,
 				2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */,
+				CDFC7FFFF2B643A7A2DA2503 /* libRNSentry-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -838,12 +849,14 @@
 				2AF38BF7740943F8AF722187 /* libSplashScreen.a */,
 				59AAB9A4BCAC43C7ADD55200 /* libRNVersionNumber.a */,
 				8DCE7B9F57D34FC18AA1F0BA /* libRNFirebase.a */,
-				E1E2FA9064FD4F5CBDEC1D68 /* libRNSentry.a */,
 				652F9218FF3D4BD5A956C677 /* libRNOpenAppSettings.a */,
 				1DDB46D021824DD6AF617CBC /* libBVLinearGradient.a */,
 				B70893341FE94B688CC47C7A /* libRCTVideo.a */,
 				E7043272667B49B5941885D9 /* libRCTBluetoothSerial.a */,
 				782B25072DB94F90845D0FCB /* libBleClient.a */,
+				C0E85C1C93614FF486CF48F5 /* libRNCWebView.a */,
+				BABCE79C5C674FFA9AAC0E81 /* libRNSentry.a */,
+				2F766213077F400FA299F11E /* libRNSentry-tvOS.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -936,11 +949,11 @@
 			path = Analytics;
 			sourceTree = "<group>";
 		};
-		23CF45FA212D5D3D0085F0A9 /* Products */ = {
+		23C28B4C23D278D500E71EA2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				23CF45FE212D5D3D0085F0A9 /* libRNSentry.a */,
-				23DC35E2230E73B40000C391 /* libRNSentry-tvOS.a */,
+				23C28B5123D278D500E71EA2 /* libRNSentry.a */,
+				23C28B5323D278D500E71EA2 /* libRNSentry-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -970,12 +983,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		23EC3AC723D1B609004CE18E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23EC3ACB23D1B609004CE18E /* libRNCWebView.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				23DC35E8230E741C0000C391 /* JavaScriptCore.framework */,
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
-				504204A088D04865AAB0456E /* libz.tbd */,
+				CB4DF67CF4E1475A9BF8F76B /* libz.tbd */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1042,13 +1063,13 @@
 				30DE76568AD942F1A39FBBF1 /* SplashScreen.xcodeproj */,
 				E9E43B9775A64CF08F66E683 /* RNVersionNumber.xcodeproj */,
 				2D06B00211EF48E18CF50AAB /* RNFirebase.xcodeproj */,
-				7656FFF0A9494CBB993B55D5 /* RNSentry.xcodeproj */,
 				317F8ABEB3884A30831C9395 /* RNOpenAppSettings.xcodeproj */,
 				AB68D73B6C7A415E812FCE04 /* BVLinearGradient.xcodeproj */,
 				DA0A2DF28EED4C66AD2C004A /* RCTVideo.xcodeproj */,
 				B878BD9E77914666B5636D5D /* RCTBluetoothSerial.xcodeproj */,
 				776F9825A23E43019EFFB6D6 /* BleClient.xcodeproj */,
 				CEE19B8CCC0546338000A24C /* RNCWebView.xcodeproj */,
+				D7D4F057D8264BD08B0EC746 /* RNSentry.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1186,11 +1207,11 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = B423242B9Q;
+						DevelopmentTeam = G549W9SJ4D;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = B423242B9Q;
+						DevelopmentTeam = G549W9SJ4D;
 						LastSwiftMigration = 1010;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -1293,6 +1314,10 @@
 					ProjectRef = B8CA89F690CA490A85205D11 /* ReactNativeConfig.xcodeproj */;
 				},
 				{
+					ProductGroup = 23EC3AC723D1B609004CE18E /* Products */;
+					ProjectRef = CEE19B8CCC0546338000A24C /* RNCWebView.xcodeproj */;
+				},
+				{
 					ProductGroup = 23D1A346227C8F68009CB6D3 /* Products */;
 					ProjectRef = 23D1A345227C8F68009CB6D3 /* RNDeviceInfo.xcodeproj */;
 				},
@@ -1309,8 +1334,8 @@
 					ProjectRef = 317F8ABEB3884A30831C9395 /* RNOpenAppSettings.xcodeproj */;
 				},
 				{
-					ProductGroup = 23CF45FA212D5D3D0085F0A9 /* Products */;
-					ProjectRef = 7656FFF0A9494CBB993B55D5 /* RNSentry.xcodeproj */;
+					ProductGroup = 23C28B4C23D278D500E71EA2 /* Products */;
+					ProjectRef = D7D4F057D8264BD08B0EC746 /* RNSentry.xcodeproj */;
 				},
 				{
 					ProductGroup = 237DB02320F7ABBB00B6E4A6 /* Products */;
@@ -1518,11 +1543,18 @@
 			remoteRef = 2396A76921DFA586007C79F2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		23CF45FE212D5D3D0085F0A9 /* libRNSentry.a */ = {
+		23C28B5123D278D500E71EA2 /* libRNSentry.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libRNSentry.a;
-			remoteRef = 23CF45FD212D5D3D0085F0A9 /* PBXContainerItemProxy */;
+			remoteRef = 23C28B5023D278D500E71EA2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		23C28B5323D278D500E71EA2 /* libRNSentry-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRNSentry-tvOS.a";
+			remoteRef = 23C28B5223D278D500E71EA2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		23D1A344227C8F3C009CB6D3 /* libRCTBluetoothSerial.a */ = {
@@ -1595,11 +1627,11 @@
 			remoteRef = 23DC35D6230E73B40000C391 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		23DC35E2230E73B40000C391 /* libRNSentry-tvOS.a */ = {
+		23EC3ACB23D1B609004CE18E /* libRNCWebView.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = "libRNSentry-tvOS.a";
-			remoteRef = 23DC35E1230E73B40000C391 /* PBXContainerItemProxy */;
+			path = libRNCWebView.a;
+			remoteRef = 23EC3ACA23D1B609004CE18E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		2D16E6721FA4F8DC00B85C8A /* libRCTBlob-tvOS.a */ = {
@@ -1888,7 +1920,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = B423242B9Q;
+				DEVELOPMENT_TEAM = G549W9SJ4D;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1902,19 +1934,20 @@
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
 					"$(SRCROOT)/../node_modules/react-native-version-number/ios",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
-					"$(SRCROOT)/../node_modules/react-native-sentry/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-app-settings/ios",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-bluetooth-serial/ios/RCTBluetoothSerial",
 					"$(SRCROOT)/../node_modules/react-native-ble-plx/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-webview/ios",
+					"$(SRCROOT)/../node_modules/@sentry/react-native/ios/**",
 				);
 				INFOPLIST_FILE = OttoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1932,7 +1965,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = B423242B9Q;
+				DEVELOPMENT_TEAM = G549W9SJ4D;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-device-info/RNDeviceInfo",
@@ -1942,19 +1975,20 @@
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
 					"$(SRCROOT)/../node_modules/react-native-version-number/ios",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
-					"$(SRCROOT)/../node_modules/react-native-sentry/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-app-settings/ios",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-bluetooth-serial/ios/RCTBluetoothSerial",
 					"$(SRCROOT)/../node_modules/react-native-ble-plx/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-webview/ios",
+					"$(SRCROOT)/../node_modules/@sentry/react-native/ios/**",
 				);
 				INFOPLIST_FILE = OttoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1971,13 +2005,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon${BUNDLE_ID_SUFFIX}";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				BUNDLE_ID_PREFIX = "Otto-Dev";
+				BUNDLE_ID_PREFIX = "OttoDIY-Dev";
 				BUNDLE_ID_SUFFIX = .dev;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Otto/Otto Dev.entitlements";
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = B423242B9Q;
+				DEVELOPMENT_TEAM = G549W9SJ4D;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Firebase",
@@ -1995,7 +2029,6 @@
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
 					"$(SRCROOT)/../node_modules/react-native-version-number/ios",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
-					"$(SRCROOT)/../node_modules/react-native-sentry/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-app-settings/ios",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
@@ -2003,6 +2036,7 @@
 					"$(SRCROOT)/../node_modules/react-native-ble-plx/ios/**",
 					"$(SRCROOT)/Firebase",
 					"$(SRCROOT)/../node_modules/react-native-webview/ios",
+					"$(SRCROOT)/../node_modules/@sentry/react-native/ios/**",
 				);
 				INFOPLIST_FILE = Otto/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2012,6 +2046,7 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ottodiy.OttoDIY;
 				PRODUCT_NAME = "Otto Dev";
 				SWIFT_OBJC_BRIDGING_HEADER = "Otto-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -2026,12 +2061,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon${BUNDLE_ID_SUFFIX}";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				BUNDLE_ID_PREFIX = Otto;
+				BUNDLE_ID_PREFIX = OttoDIY;
 				BUNDLE_ID_SUFFIX = "";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Otto/Otto Dev.entitlements";
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = B423242B9Q;
+				DEVELOPMENT_TEAM = G549W9SJ4D;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Firebase",
@@ -2049,7 +2084,6 @@
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
 					"$(SRCROOT)/../node_modules/react-native-version-number/ios",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
-					"$(SRCROOT)/../node_modules/react-native-sentry/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-app-settings/ios",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
@@ -2057,6 +2091,7 @@
 					"$(SRCROOT)/../node_modules/react-native-ble-plx/ios/**",
 					"$(SRCROOT)/Firebase",
 					"$(SRCROOT)/../node_modules/react-native-webview/ios",
+					"$(SRCROOT)/../node_modules/@sentry/react-native/ios/**",
 				);
 				INFOPLIST_FILE = Otto/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2066,6 +2101,7 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ottodiy.OttoDIY;
 				PRODUCT_NAME = Otto;
 				SWIFT_OBJC_BRIDGING_HEADER = "Otto-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
@@ -2114,14 +2150,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon${BUNDLE_ID_SUFFIX}";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				BUNDLE_ID_PREFIX = "Otto-Beta";
+				BUNDLE_ID_PREFIX = "OttoDIY-Beta";
 				BUNDLE_ID_SUFFIX = .beta;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Otto/Otto Dev.entitlements";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = B423242B9Q;
+				DEVELOPMENT_TEAM = G549W9SJ4D;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Firebase",
@@ -2140,7 +2176,6 @@
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
 					"$(SRCROOT)/../node_modules/react-native-version-number/ios",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
-					"$(SRCROOT)/../node_modules/react-native-sentry/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-app-settings/ios",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
@@ -2148,6 +2183,7 @@
 					"$(SRCROOT)/../node_modules/react-native-ble-plx/ios/**",
 					"$(SRCROOT)/Firebase",
 					"$(SRCROOT)/../node_modules/react-native-webview/ios",
+					"$(SRCROOT)/../node_modules/@sentry/react-native/ios/**",
 				);
 				INFOPLIST_FILE = Otto/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2158,6 +2194,7 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ottodiy.OttoDIY;
 				PRODUCT_NAME = "Otto Beta";
 				SWIFT_OBJC_BRIDGING_HEADER = "Otto-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
@@ -2174,7 +2211,7 @@
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = B423242B9Q;
+				DEVELOPMENT_TEAM = G549W9SJ4D;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-device-info/RNDeviceInfo",
@@ -2184,19 +2221,20 @@
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
 					"$(SRCROOT)/../node_modules/react-native-version-number/ios",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
-					"$(SRCROOT)/../node_modules/react-native-sentry/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-app-settings/ios",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-bluetooth-serial/ios/RCTBluetoothSerial",
 					"$(SRCROOT)/../node_modules/react-native-ble-plx/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-webview/ios",
+					"$(SRCROOT)/../node_modules/@sentry/react-native/ios/**",
 				);
 				INFOPLIST_FILE = OttoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -2229,18 +2267,19 @@
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
 					"$(SRCROOT)/../node_modules/react-native-version-number/ios",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
-					"$(SRCROOT)/../node_modules/react-native-sentry/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-app-settings/ios",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-bluetooth-serial/ios/RCTBluetoothSerial",
 					"$(SRCROOT)/../node_modules/react-native-ble-plx/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-webview/ios",
+					"$(SRCROOT)/../node_modules/@sentry/react-native/ios/**",
 				);
 				INFOPLIST_FILE = "Otto-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -2270,6 +2309,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Otto-tvOSTests";
@@ -2301,18 +2341,19 @@
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
 					"$(SRCROOT)/../node_modules/react-native-version-number/ios",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
-					"$(SRCROOT)/../node_modules/react-native-sentry/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-app-settings/ios",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-bluetooth-serial/ios/RCTBluetoothSerial",
 					"$(SRCROOT)/../node_modules/react-native-ble-plx/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-webview/ios",
+					"$(SRCROOT)/../node_modules/@sentry/react-native/ios/**",
 				);
 				INFOPLIST_FILE = "Otto-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -2348,18 +2389,19 @@
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
 					"$(SRCROOT)/../node_modules/react-native-version-number/ios",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
-					"$(SRCROOT)/../node_modules/react-native-sentry/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-app-settings/ios",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-bluetooth-serial/ios/RCTBluetoothSerial",
 					"$(SRCROOT)/../node_modules/react-native-ble-plx/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-webview/ios",
+					"$(SRCROOT)/../node_modules/@sentry/react-native/ios/**",
 				);
 				INFOPLIST_FILE = "Otto-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -2390,6 +2432,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Otto-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2414,6 +2457,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Otto-tvOSTests";

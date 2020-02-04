@@ -77,6 +77,7 @@ project.ext.react = [
 ]
 
 apply from: "../../node_modules/react-native/react.gradle"
+apply from: "../../node_modules/@sentry/react-native/sentry.gradle"
 // apply from: "../../node_modules/react-native-sentry/sentry.gradle" // TODO getting bad sentry url
 
 // See https://github.com/luggit/react-native-config#setup
@@ -171,13 +172,13 @@ android {
 }
 
 dependencies {
+    implementation project(':@sentry_react-native')
     implementation project(':react-native-webview')
     compile project(':react-native-ble-plx')
     compile project(':react-native-bluetooth-serial')
     compile project(':react-native-video')
     compile project(':react-native-linear-gradient')
     compile project(':react-native-app-settings')
-    compile project(':react-native-sentry')
     implementation(project(':react-native-firebase')) {
         transitive = false
     }
