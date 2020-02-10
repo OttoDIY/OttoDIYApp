@@ -1,12 +1,10 @@
 import Config from 'react-native-config'
-import { Platform } from 'react-native'
-import { Sentry, SentrySeverity } from '@sentry/react-native'
+import * as Sentry from '@sentry/react-native'
 
 import { enrichProperties } from 'App/Services/Properties'
 
-// TODO Fix for iOS
 const isCrashReportingEnabled = () => {
-  return (!__DEV__ && Platform.OS !== 'ios')
+  return !__DEV__
 }
 
 export const initCrashReporting = () => {
@@ -47,7 +45,7 @@ export const captureAPIError = (message, errorResponse) => {
       ? { errorResponse }
       : {}
     Sentry.captureMessage(message, {
-      level: SentrySeverity.Error,
+      level: Sentry.Severity.Error,
       extra: enrichProperties(extra)
     })
   }
