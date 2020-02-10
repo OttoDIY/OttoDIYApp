@@ -4,21 +4,23 @@ import { Platform, View, Button, Text } from 'react-native'
 
 import { TouchableOpacity } from 'App/Components'
 
-import s from './Styles'
+import styles, { stylesLight } from './Styles'
 
 export default class NavButton extends Component {
   static propTypes = {
-    onPress: PropTypes.func,
-    text: PropTypes.string
+    theme: PropTypes.string,
+    text: PropTypes.string,
+    onPress: PropTypes.func
   }
 
   render () {
-    const { style = {}, text, onPress } = this.props
+    const { style = {}, theme = 'default', text, onPress } = this.props
     if (Platform.OS === 'ios') {
       return (
         <Button title={text} onPress={onPress} />
       )
     } else {
+      const s = (theme === 'light') ? stylesLight : styles
       return (
         <View style={s.view}>
           <TouchableOpacity style={s.button} onPress={onPress}>

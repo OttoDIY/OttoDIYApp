@@ -46,10 +46,17 @@ export default {
       left: 'M 4'
     }
   },
+  moves: [
+    { title: 'Wait', cmd: 'M 0', showDuration: true },
+    { title: 'Forwards', cmd: 'M 1', showDuration: true },
+    { title: 'Back', cmd: 'M 2', showDuration: true },
+    { title: 'Left', cmd: 'M 3', showDuration: true },
+    { title: 'Right', cmd: 'M 4', showDuration: true }
+  ],
   skills: [
     {
-      id: 'moves',
-      category: 'Moves',
+      id: 'skills',
+      category: 'Skills',
       image: Images.humanoid.swing,
       items: [
         { title: 'Right Hand', image: Images.humanoid.handright, cmd: 'M 22', stopAtEnd: true },
@@ -74,12 +81,12 @@ export default {
       category: 'Sounds',
       image: Images.humanoid.beep,
       items: [
-        { title: 'Mode 1', image: Images.sing.mode1, cmd: 'K 16', stopAtEnd: false },
-        { title: 'Mode 2', image: Images.sing.mode2, cmd: 'K 17', stopAtEnd: false },
-        { title: 'Mode 3', image: Images.sing.mode3, cmd: 'K 18', stopAtEnd: false },
+        { title: 'Sing 1', image: Images.sing.mode1, cmd: 'K 16', stopAtEnd: false },
+        { title: 'Sing 2', image: Images.sing.mode2, cmd: 'K 17', stopAtEnd: false },
+        { title: 'Sing 3', image: Images.sing.mode3, cmd: 'K 18', stopAtEnd: false },
         { title: 'OhOoh', image: Images.sing.ohooh, cmd: 'K 4', stopAtEnd: false },
-        { title: 'Button Pushed', image: Images.sing.buttonPushed, cmd: 'K 19', stopAtEnd: false },
-        { title: 'Happy Short', image: Images.sing.happyShort, cmd: 'K 10', stopAtEnd: false },
+        { title: 'Push', image: Images.sing.buttonPushed, cmd: 'K 19', stopAtEnd: false },
+        { title: 'Kinda Happy', image: Images.sing.happyShort, cmd: 'K 10', stopAtEnd: false },
         { title: 'Happy', image: Images.sing.happy, cmd: 'K 8', stopAtEnd: false },
         { title: 'Super Happy', image: Images.sing.superHappy, cmd: 'K 9', stopAtEnd: false },
         { title: 'Sad', image: Images.sing.sad, cmd: 'K 11', stopAtEnd: false },
@@ -87,7 +94,7 @@ export default {
         { title: 'Surprise', image: Images.sing.surprise, cmd: 'K 3', stopAtEnd: false },
         { title: 'Disconnection', image: Images.sing.disconnection, cmd: 'K 2', stopAtEnd: false },
         { title: 'Confused', image: Images.sing.confused, cmd: 'K 12', stopAtEnd: false },
-        { title: 'Fart3', image: Images.sing.fart3, cmd: 'K 15', stopAtEnd: false },
+        { title: 'Fart', image: Images.sing.fart3, cmd: 'K 15', stopAtEnd: false },
         { title: 'Cuddly', image: Images.sing.cuddly, cmd: 'K 6', stopAtEnd: false }
       ]
     },

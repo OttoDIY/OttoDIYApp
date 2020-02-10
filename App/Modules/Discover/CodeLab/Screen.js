@@ -36,6 +36,7 @@ export default class Screen extends Component {
     const allSkills = []
     if (moves && moves.length > 0) {
       allSkills.push({
+        id: 'moves',
         category: 'Moves',
         items: moves
       })

@@ -123,6 +123,15 @@ export default class Otto {
     }
   }
 
+  moveByDirection = (direction, stopAtEnd = true) => {
+    const cmd = cmdFromInstruction(direction) + ' ' + this.speed
+    Bluetooth.write(cmd)
+
+    if (stopAtEnd) {
+      this.stop(DELAY)
+    }
+  }
+
   moveAndStop = (touch) => {
     this.move(touch)
     this.stop(DELAY)
@@ -130,25 +139,24 @@ export default class Otto {
 
   doSkill = (cmd, stopAtEnd) => {
     Bluetooth.write(cmd)
-    this.stop(DELAY)
+    if (stopAtEnd) {
+      this.stop(DELAY)
+    }
   }
 
-  run = (instructions, stopAtEnd = true) => {
+  run = (instructions) => {
     let delay = 0
-    if (stopAtEnd) {
-      // Always finish with stop if stopAtEnd is true
-      instructions.push(STOP)
-    }
     instructions.forEach((instruction) => {
       setTimeout(() => {
-        const cmd = (
-          instruction === 'up' || instruction === 'down' ||
-          instruction === 'right' || instruction === 'left')
-          ? cmdFromInstruction(instruction) + ' ' + this.speed
-          : cmdFromInstruction(instruction)
-        Bluetooth.write(cmd)
+        const { cmd } = instruction
+        if (cmd) {
+          Bluetooth.write(cmd)
+        }
       }, delay)
-      delay += DELAY
+      const { duration } = instruction
+      delay += (duration && duration > 0) ? duration : DELAY
     })
+    // Always finish with stop
+    this.stop(delay)
   }
 }

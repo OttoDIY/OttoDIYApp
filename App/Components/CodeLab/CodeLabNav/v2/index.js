@@ -34,6 +34,7 @@ export default class CodeLabNav extends Component {
       <PlayerBottomNav
         theme='light'
         skills={skills}
+        showTabIcons={false}
         onSkillPress={this.onSkillPress}
         onNavHeightChange={onNavHeightChange} />
     )

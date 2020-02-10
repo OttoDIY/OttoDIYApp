@@ -19,11 +19,13 @@ export default class PlayerBottomNav extends Component {
     }),
     skills: PropTypes.arrayOf(
       PropTypes.shape({
-        title: PropTypes.string,
+        id: PropTypes.string.isRequired,
+        category: PropTypes.string.isRequired,
         image: PropTypes.oneOfType([PropTypes.number, PropTypes.object])
       }).isRequired
     ),
     showSkillIcons: PropTypes.bool,
+    showTabIcons: PropTypes.bool,
     onSliderPress: PropTypes.func,
     onSkillPress: PropTypes.func,
     onNavHeightChange: PropTypes.func
@@ -57,6 +59,7 @@ export default class PlayerBottomNav extends Component {
       slider,
       skills = [],
       showSkillIcons = false,
+      showTabIcons = true,
       onSliderPress = () => {},
       onSkillPress = () => {} } = this.props
 
@@ -112,7 +115,8 @@ export default class PlayerBottomNav extends Component {
         {skillCategories.length > 1 &&
           <BottomTabs
             theme={theme}
-            tabs={skillCategories.map(category => category.toUpperCase())}
+            tabs={skills}
+            showIcons={showTabIcons}
             onTabPress={this.onCategoryPress} />
         }
       </View>

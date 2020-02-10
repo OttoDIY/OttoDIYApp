@@ -16,7 +16,8 @@ const s = {
   label: {
     ...Styles.text,
     minWidth: 40,
-    textAlign: 'center'
+    textAlign: 'center',
+    color: Colors.primary
   }
 }
 

@@ -51,6 +51,10 @@ export default class Simulator {
     // Only moveAndStop is supported for the time being
   }
 
+  moveByDirection = (direction, stopAtEnd = true) => {
+    socket.emit({event: 'move', direction})
+  }
+
   moveAndStop = (touch) => {
     const direction = calculateDirection(touch)
     if (direction) {
@@ -62,7 +66,7 @@ export default class Simulator {
     // TODO skill commands not supported right now
   }
 
-  run = (instructions, stopAtEnd = true) => {
+  run = (instructions) => {
     let delay = 0
     instructions.forEach((instruction) => {
       setTimeout(() => {

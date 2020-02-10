@@ -3,6 +3,10 @@ export default {
   hello: require('App/Images/Hello/hello.png'),
   bluetooth: require('App/Images/Bluetooth/bluetooth.png'),
   done: require('App/Images/Done/done.png'),
+  slider: {
+    thumb: require('App/Images/Slider/thumb.png'),
+    thumb_light: require('App/Images/Slider/thumb_light.png')
+  },
   controls: {
     controls: require('App/Images/Controls/controls.png'),
     control: require('App/Images/Controls/control.png'),

@@ -45,31 +45,31 @@ export class PlayerContainer extends Component {
 
   onUp = async () => {
     if (await this.checkIsConnected()) {
-      this.client.run(['up'])
+      this.client.moveByDirection('up')
     }
   }
 
   onDown = async () => {
     if (await this.checkIsConnected()) {
-      this.client.run(['down'])
+      this.client.moveByDirection('down')
     }
   }
 
   onLeft = async () => {
     if (await this.checkIsConnected()) {
-      this.client.run(['left'])
+      this.client.moveByDirection('left')
     }
   }
 
   onRight = async () => {
     if (await this.checkIsConnected()) {
-      this.client.run(['right'])
+      this.client.moveByDirection('right')
     }
   }
 
   onLongPress = async (direction) => {
     if (await this.checkIsConnected()) {
-      this.client.run([direction], false)
+      this.client.moveByDirection(direction, false)
     }
   }
 
