@@ -29,7 +29,8 @@ describe('Player', () => {
         onToggleSpeed={() => {}}
         onHelp={() => {}}
         onHideNotConnectedModal={() => {}}
-        onChooseRobotPress={() => {}} />)
+        onChooseRobotPress={() => {}}
+        onCodeLabPress={() => {}} />)
   })
 
   it('Component renders correctly', () => {

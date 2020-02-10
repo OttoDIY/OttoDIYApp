@@ -10,14 +10,17 @@ import BottomTabs from '../BottomTabs'
 const tabs = [
   {
     id: 'moves',
+    category: 'Moves',
     image: Images.buttons.moves
   },
   {
     id: 'sounds',
+    category: 'Sounds',
     image: Images.sing.beep
   },
   {
     id: 'gestures',
+    category: 'Gestures',
     image: Images.gestures.superhappy
   }
 ]

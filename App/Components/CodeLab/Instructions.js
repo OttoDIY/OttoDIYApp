@@ -1,35 +1,35 @@
 const Instructions = {
   action: {
     up: {
-      key: 'up',
+      cmd: 'up',
       icon: 'arrow-up',
       title: 'Move Up'
     },
     left: {
-      key: 'left',
+      cmd: 'left',
       icon: 'arrow-left',
       title: 'Move Left'
     },
     right: {
-      key: 'right',
+      cmd: 'right',
       icon: 'arrow-right',
       title: 'Move Right'
     },
     down: {
-      key: 'down',
+      cmd: 'down',
       icon: 'arrow-down',
       title: 'Move Down'
     }
   },
   sensor: {
     temperature: {
-      key: 'temperature',
+      cmd: 'temperature',
       type: 'sensor',
       icon: 'thermometer',
       title: 'Read Temperature'
     },
     distance: {
-      key: 'distance',
+      cmd: 'distance',
       type: 'sensor',
       icon: 'road',
       title: 'Read Distance'
@@ -37,30 +37,30 @@ const Instructions = {
   },
   control: {
     if: {
-      key: 'if',
+      cmd: 'if',
       type: 'control',
       title: 'If'
     },
     loop: {
-      key: 'loop',
+      cmd: 'loop',
       type: 'control',
       title: 'Loop'
     },
     while: {
-      key: 'while',
+      cmd: 'while',
       type: 'control',
       title: 'While'
     }
   },
   data: {
     color: {
-      key: 'color',
+      cmd: 'color',
       type: 'data',
       icon: 'eyedropper',
       title: 'Set Color'
     },
     speed: {
-      key: 'speed',
+      cmd: 'speed',
       type: 'data',
       icon: 'rocket',
       title: 'Set Speed'

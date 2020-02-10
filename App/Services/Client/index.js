@@ -92,6 +92,13 @@ export default class Client {
     }
   }
 
+  moveByDirection = async (direction, stopAtEnd = true) => {
+    const client = await this.getClient()
+    if (client) {
+      client.moveByDirection(direction, stopAtEnd)
+    }
+  }
+
   moveAndStop = async (touch) => {
     const client = await this.getClient()
     if (client) {
@@ -106,10 +113,10 @@ export default class Client {
     }
   }
 
-  run = async (instructions, stopAtEnd = true) => {
+  run = async (instructions) => {
     const client = await this.getClient()
     if (client) {
-      client.run(instructions, stopAtEnd)
+      client.run(instructions)
     }
   }
 }

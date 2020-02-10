@@ -1,11 +1,14 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react-native'
 
-import Decorator from './Decorators'
+import OttoConfig from 'App/Services/Client/Otto/Config'
+import { FullScreenDecorator } from './Decorators'
 import { CodeLabNav } from '../CodeLab'
 
+const skills = OttoConfig.skills
+
 storiesOf('CodeLab Nav', module)
-  .addDecorator(Decorator)
+  .addDecorator(FullScreenDecorator)
   .add('Default', () => (
-    <CodeLabNav onPress={(instruction) => {}} onRun={() => {}} />
+    <CodeLabNav skills={skills} onPress={(instruction) => {}} />
   ))

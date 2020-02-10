@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, TouchableOpacity, Image } from 'react-native'
+import { View, TouchableOpacity, Text, Image } from 'react-native'
 import PropTypes from 'prop-types'
 import uuid from 'react-native-uuid'
 
@@ -9,8 +9,10 @@ export default class BottomNav extends Component {
   static propTypes = {
     tabs: PropTypes.arrayOf(PropTypes.shape({
       id: PropTypes.string.isRequired,
-      image: PropTypes.oneOfType([PropTypes.number, PropTypes.object]).isRequired
+      category: PropTypes.string.isRequired,
+      image: PropTypes.oneOfType([PropTypes.number, PropTypes.object])
     })),
+    showIcons: PropTypes.bool,
     onTabPress: PropTypes.func.isRequired
   }
 
@@ -38,20 +40,22 @@ export default class BottomNav extends Component {
   }
 
   render () {
-    const { tabs } = this.props
+    const { tabs, showIcons = true } = this.props
     const { activeTab } = this.state
     const flexStyle = {
       flex: (tabs && tabs.length > 0) ? (1 / tabs.length) : 0
     }
+
     return (
       <View style={s.view}>
         {tabs.map((tab) => {
           return (
             <TouchableOpacity
               key={uuid.v4()}
-              style={[s.tab, flexStyle, (activeTab === tab) ? s.tab_active : null]}
+              style={[s.tab, flexStyle, (activeTab && activeTab.id === tab.id) ? s.tab_active : null]}
               onPress={() => { this.onTabPress(tab) }}>
-              <Image style={s.image} source={tab.image} />
+              {showIcons && <Image style={s.image} source={tab.image} />}
+              {!showIcons && <Text style={s.text}>{tab.category.toUpperCase()}</Text>}
             </TouchableOpacity>
           )
         })}

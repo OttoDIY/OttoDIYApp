@@ -133,6 +133,8 @@ jest.mock('react-native-firebase', () => {
 
 jest.mock('react-native-video', () => 'react-native-video')
 
+jest.mock('@react-native-community/slider', () => '@react-native-community/slider')
+
 jest.mock('global', () =>
   Object.assign(global, { window: { STORYBOOK_HOOKS_CONTEXT: '' } })
 )

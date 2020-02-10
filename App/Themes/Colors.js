@@ -51,6 +51,7 @@ export default {
     bubble_active: palette.primaryDark
   },
   codeLab: {
+    default: '#FFFFFF',
     action: '#4EBD64',
     sensor: '#B55ADA',
     control: '#EE4444',

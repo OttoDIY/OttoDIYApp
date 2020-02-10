@@ -6,6 +6,12 @@ exports[`CodeLab Component renders correctly 1`] = `
     instructions={Array []}
     onChangeOrder={[Function]}
     onClose={[Function]}
+    onSlidingComplete={[Function]}
+    style={
+      Object {
+        "marginBottom": 94,
+      }
+    }
   />
   <Modal
     navigation={
@@ -13,13 +19,420 @@ exports[`CodeLab Component renders correctly 1`] = `
         "navigate": [Function],
       }
     }
+    onBack={[Function]}
     onHidePress={[Function]}
     show={false}
     template="NotConnected"
   />
   <CodeLabNav
+    onNavHeightChange={[Function]}
     onPress={[Function]}
-    onRun={[Function]}
+    skills={
+      Array [
+        Object {
+          "category": "Moves",
+          "id": "moves",
+          "items": Array [
+            Object {
+              "cmd": "M 0",
+              "showDuration": true,
+              "title": "Wait",
+            },
+            Object {
+              "cmd": "M 1",
+              "showDuration": true,
+              "title": "Forwards",
+            },
+            Object {
+              "cmd": "M 2",
+              "showDuration": true,
+              "title": "Back",
+            },
+            Object {
+              "cmd": "M 3",
+              "showDuration": true,
+              "title": "Left",
+            },
+            Object {
+              "cmd": "M 4",
+              "showDuration": true,
+              "title": "Right",
+            },
+          ],
+        },
+        Object {
+          "category": "Skills",
+          "id": "skills",
+          "image": Object {
+            "process": [Function],
+          },
+          "items": Array [
+            Object {
+              "cmd": "M 19",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": true,
+              "title": "Jitter",
+            },
+            Object {
+              "cmd": "M 8",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": true,
+              "title": "Swing",
+            },
+            Object {
+              "cmd": "M 14",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": true,
+              "title": "Tiptoe",
+            },
+            Object {
+              "cmd": "M 20",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": true,
+              "title": "Ascend",
+            },
+            Object {
+              "cmd": "M 5",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": true,
+              "title": "Up Down",
+            },
+            Object {
+              "cmd": "M 13",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": true,
+              "title": "Flap Back",
+            },
+            Object {
+              "cmd": "M 7",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": true,
+              "title": "Moonwalk Left",
+            },
+            Object {
+              "cmd": "M 17",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": true,
+              "title": "Shake Left",
+            },
+            Object {
+              "cmd": "M 15",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": true,
+              "title": "Bend Left",
+            },
+            Object {
+              "cmd": "M 10",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": true,
+              "title": "Cross Left",
+            },
+            Object {
+              "cmd": "M 12",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": true,
+              "title": "Flap Front",
+            },
+            Object {
+              "cmd": "M 6",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": true,
+              "title": "Moonwalk Right",
+            },
+            Object {
+              "cmd": "M 18",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": true,
+              "title": "Shake Right",
+            },
+            Object {
+              "cmd": "M 16",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": true,
+              "title": "Bend Right",
+            },
+            Object {
+              "cmd": "M 9",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": true,
+              "title": "Cross Right",
+            },
+          ],
+        },
+        Object {
+          "category": "Sounds",
+          "id": "sounds",
+          "image": Object {
+            "process": [Function],
+          },
+          "items": Array [
+            Object {
+              "cmd": "K 16",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": false,
+              "title": "Sing 1",
+            },
+            Object {
+              "cmd": "K 17",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": false,
+              "title": "Sing 2",
+            },
+            Object {
+              "cmd": "K 18",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": false,
+              "title": "Sing 3",
+            },
+            Object {
+              "cmd": "K 4",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": false,
+              "title": "OhOoh",
+            },
+            Object {
+              "cmd": "K 19",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": false,
+              "title": "Push",
+            },
+            Object {
+              "cmd": "K 10",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": false,
+              "title": "Kinda Happy",
+            },
+            Object {
+              "cmd": "K 8",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": false,
+              "title": "Happy",
+            },
+            Object {
+              "cmd": "K 9",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": false,
+              "title": "Super Happy",
+            },
+            Object {
+              "cmd": "K 11",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": false,
+              "title": "Sad",
+            },
+            Object {
+              "cmd": "K 7",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": false,
+              "title": "Sleeping",
+            },
+            Object {
+              "cmd": "K 3",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": false,
+              "title": "Surprise",
+            },
+            Object {
+              "cmd": "K 2",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": false,
+              "title": "Disconnection",
+            },
+            Object {
+              "cmd": "K 12",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": false,
+              "title": "Confused",
+            },
+            Object {
+              "cmd": "K 15",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": false,
+              "title": "Fart",
+            },
+            Object {
+              "cmd": "K 6",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": false,
+              "title": "Cuddly",
+            },
+          ],
+        },
+        Object {
+          "category": "Gestures",
+          "id": "gestures",
+          "image": Object {
+            "process": [Function],
+          },
+          "items": Array [
+            Object {
+              "cmd": "H 1",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": false,
+              "title": "Happy",
+            },
+            Object {
+              "cmd": "H 2",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": false,
+              "title": "Super Happy",
+            },
+            Object {
+              "cmd": "H 7",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": false,
+              "title": "Love",
+            },
+            Object {
+              "cmd": "H 3",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": false,
+              "title": "Sad",
+            },
+            Object {
+              "cmd": "H 13",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": false,
+              "title": "Fail",
+            },
+            Object {
+              "cmd": "H 6",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": false,
+              "title": "Confused",
+            },
+            Object {
+              "cmd": "H 5",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": false,
+              "title": "Fart",
+            },
+            Object {
+              "cmd": "H 9",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": false,
+              "title": "Fretful",
+            },
+            Object {
+              "cmd": "H 8",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": false,
+              "title": "Angry",
+            },
+            Object {
+              "cmd": "H 4",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": false,
+              "title": "Sleeping",
+            },
+            Object {
+              "cmd": "H 10",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": false,
+              "title": "Magic",
+            },
+            Object {
+              "cmd": "H 12",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": false,
+              "title": "Victory",
+            },
+            Object {
+              "cmd": "H 11",
+              "image": Object {
+                "process": [Function],
+              },
+              "stopAtEnd": false,
+              "title": "Wave",
+            },
+          ],
+        },
+      ]
+    }
   />
 </Container>
 `;

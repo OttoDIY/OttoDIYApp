@@ -3,6 +3,7 @@ package com.ottodiy;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.reactnativecommunity.slider.ReactSliderPackage;
 import io.sentry.RNSentryPackage;
 import com.reactnativecommunity.webview.RNCWebViewPackage;
 import com.polidea.reactnativeble.BlePackage;
@@ -40,6 +41,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new ReactSliderPackage(),
             new RNSentryPackage(),
             new RNCWebViewPackage(),
             new BlePackage(),

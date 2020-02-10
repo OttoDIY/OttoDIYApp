@@ -3,6 +3,10 @@ export default {
   hello: require('App/Images/Hello/hello.png'),
   bluetooth: require('App/Images/Bluetooth/bluetooth.png'),
   done: require('App/Images/Done/done.png'),
+  slider: {
+    thumb: require('App/Images/Slider/thumb.png'),
+    thumb_light: require('App/Images/Slider/thumb_light.png')
+  },
   controls: {
     controls: require('App/Images/Controls/controls.png'),
     control: require('App/Images/Controls/control.png'),
@@ -109,8 +113,10 @@ export default {
     plus: require('App/Images/Robots/Plus/plus.png'),
     plusSmall: require('App/Images/Robots/Plus/plus_small.png'),
     plusBluetooth: require('App/Images/Robots/Plus/plus_bluetooth.png'),
+    plusCodeLab: require('App/Images/Robots/Plus/codelab.png'),
     humanoid: require('App/Images/Robots/Humanoid/humanoid.png'),
     humanoidBluetooth: require('App/Images/Robots/Humanoid/humanoid_bluetooth.png'),
-    humanoidSmall: require('App/Images/Robots/Humanoid/humanoid_small.png')
+    humanoidSmall: require('App/Images/Robots/Humanoid/humanoid_small.png'),
+    humanoidCodeLab: require('App/Images/Robots/Humanoid/codelab.png')
   }
 }
