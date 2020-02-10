@@ -9,7 +9,7 @@ const isCrashReportingEnabled = () => {
 
 export const initCrashReporting = () => {
   if (isCrashReportingEnabled()) {
-    Sentry.init({dsn: Config.SENTRY_URL})
+    Sentry.init({dsn: Config.SENTRY_DNS})
   }
 }
 
