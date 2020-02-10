@@ -38,7 +38,8 @@ export default class Screen extends Component {
     onToggleSpeed: PropTypes.func,
     onHelp: PropTypes.func,
     onHideNotConnectedModal: PropTypes.func.isRequired,
-    onChooseRobotPress: PropTypes.func.isRequired
+    onChooseRobotPress: PropTypes.func.isRequired,
+    onCodeLabPress: PropTypes.func.isRequired
   }
 
   constructor (props) {
@@ -69,7 +70,8 @@ export default class Screen extends Component {
       onToggleSpeed,
       onHelp,
       onHideNotConnectedModal,
-      onChooseRobotPress
+      onChooseRobotPress,
+      onCodeLabPress
     } = this.props
 
     const { activeTabIndex } = this.state
@@ -92,6 +94,9 @@ export default class Screen extends Component {
             <Image source={(config) ? config.imageSmall : null} />
           </TouchableOpacity>
           <View style={s.headerCenter} />
+          <TouchableOpacity onPress={onCodeLabPress}>
+            <Image source={(config) ? config.imageCodeLab : null} />
+          </TouchableOpacity>
           {/* <Image source={Images.buttons.battery} /> */}
           {/* connected &&
             <TouchableOpacity onPress={onChooseRobotPress}>

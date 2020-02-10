@@ -17,5 +17,6 @@ storiesOf('InstructionList', module)
     <InstructionList
       instructions={instructions}
       onChangeOrder={(orderNext) => {}}
+      onSlidingComplete={(instruction, value) => {}}
       onClose={() => {}} />
   ))

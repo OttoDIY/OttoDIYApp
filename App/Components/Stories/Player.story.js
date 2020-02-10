@@ -20,6 +20,7 @@ const slider = {
 const skills = {
   default: [
     {
+      id: 'skills',
       category: 'Skills',
       items: [
         {title: 'Jump'},

@@ -10,6 +10,7 @@ export default {
   name: 'Otto DIY',
   image: Images.robots.plus,
   imageSmall: Images.robots.plusSmall,
+  imageCodeLab: Images.robots.plusCodeLab,
   imageHelp: Images.buttons.help,
   description: 'The open source robot that you can build yourself',
   links: [

@@ -114,6 +114,10 @@ export class PlayerContainer extends Component {
     this.props.navigation.navigate('WhichRobotScreen', { hideSkip: true })
   }
 
+  onCodeLabPress = () => {
+    this.props.navigation.navigate('CodeLabScreen')
+  }
+
   render () {
     const {connected, config, speed, showNotConnectedModal} = this.state
     return (
@@ -138,6 +142,7 @@ export class PlayerContainer extends Component {
         onHelp={this.onHelp}
         onHideNotConnectedModal={this.onHideNotConnectedModal}
         onChooseRobotPress={this.onChooseRobotPress}
+        onCodeLabPress={this.onCodeLabPress}
       />
     )
   }

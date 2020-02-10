@@ -10,6 +10,7 @@ export default {
   name: 'Humanoid',
   image: Images.robots.humanoid,
   imageSmall: Images.robots.humanoidSmall,
+  imageCodeLab: Images.robots.humanoidCodeLab,
   imageHelp: Images.humanoid.help,
   description: 'Otto with arms, LED mouth and more sensors',
   links: [

@@ -33,6 +33,18 @@ exports[`Player Component renders correctly 1`] = `
         }
       }
     />
+    <TouchableOpacity
+      activeOpacity={0.2}
+      onPress={[Function]}
+    >
+      <Image
+        source={
+          Object {
+            "process": [Function],
+          }
+        }
+      />
+    </TouchableOpacity>
   </View>
   <View
     style={
@@ -407,8 +419,8 @@ exports[`Player Component renders correctly 1`] = `
       tabs={
         Array [
           Object {
-            "category": "Moves",
-            "id": "moves",
+            "category": "Skills",
+            "id": "skills",
             "image": Object {
               "process": [Function],
             },
@@ -548,7 +560,7 @@ exports[`Player Component renders correctly 1`] = `
                   "process": [Function],
                 },
                 "stopAtEnd": false,
-                "title": "Mode 1",
+                "title": "Sing 1",
               },
               Object {
                 "cmd": "K 17",
@@ -556,7 +568,7 @@ exports[`Player Component renders correctly 1`] = `
                   "process": [Function],
                 },
                 "stopAtEnd": false,
-                "title": "Mode 2",
+                "title": "Sing 2",
               },
               Object {
                 "cmd": "K 18",
@@ -564,7 +576,7 @@ exports[`Player Component renders correctly 1`] = `
                   "process": [Function],
                 },
                 "stopAtEnd": false,
-                "title": "Mode 3",
+                "title": "Sing 3",
               },
               Object {
                 "cmd": "K 4",
@@ -580,7 +592,7 @@ exports[`Player Component renders correctly 1`] = `
                   "process": [Function],
                 },
                 "stopAtEnd": false,
-                "title": "Button Pushed",
+                "title": "Push",
               },
               Object {
                 "cmd": "K 10",
@@ -588,7 +600,7 @@ exports[`Player Component renders correctly 1`] = `
                   "process": [Function],
                 },
                 "stopAtEnd": false,
-                "title": "Happy Short",
+                "title": "Kinda Happy",
               },
               Object {
                 "cmd": "K 8",
@@ -652,7 +664,7 @@ exports[`Player Component renders correctly 1`] = `
                   "process": [Function],
                 },
                 "stopAtEnd": false,
-                "title": "Fart3",
+                "title": "Fart",
               },
               Object {
                 "cmd": "K 6",

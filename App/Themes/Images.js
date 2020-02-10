@@ -113,8 +113,10 @@ export default {
     plus: require('App/Images/Robots/Plus/plus.png'),
     plusSmall: require('App/Images/Robots/Plus/plus_small.png'),
     plusBluetooth: require('App/Images/Robots/Plus/plus_bluetooth.png'),
+    plusCodeLab: require('App/Images/Robots/Plus/codelab.png'),
     humanoid: require('App/Images/Robots/Humanoid/humanoid.png'),
     humanoidBluetooth: require('App/Images/Robots/Humanoid/humanoid_bluetooth.png'),
-    humanoidSmall: require('App/Images/Robots/Humanoid/humanoid_small.png')
+    humanoidSmall: require('App/Images/Robots/Humanoid/humanoid_small.png'),
+    humanoidCodeLab: require('App/Images/Robots/Humanoid/codelab.png')
   }
 }
