@@ -40,6 +40,10 @@ export default {
     border: palette.primaryTranslucent,
     border_disabled: palette.greyTranslucent
   },
+  led: {
+    default: '#ADBECB',
+    active: '#EC454C'
+  },
   link: {
     text: palette.primaryDark
   },
