@@ -118,6 +118,26 @@ export default {
         { title: 'Victory', image: Images.gestures.victory, cmd: 'H 12', stopAtEnd: false },
         { title: 'Wave', image: Images.gestures.wave, cmd: 'H 11', stopAtEnd: false }
       ]
+    },
+    {
+      id: 'mouth',
+      category: 'Mouth',
+      image: Images.humanoid.mouth.superhappy,
+      items: [
+        { title: 'Happy', image: Images.humanoid.mouth.happy, cmd: 'L 0000000100001010010001100000000', stopAtEnd: false },
+        { title: 'Super Happy', image: Images.humanoid.mouth.superhappy, cmd: 'L 0000000111111010010001100000000', stopAtEnd: false },
+        { title: 'Love', image: Images.humanoid.mouth.love, cmd: 'L 0010010101101100001010010001100', stopAtEnd: false },
+        { title: 'Sad', image: Images.humanoid.mouth.sad, cmd: 'L 0000000001100010010100001000000', stopAtEnd: false },
+        { title: 'Fail', image: Images.humanoid.mouth.fail, cmd: 'L 0100001010010001100010010100001', stopAtEnd: false },
+        { title: 'Confused', image: Images.humanoid.mouth.confused, cmd: 'L 0000000001000010101100010000000', stopAtEnd: false },
+        { title: 'Fart', image: Images.humanoid.mouth.fart, cmd: 'L 0000000111111001001001001000110', stopAtEnd: false },
+        { title: 'Fretful', image: Images.humanoid.mouth.fretful, cmd: 'L 0000000000000111111000000000000', stopAtEnd: false },
+        { title: 'Angry', image: Images.humanoid.mouth.angry, cmd: 'L 0000000011110100001100001000000', stopAtEnd: false },
+        { title: 'Sleeping', image: Images.humanoid.mouth.sleeping, cmd: 'L 0000000000000011000011000000000', stopAtEnd: false },
+        { title: 'Magic', image: Images.humanoid.mouth.magic, cmd: 'L 0000000010010100001010010000000', stopAtEnd: false },
+        { title: 'Victory', image: Images.humanoid.mouth.victory, cmd: 'L 0001100010010100001010010001100', stopAtEnd: false },
+        { title: 'Wave', image: Images.humanoid.mouth.wave, cmd: 'L 0000000000011000100001000110000', stopAtEnd: false }
+      ]
     }
   ]
 }

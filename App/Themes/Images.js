@@ -107,7 +107,22 @@ export default {
     updown: require('App/Images/Buttons/Humanoid/Updown/updown.png'),
     handleft: require('App/Images/Buttons/Humanoid/Hand/handleft.png'),
     handright: require('App/Images/Buttons/Humanoid/Hand/handright.png'),
-    handsup: require('App/Images/Buttons/Humanoid/Hand/handsup.png')
+    handsup: require('App/Images/Buttons/Humanoid/Hand/handsup.png'),
+    mouth: {
+      happy: require('App/Images/Buttons/Humanoid/Mouth/Happy/happy.png'),
+      superhappy: require('App/Images/Buttons/Humanoid/Mouth/SuperHappy/superhappy.png'),
+      love: require('App/Images/Buttons/Humanoid/Mouth/Love/love.png'),
+      sad: require('App/Images/Buttons/Humanoid/Mouth/Sad/sad.png'),
+      fail: require('App/Images/Buttons/Humanoid/Mouth/Fail/fail.png'),
+      confused: require('App/Images/Buttons/Humanoid/Mouth/Confused/confused.png'),
+      fart: require('App/Images/Buttons/Humanoid/Mouth/Fart/fart.png'),
+      fretful: require('App/Images/Buttons/Humanoid/Mouth/Fretful/fretful.png'),
+      angry: require('App/Images/Buttons/Humanoid/Mouth/Angry/angry.png'),
+      sleeping: require('App/Images/Buttons/Humanoid/Mouth/Sleeping/sleeping.png'),
+      magic: require('App/Images/Buttons/Humanoid/Mouth/Magic/magic.png'),
+      victory: require('App/Images/Buttons/Humanoid/Mouth/Victory/victory.png'),
+      wave: require('App/Images/Buttons/Humanoid/Mouth/Wave/wave.png')
+    }
   },
   robots: {
     plus: require('App/Images/Robots/Plus/plus.png'),
