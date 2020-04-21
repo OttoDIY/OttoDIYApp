@@ -71,6 +71,13 @@ export default class Client {
     }
   }
 
+  setLEDMatrix = async (matrix) => {
+    const client = await this.getClient()
+    if (client) {
+      client.setLEDMatrix(matrix)
+    }
+  }
+
   stop = async (delay) => {
     const client = await this.getClient()
     if (client) {

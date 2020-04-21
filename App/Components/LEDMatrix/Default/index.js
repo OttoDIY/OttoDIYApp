@@ -8,6 +8,7 @@ export default class LEDMatrix extends Component {
   static propTypes = {
     colSize: PropTypes.number,
     rowSize: PropTypes.number,
+    matrix: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.number)),
     onPress: PropTypes.func.isRequired
   }
 

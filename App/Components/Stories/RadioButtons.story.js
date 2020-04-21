@@ -20,12 +20,12 @@ storiesOf('Radio Button', module)
   ))
   .add('Second', () => (
     <View style={style}>
-      <RadioButtons labels={['First', 'Second', 'Third']} selectedIndex={1} onPress={(i) => {}} />
+      <RadioButtons labels={['First', 'Second', 'Third']} activeIndex={1} onPress={(i) => {}} />
     </View>
   ))
   .add('Third', () => (
     <View style={style}>
-      <RadioButtons labels={['First', 'Second', 'Third']} selectedIndex={2} onPress={(i) => {}} />
+      <RadioButtons labels={['First', 'Second', 'Third']} activeIndex={2} onPress={(i) => {}} />
     </View>
   ))
   .add('Light', () => (

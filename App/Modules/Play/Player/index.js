@@ -99,6 +99,10 @@ export class PlayerContainer extends Component {
     this.setState({speed: newSpeed})
   }
 
+  onLEDMatrixPress = (matrix) => {
+    this.client.setLEDMatrix(matrix)
+  }
+
   onHelp = () => {
     this.props.navigation.navigate('WebScreen', {
       source: 'https://wikifactory.com/+OttoDIY/otto-diy-plus',
@@ -139,6 +143,7 @@ export class PlayerContainer extends Component {
         onLongPressOut={this.onLongPressOut}
         onSkillPress={this.onSkillPress}
         onToggleSpeed={this.onToggleSpeed}
+        onLEDMatrixPress={this.onLEDMatrixPress}
         onHelp={this.onHelp}
         onHideNotConnectedModal={this.onHideNotConnectedModal}
         onChooseRobotPress={this.onChooseRobotPress}

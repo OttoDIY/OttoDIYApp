@@ -123,6 +123,10 @@ export default {
       id: 'mouth',
       category: 'Mouth',
       image: Images.humanoid.mouth.superhappy,
+      interfaces: [
+        {title: 'Mouth', type: 'default'},
+        {title: 'LED Matrix', type: 'ledMatrix'}
+      ],
       items: [
         { title: 'Happy', image: Images.humanoid.mouth.happy, cmd: 'L 0000000100001010010001100000000', stopAtEnd: false },
         { title: 'Super Happy', image: Images.humanoid.mouth.superhappy, cmd: 'L 0000000111111010010001100000000', stopAtEnd: false },

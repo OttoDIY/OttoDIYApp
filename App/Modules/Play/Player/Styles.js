@@ -70,5 +70,13 @@ export default StyleSheet.create({
   },
   buttonView: {
     margin: Metrics.unit
+  },
+  ledMatrixView: {
+    alignItems: 'center',
+    margin: Metrics.unit * 3
+  },
+  radioButtonsView: {
+    marginTop: Metrics.unit * 3,
+    alignItems: 'center'
   }
 })

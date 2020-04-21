@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native'
 
-import { Styles, Colors, Metrics } from 'App/Themes'
+import { Styles, Colors, Metrics, Fonts } from 'App/Themes'
 
 const styles = {
   ...Styles,
@@ -19,6 +19,12 @@ const styles = {
   image: {
     width: 54,
     height: 54
+  },
+  text_medium: {
+    fontSize: Fonts.size.medium
+  },
+  text_small: {
+    fontSize: Fonts.size.small
   }
 }
 

@@ -2607,11 +2607,13 @@ exports[`Storyshots CodeLab Nav Default 1`] = `
       >
         <Text
           style={
-            Object {
-              "color": "white",
-              "fontFamily": "Roboto-Medium",
-              "fontSize": 16,
-            }
+            Array [
+              Object {
+                "color": "white",
+                "fontFamily": "Roboto-Medium",
+                "fontSize": 16,
+              },
+            ]
           }
         >
           SKILLS
@@ -2642,11 +2644,13 @@ exports[`Storyshots CodeLab Nav Default 1`] = `
       >
         <Text
           style={
-            Object {
-              "color": "white",
-              "fontFamily": "Roboto-Medium",
-              "fontSize": 16,
-            }
+            Array [
+              Object {
+                "color": "white",
+                "fontFamily": "Roboto-Medium",
+                "fontSize": 16,
+              },
+            ]
           }
         >
           SOUNDS
@@ -2677,11 +2681,13 @@ exports[`Storyshots CodeLab Nav Default 1`] = `
       >
         <Text
           style={
-            Object {
-              "color": "white",
-              "fontFamily": "Roboto-Medium",
-              "fontSize": 16,
-            }
+            Array [
+              Object {
+                "color": "white",
+                "fontFamily": "Roboto-Medium",
+                "fontSize": 16,
+              },
+            ]
           }
         >
           GESTURES

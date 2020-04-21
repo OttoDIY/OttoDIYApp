@@ -9,12 +9,12 @@ export default class RadioButtons extends Component {
   static propTypes = {
     theme: PropTypes.string,
     labels: PropTypes.arrayOf(PropTypes.string).isRequired,
-    selectedIndex: PropTypes.number,
+    activeIndex: PropTypes.number,
     onPress: PropTypes.func.isRequired
   }
 
   render () {
-    const { style = {}, theme = 'default', labels, selectedIndex = 0, onPress } = this.props
+    const { style = {}, theme = 'default', labels, activeIndex = 0, onPress } = this.props
     const s = (theme === 'light') ? stylesLight : styles
     return (
 
@@ -28,7 +28,7 @@ export default class RadioButtons extends Component {
           if (i > 0) {
             buttonStyle.push(s.borderLeftNoRadius)
           }
-          if (i === selectedIndex) {
+          if (i === activeIndex) {
             buttonStyle.push(s.button_selected)
             textStyle.push(s.text_selected)
           }
