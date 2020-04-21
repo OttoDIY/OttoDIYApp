@@ -36,6 +36,10 @@ export default class Simulator {
     // TODO
   }
 
+  setLEDMatrix = async (matrix) => {
+    // TODO
+  }
+
   stop = async (delay) => {
     if (!delay) {
       // TODO Stop command not supported right now

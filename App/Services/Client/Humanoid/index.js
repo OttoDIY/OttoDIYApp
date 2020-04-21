@@ -103,6 +103,14 @@ export default class Otto {
     }
   }
 
+  setLEDMatrix = async (matrix) => {
+    let cmd = 'L 0'
+    matrix.forEach(row => {
+      cmd += row.join('')
+    })
+    Bluetooth.write(cmd)
+  }
+
   stop = async (delay) => {
     if (!delay) {
       const cmd = cmdFromInstruction(STOP)

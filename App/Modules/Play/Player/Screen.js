@@ -7,6 +7,8 @@ import {
   Container,
   ChamferImageButton,
   ArrowJoystick,
+  LEDMatrix,
+  RadioButtons,
   BottomTabs,
   Modal} from 'App/Components'
 
@@ -22,6 +24,15 @@ const speedButtonImages = {
   fast: Images.buttons.speed.fast
 }
 
+// Deep clone of default LED Matrix values
+const defaultLEDMatrixValue = () => JSON.parse(JSON.stringify([
+  [0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0]
+]))
+
 export default class Screen extends Component {
   static propTypes = {
     connected: PropTypes.bool.isRequired,
@@ -36,6 +47,7 @@ export default class Screen extends Component {
     onLongPressOut: PropTypes.func,
     onSkillPress: PropTypes.func,
     onToggleSpeed: PropTypes.func,
+    onLEDMatrixPress: PropTypes.func,
     onHelp: PropTypes.func,
     onHideNotConnectedModal: PropTypes.func.isRequired,
     onChooseRobotPress: PropTypes.func.isRequired,
@@ -46,12 +58,37 @@ export default class Screen extends Component {
     super(props)
 
     this.state = {
-      activeTabIndex: 0
+      activeTabIndex: 0,
+      activeInterfaceIndex: 0,
+      ledMatrixValue: defaultLEDMatrixValue()
     }
   }
 
   onTabPress = (tab, i) => {
-    this.setState({ activeTabIndex: i })
+    this.setState({
+      activeTabIndex: i,
+      activeInterfaceIndex: 0,
+      ledMatrixValue: defaultLEDMatrixValue()
+    })
+  }
+
+  onInterfacePress = (i) => {
+    this.setState({
+      activeInterfaceIndex: i,
+      ledMatrixValue: defaultLEDMatrixValue()
+    })
+  }
+
+  // Clone current ledMatrixValue & swap value at row*col
+  onLEDMatrixPress = (row, col) => {
+    const { onLEDMatrixPress } = this.props
+    const { ledMatrixValue } = this.state
+    const newLEDMatrixValue = [...ledMatrixValue]
+    newLEDMatrixValue[row][col] = (newLEDMatrixValue[row][col] === 0)
+      ? newLEDMatrixValue[row][col] = 1
+      : newLEDMatrixValue[row][col] = 0
+    this.setState({ ledMatrixValue: newLEDMatrixValue })
+    onLEDMatrixPress(newLEDMatrixValue)
   }
 
   render () {
@@ -74,7 +111,7 @@ export default class Screen extends Component {
       onCodeLabPress
     } = this.props
 
-    const { activeTabIndex } = this.state
+    const { ledMatrixValue, activeTabIndex, activeInterfaceIndex } = this.state
 
     const { skills } = config || {}
 
@@ -86,6 +123,11 @@ export default class Screen extends Component {
     const skillsInRows = (showPlayerBottomNav)
       ? splitItemsByRow(activeSkills, true)
       : []
+
+    const interfaces = (skills && skills[activeTabIndex]) ? skills[activeTabIndex].interfaces : null
+
+    const isDefaultInterface = (!interfaces || interfaces[activeInterfaceIndex].type === 'default')
+    const isLEDMatrixInterface = (interfaces && interfaces[activeInterfaceIndex].type === 'ledMatrix')
 
     return (
       <Container dark>
@@ -132,27 +174,47 @@ export default class Screen extends Component {
             image={(config) ? config.imageHelp : null}
             onPress={onHelp} />
         </View>
-        <View style={s.buttonsView}>
-          {skillsInRows.map((skillsInRow) => {
-            return (
-              <View key={uuid.v4()} style={s.buttonsRowView}>
-                {skillsInRow.map((skill) => {
-                  return (skill)
-                    ? (
-                      <View key={uuid.v4()} style={s.buttonView}>
-                        <ChamferImageButton
-                          image={skill.image}
-                          onPress={() => { onSkillPress(skill) }} />
-                      </View>
-                    )
-                    : (
-                      <View key={uuid.v4()} />
-                    )
-                })}
-              </View>
-            )
-          })}
-        </View>
+        {interfaces && interfaces.length > 1 &&
+          <View style={s.radioButtonsView}>
+            <RadioButtons
+              theme='light'
+              labels={interfaces.map(({ title }) => title)}
+              activeIndex={activeInterfaceIndex}
+              onPress={this.onInterfacePress} />
+          </View>
+        }
+        {isDefaultInterface &&
+          <View style={s.buttonsView}>
+            {skillsInRows.map((skillsInRow) => {
+              return (
+                <View key={uuid.v4()} style={s.buttonsRowView}>
+                  {skillsInRow.map((skill) => {
+                    return (skill)
+                      ? (
+                        <View key={uuid.v4()} style={s.buttonView}>
+                          <ChamferImageButton
+                            image={skill.image}
+                            onPress={() => { onSkillPress(skill) }} />
+                        </View>
+                      )
+                      : (
+                        <View key={uuid.v4()} />
+                      )
+                  })}
+                </View>
+              )
+            })}
+          </View>
+        }
+        {isLEDMatrixInterface &&
+          <View style={s.ledMatrixView}>
+            <LEDMatrix
+              colSize={6}
+              rowSize={5}
+              matrix={ledMatrixValue}
+              onPress={this.onLEDMatrixPress} />
+          </View>
+        }
         {/*
         <View style={s.separator_flipped}>
           <View style={s.separatorDiagonal}>

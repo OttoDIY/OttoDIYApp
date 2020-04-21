@@ -46,6 +46,13 @@ export default class BottomNav extends Component {
       flex: (tabs && tabs.length > 0) ? (1 / tabs.length) : 0
     }
 
+    const textStyle = [s.text]
+    if (tabs.length === 5) {
+      textStyle.push(s.text_medium)
+    } else if (tabs.length > 5) {
+      textStyle.push(s.text_small)
+    }
+
     return (
       <View style={s.view}>
         {tabs.map((tab) => {
@@ -55,7 +62,7 @@ export default class BottomNav extends Component {
               style={[s.tab, flexStyle, (activeTab && activeTab.id === tab.id) ? s.tab_active : null]}
               onPress={() => { this.onTabPress(tab) }}>
               {showIcons && <Image style={s.image} source={tab.image} />}
-              {!showIcons && <Text style={s.text}>{tab.category.toUpperCase()}</Text>}
+              {!showIcons && <Text style={textStyle}>{tab.category.toUpperCase()}</Text>}
             </TouchableOpacity>
           )
         })}

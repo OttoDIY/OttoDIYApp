@@ -103,6 +103,10 @@ export default class Otto {
     }
   }
 
+  setLEDMatrix = async (matrix) => {
+    // Not supported
+  }
+
   stop = async (delay) => {
     if (!delay) {
       const cmd = cmdFromInstruction(STOP)
