@@ -4,12 +4,14 @@ import WebSocket from 'App/Services/WebSocket'
 
 import Simulator from './Simulator'
 import Otto from './Otto'
+import Eyes from './Eyes'
 import Humanoid from './Humanoid'
 
 const robot = { name: null }
 
 const simulator = new Simulator()
 const otto = new Otto()
+const eyes = new Eyes()
 const humanoid = new Humanoid()
 
 export const setRobot = async (robotName) => {
@@ -39,6 +41,8 @@ export default class Client {
   getClient = async () => {
     if (robot.name === 'otto') {
       return otto
+    } else if (robot.name === 'eyes') {
+      return eyes
     } else if (robot.name === 'humanoid') {
       return humanoid
     } else if (robot.name === 'simulator') {

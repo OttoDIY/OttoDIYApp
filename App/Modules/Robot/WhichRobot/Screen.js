@@ -17,8 +17,13 @@ export default class WhichRobotScreen extends Component {
           <CardListItem
             image={Images.robots.plus}
             title='Otto DIY'
-            text='The open source robot that you can build yourself'
+            text='The truly open source biped robot that you can build'
             onPress={() => { onPress('otto') }} />
+             <CardListItem
+            image={Images.robots.eyes}
+            title='Eyes'
+            text='Otto with LED eyes and emotions'
+            onPress={() => { onPress('eyes') }} />
           <CardListItem
             image={Images.robots.humanoid}
             title='Humanoid'
@@ -26,7 +31,7 @@ export default class WhichRobotScreen extends Component {
             onPress={() => { onPress('humanoid') }} />
         </List>
         <Footer>
-          <Card theme='light' text='Choose which Otto you want to play with' />
+          <Card theme='light' text='Choose which Otto robot you want to play with' />
         </Footer>
       </Container>
     )
