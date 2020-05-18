@@ -26,19 +26,19 @@ export default class Screen extends Component {
           <Card
             image={Images.onboarding.one}
             title='Welcome to the Otto DIY App'
-            text='Where your Otto comes alive'
+            text='Where you can learn coding and bring your robot to live'
             style={{titleViewText: {fontSize: 22}}}
           />
           <Card
             image={Images.onboarding.two}
             title='Otto awaits your commands'
-            text='Otto DIY+ & Humanoid supported out of the box, more robots coming soon!'
+            text='Otto DIY+ Eyes & Humanoid supported out of the box!'
             style={{titleViewText: {fontSize: 22}}}
           />
           <Card
             image={Images.onboarding.three}
             title='Lots more to come! 🎉'
-            text='Learn to code, customize your Otto and so much more...'
+            text='Games, , more robots, customize your Otto and so much more...'
             style={{titleViewText: {fontSize: 22}}}
           />
         </Carousel>
