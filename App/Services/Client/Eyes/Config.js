@@ -58,7 +58,7 @@ export default {
     {
       id: 'skills',
       category: 'Skills',
-      image: Images.buttons.moves,
+      image: Images.eyes.moonwalkleft,
       items: [
         { title: 'Jitter', image: Images.eyes.jitter, cmd: 'M 19', stopAtEnd: true },
         { title: 'Swing', image: Images.eyes.swing, cmd: 'M 8', stopAtEnd: true },
@@ -80,7 +80,7 @@ export default {
     {
       id: 'sounds',
       category: 'Sounds',
-      image: Images.sing.beep,
+      image: Images.eyes.beep,
       items: [
         { title: 'Sing 1', image: Images.sing.mode1, cmd: 'K 16', stopAtEnd: false },
         { title: 'Sing 2', image: Images.sing.mode2, cmd: 'K 17', stopAtEnd: false },
