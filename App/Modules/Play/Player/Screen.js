@@ -6,6 +6,7 @@ import uuid from 'react-native-uuid'
 import {
   Container,
   ChamferImageButton,
+  Joystick,
   ArrowJoystick,
   LEDMatrix,
   RadioButtons,
@@ -113,7 +114,10 @@ export default class Screen extends Component {
 
     const { ledMatrixValue, activeTabIndex, activeInterfaceIndex } = this.state
 
-    const { skills } = config || {}
+    const { skills, joystick } = config || {}
+    // Default (aka arrows) and thumbstick joystick supported,
+    // fallback to default if joystick isn't set to 'thumbstick'
+    const isDefaultJoystick = joystick !== 'thumbstick'
 
     const showPlayerBottomNav = config && skills && skills.length > 0
 
@@ -162,13 +166,24 @@ export default class Screen extends Component {
             image={speedButtonImages[speed]}
             onPress={onToggleSpeed} />
           <View style={s.joystickView}>
-            <ArrowJoystick
-              onUp={onUp}
-              onDown={onDown}
-              onLeft={onLeft}
-              onRight={onRight}
-              onLongPress={onLongPress}
-              onLongPressOut={onLongPressOut} />
+            {isDefaultJoystick &&
+              <ArrowJoystick
+                onUp={onUp}
+                onDown={onDown}
+                onLeft={onLeft}
+                onRight={onRight}
+                onLongPress={onLongPress}
+                onLongPressOut={onLongPressOut} />
+            }
+            {!isDefaultJoystick &&
+              <Joystick
+                onUp={onUp}
+                onDown={onDown}
+                onLeft={onLeft}
+                onRight={onRight}
+                onLongPress={onLongPress}
+                onLongPressOut={onLongPressOut} />
+            }
           </View>
           <ChamferImageButton
             image={(config) ? config.imageHelp : null}

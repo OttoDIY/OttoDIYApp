@@ -30,7 +30,7 @@ export default class Joystick extends Component {
 
     return (
       <View style={style}>
-        <Image source={Images.joystick.arrows} />
+        <Image source={Images.joystick.arrowsTranslucent} />
         <View style={s.thumbstickView}>
           <JoystickThumbstick
             neutralPointX={80}

@@ -9,6 +9,7 @@ export default {
     beep: true
   },
   params: [],
+  joystick: 'thumbstick',
   moves: [
     { title: 'Wait', showDuration: true },
     { title: 'Up', cmd: 'up' },
