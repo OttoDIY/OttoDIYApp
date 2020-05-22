@@ -4176,7 +4176,7 @@ exports[`Storyshots Instruction Control 1`] = `
           style={
             Array [
               Object {
-                "color": "#516173",
+                "color": "rgba(255, 255, 255, 0.8)",
                 "fontSize": 24,
               },
               Object {
@@ -4306,7 +4306,7 @@ exports[`Storyshots Instruction Data 1`] = `
           style={
             Array [
               Object {
-                "color": "#516173",
+                "color": "rgba(255, 255, 255, 0.8)",
                 "fontSize": 24,
               },
               Object {
@@ -4436,7 +4436,7 @@ exports[`Storyshots Instruction Sensor 1`] = `
           style={
             Array [
               Object {
-                "color": "#516173",
+                "color": "rgba(255, 255, 255, 0.8)",
                 "fontSize": 24,
               },
               Object {
@@ -4569,7 +4569,7 @@ exports[`Storyshots Joystick Default 1`] = `
             onStartShouldSetResponderCapture={[Function]}
             style={
               Object {
-                "backgroundColor": "#2D2D64",
+                "backgroundColor": "white",
                 "borderRadius": 30,
                 "height": 60,
                 "left": 0,
@@ -4584,7 +4584,7 @@ exports[`Storyshots Joystick Default 1`] = `
     <View
       style={
         Object {
-          "backgroundColor": "#9696B2",
+          "backgroundColor": "#575B87",
           "borderRadius": 30,
           "height": 60,
           "left": 50,
@@ -14055,7 +14055,7 @@ exports[`Storyshots Modal Problems Connecting 1`] = `
                 ]
               }
             >
-              1. Check the device you are pairing with is discoverable. Often, you’ll see a blue light on when it’s ready.
+              1. Check the device you are pairing with is discoverable. Often, you’ll see a red light blinking on a different speed when it’s ready.
 
 2. Turn Bluetooth off and then on again on this device.
 

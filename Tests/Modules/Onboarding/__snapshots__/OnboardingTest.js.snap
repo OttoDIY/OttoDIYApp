@@ -32,7 +32,7 @@ exports[`Onboarding Component renders correctly 1`] = `
           },
         }
       }
-      text="Where your Otto comes alive"
+      text="Where you can learn coding and bring your robot to live"
       title="Welcome to the Otto DIY App"
     />
     <Card
@@ -48,7 +48,7 @@ exports[`Onboarding Component renders correctly 1`] = `
           },
         }
       }
-      text="Otto DIY+ & Humanoid supported out of the box, more robots coming soon!"
+      text="Otto DIY+ Eyes & Humanoid supported out of the box!"
       title="Otto awaits your commands"
     />
     <Card
@@ -64,7 +64,7 @@ exports[`Onboarding Component renders correctly 1`] = `
           },
         }
       }
-      text="Learn to code, customize your Otto and so much more..."
+      text="Games, , more robots, customize your Otto and so much more..."
       title="Lots more to come! 🎉"
     />
   </Carousel>

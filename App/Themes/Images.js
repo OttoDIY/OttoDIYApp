@@ -24,7 +24,8 @@ export default {
     led: require('App/Images/Featured/LED/led.png')
   },
   joystick: {
-    arrows: require('App/Images/Joystick/arrows.png')
+    arrows: require('App/Images/Joystick/arrows.png'),
+    arrowsTranslucent: require('App/Images/Joystick/arrows_translucent.png')
   },
   buttons: {
     ascend: require('App/Images/Buttons/Ascend/ascend.png'),
@@ -107,7 +108,7 @@ export default {
     shakeright: require('App/Images/Buttons/Eyes/Shake/shakeright.png'),
     swing: require('App/Images/Buttons/Eyes/Swing/swing.png'),
     tiptoe: require('App/Images/Buttons/Eyes/Tiptoe/tiptoe.png'),
-    updown: require('App/Images/Buttons/Eyes/Updown/updown.png')    
+    updown: require('App/Images/Buttons/Eyes/Updown/updown.png')
   },
   humanoid: {
     beep: require('App/Images/Buttons/Humanoid/Beep/beep.png'),

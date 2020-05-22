@@ -14,7 +14,7 @@ const styles = {
     borderTopColor: Colors.transparent
   },
   tab_active: {
-    borderTopColor: Colors.white_translucent
+    borderTopColor: Colors.whiteTranslucent
   },
   image: {
     width: 54,

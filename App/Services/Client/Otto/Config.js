@@ -38,6 +38,7 @@ export default {
       defaultIndex: 1
     }
   ],
+  joystick: 'default',
   commands: {
     stop: 'M 0',
     walk: {

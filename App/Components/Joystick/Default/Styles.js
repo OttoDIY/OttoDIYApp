@@ -16,14 +16,14 @@ export default StyleSheet.create({
     position: 'absolute',
     top: 50,
     left: 50,
-    backgroundColor: Colors.primaryTranslucent,
+    backgroundColor: Colors.primaryTranslucent80,
     width: 60,
     height: 60,
     borderRadius: 30,
     zIndex: 9998
   },
   thumbstick: {
-    backgroundColor: Colors.primary,
+    backgroundColor: Colors.white,
     width: 60,
     height: 60
   },
