@@ -43,6 +43,16 @@ export class PlayerContainer extends Component {
     this.setState({connected})
   }
 
+  onDraggableMove = (touch) => {
+    this.client.move(touch)
+  }
+
+  onDraggableRelease = async (touch) => {
+    if (await this.checkIsConnected()) {
+      this.client.moveAndStop(touch)
+    }
+  }
+
   onUp = async () => {
     if (await this.checkIsConnected()) {
       this.client.moveByDirection('up')
@@ -135,6 +145,8 @@ export class PlayerContainer extends Component {
         speed={speed}
         showNotConnectedModal={showNotConnectedModal}
         onConnect={this.onConnect}
+        onDraggableMove={this.onDraggableMove}
+        onDraggableRelease={this.onDraggableRelease}
         onUp={this.onUp}
         onDown={this.onDown}
         onLeft={this.onLeft}

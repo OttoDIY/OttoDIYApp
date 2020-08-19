@@ -41,6 +41,9 @@ export default class Screen extends Component {
     speed: PropTypes.string.isRequired,
     showNotConnectedModal: PropTypes.bool.isRequired,
     onConnect: PropTypes.func,
+    onDraggableMove: PropTypes.func,
+    onDraggableRelease: PropTypes.func,
+    onDraggableStart: PropTypes.func,
     onUp: PropTypes.func,
     onDown: PropTypes.func,
     onLeft: PropTypes.func,
@@ -98,6 +101,9 @@ export default class Screen extends Component {
       speed,
       showNotConnectedModal,
       onConnect,
+      onDraggableMove,
+      onDraggableRelease,
+      onDraggableStart,
       onUp,
       onDown,
       onLeft,
@@ -177,12 +183,9 @@ export default class Screen extends Component {
             }
             {!isDefaultJoystick &&
               <Joystick
-                onUp={onUp}
-                onDown={onDown}
-                onLeft={onLeft}
-                onRight={onRight}
-                onLongPress={onLongPress}
-                onLongPressOut={onLongPressOut} />
+                onDraggableMove={onDraggableMove}
+                onDraggableRelease={onDraggableRelease}
+                onDraggableStart={onDraggableStart} />
             }
           </View>
           <ChamferImageButton

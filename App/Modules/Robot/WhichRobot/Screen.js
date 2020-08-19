@@ -11,9 +11,10 @@ export default class WhichRobotScreen extends Component {
 
   render () {
     const { onPress } = this.props
+    const footerHeight = 132
     return (
       <Container>
-        <List linedRows scrollable>
+        <List style={{ marginBottom: footerHeight }} linedRows scrollable>
           <CardListItem
             image={Images.robots.plus}
             title='Otto DIY'
