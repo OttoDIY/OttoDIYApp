@@ -144,6 +144,25 @@ export default {
       wave: require('App/Images/Buttons/Humanoid/Mouth/Wave/wave.png')
     }
   },
+  wheels: {
+    jiggleleft: require('App/Images/Buttons/Wheels/Jiggle/jiggleleft.png'),
+    jiggleright: require('App/Images/Buttons/Wheels/Jiggle/jiggleright.png'),
+    beep: require('App/Images/Buttons/Wheels/Beep/beep.png'),
+    rotateleft: require('App/Images/Buttons/Wheels/Rotate/rotateleft.png'),
+    rotateright: require('App/Images/Buttons/Wheels/Rotate/rotateright.png'),
+    crossleft: require('App/Images/Buttons/Wheels/Cross/crossleft.png'),
+    crossright: require('App/Images/Buttons/Wheels/Cross/crossright.png'),
+    spinleft: require('App/Images/Buttons/Wheels/Spin/spinleft.png'),
+    spinright: require('App/Images/Buttons/Wheels/Spin/spinright.png'),
+    help: require('App/Images/Buttons/Wheels/Help/help.png'),
+    wabbleleft: require('App/Images/Buttons/Wheels/Wabble/wabbleleft.png'),
+    wabbleright: require('App/Images/Buttons/Wheels/Wabble/wabbleright.png'),
+    wigle: require('App/Images/Buttons/Wheels/Wigle/wigle.png'),
+    shakeleft: require('App/Images/Buttons/Wheels/Shake/shakeleft.png'),
+    shakeright: require('App/Images/Buttons/Wheels/Shake/shakeright.png'),
+    zigzag: require('App/Images/Buttons/Wheels/Zigzag/zigzag.png'),
+    zigzag2: require('App/Images/Buttons/Wheels/Zigzag/zigzag2.png')
+  },
   robots: {
     plus: require('App/Images/Robots/Plus/plus.png'),
     plusSmall: require('App/Images/Robots/Plus/plus_small.png'),
@@ -156,6 +175,10 @@ export default {
     humanoid: require('App/Images/Robots/Humanoid/humanoid.png'),
     humanoidBluetooth: require('App/Images/Robots/Humanoid/humanoid_bluetooth.png'),
     humanoidSmall: require('App/Images/Robots/Humanoid/humanoid_small.png'),
-    humanoidCodeLab: require('App/Images/Robots/Humanoid/codelab.png')
+    humanoidCodeLab: require('App/Images/Robots/Humanoid/codelab.png'),
+    wheels: require('App/Images/Robots/Wheels/wheels.png'),
+    wheelsBluetooth: require('App/Images/Robots/Wheels/wheels_bluetooth.png'),
+    wheelsSmall: require('App/Images/Robots/Wheels/wheels_small.png'),
+    wheelsCodeLab: require('App/Images/Robots/Wheels/codelab.png')
   }
 }

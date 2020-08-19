@@ -6,6 +6,7 @@ import Simulator from './Simulator'
 import Otto from './Otto'
 import Eyes from './Eyes'
 import Humanoid from './Humanoid'
+import Wheels from './Wheels'
 
 const robot = { name: null }
 
@@ -13,6 +14,7 @@ const simulator = new Simulator()
 const otto = new Otto()
 const eyes = new Eyes()
 const humanoid = new Humanoid()
+const wheels = new Wheels()
 
 export const setRobot = async (robotName) => {
   if (robot.name !== robotName) {
@@ -45,6 +47,8 @@ export default class Client {
       return eyes
     } else if (robot.name === 'humanoid') {
       return humanoid
+    } else if (robot.name === 'wheels') {
+      return wheels
     } else if (robot.name === 'simulator') {
       return simulator
     } else {

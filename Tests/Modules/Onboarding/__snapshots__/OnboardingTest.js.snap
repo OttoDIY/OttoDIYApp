@@ -48,7 +48,7 @@ exports[`Onboarding Component renders correctly 1`] = `
           },
         }
       }
-      text="Otto DIY+ Eyes & Humanoid supported out of the box!"
+      text="Otto DIY+, Eyes, Wheels & Humanoid supported out of the box!"
       title="Otto awaits your commands"
     />
     <Card
@@ -64,7 +64,7 @@ exports[`Onboarding Component renders correctly 1`] = `
           },
         }
       }
-      text="Games, , more robots, customize your Otto and so much more..."
+      text="Games, more robots, customize your Otto and more fun!"
       title="Lots more to come! 🎉"
     />
   </Carousel>
