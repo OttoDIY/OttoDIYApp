@@ -152,7 +152,7 @@ export default {
     rotateright: require('App/Images/Buttons/Wheels/Rotate/rotateright.png'),
     crossleft: require('App/Images/Buttons/Wheels/Cross/crossleft.png'),
     crossright: require('App/Images/Buttons/Wheels/Cross/crossright.png'),
-    spinleft: require('App/Images/Buttons/Wheels/Spin/spindleft.png'),
+    spinleft: require('App/Images/Buttons/Wheels/Spin/spinleft.png'),
     spinright: require('App/Images/Buttons/Wheels/Spin/spinright.png'),
     help: require('App/Images/Buttons/Wheels/Help/help.png'),
     wabbleleft: require('App/Images/Buttons/Wheels/Wabble/wabbleleft.png'),
