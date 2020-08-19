@@ -49,12 +49,12 @@ exports[`CodeLab Component renders correctly 1`] = `
               "title": "Back",
             },
             Object {
-              "cmd": "M 3",
+              "cmd": "M 4",
               "showDuration": true,
               "title": "Left",
             },
             Object {
-              "cmd": "M 4",
+              "cmd": "M 3",
               "showDuration": true,
               "title": "Right",
             },
