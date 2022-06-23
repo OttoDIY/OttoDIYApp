@@ -104,7 +104,7 @@
     "ignite-standard": "^1.0.0",
     "ignite-vector-icons": "^1.1.0",
     "jest": "^24.7.0",
-    "jsdom": "^11.7.0",
+    "jsdom": "^16.5.0",
     "metro-react-native-babel-preset": "^0.53.1",
     "mockery": "^2.1.0",
     "properties-reader": "^0.0.16",
