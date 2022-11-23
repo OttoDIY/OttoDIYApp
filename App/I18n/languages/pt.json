@@ -1,1 +1,28 @@
-{}
+{
+    "signIn": "Entrar",
+    "logOut": "Sair",
+    "loginLogoutExampleTitle": "Exemplo de Login/Logout Redux + Sagas",
+    "progressiveImageComponent": "Componente de Imagem Progressiva",
+    "api": "API",
+    "locale": "I18n Local",
+    "rnVectorIcons": "Ícones vetoriais RN",
+    "loginWithFacebook": "Iniciar Sessão com o Facebook",
+    "rni18n": "RN i18n",
+    "igniteGenerated": "Iniciar gerador de telas",
+    "forgotPassword": "Esqueci minha senha",
+    "username": "Usuário",
+    "password": "Senha",
+    "cancel": "Cancelar",
+    "welcome": "Bem-vindo",
+    "login": "Iniciar Sessão",
+    "tempIndicator": "F",
+    "componentExamples": "Exemplos de componentes",
+    "usageExamples": "Exemplos de uso",
+    "apiTesting": "Teste de API",
+    "themeSettings": "Configurações de Tema",
+    "deviceDetails": "Detalhes do dispositivo",
+    "noItems": "Não há itens",
+    "search": "Pesquisar"
+ }
+ 
+
