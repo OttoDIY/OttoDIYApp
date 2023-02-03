@@ -107,7 +107,7 @@
     "jsdom": "^11.7.0",
     "metro-react-native-babel-preset": "^0.53.1",
     "mockery": "^2.1.0",
-    "properties-reader": "^0.0.16",
+    "properties-reader": "^2.2.0",
     "react-dom": "16.6.3",
     "react-native-mock-render": "^0.0.22",
     "react-native-schemes-manager": "^1.0.4",
